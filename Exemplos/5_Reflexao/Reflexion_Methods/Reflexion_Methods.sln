@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflexion_Methods", "Reflexion_Methods\Reflexion_Methods.csproj", "{52FADA1F-C5FE-4448-BA74-1677E6064143}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52FADA1F-C5FE-4448-BA74-1677E6064143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FADA1F-C5FE-4448-BA74-1677E6064143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FADA1F-C5FE-4448-BA74-1677E6064143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FADA1F-C5FE-4448-BA74-1677E6064143}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DF35CAE-4344-48B9-A983-177A709C60DB}
+	EndGlobalSection
+EndGlobal

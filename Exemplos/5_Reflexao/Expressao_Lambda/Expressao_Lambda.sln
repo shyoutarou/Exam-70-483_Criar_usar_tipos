@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expressao_Lambda", "Expressao_Lambda\Expressao_Lambda.csproj", "{A39CE4BD-31D2-484B-8B7A-94FDD01F5D01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A39CE4BD-31D2-484B-8B7A-94FDD01F5D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39CE4BD-31D2-484B-8B7A-94FDD01F5D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39CE4BD-31D2-484B-8B7A-94FDD01F5D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39CE4BD-31D2-484B-8B7A-94FDD01F5D01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {158D3FD4-4813-4711-A5EC-CF18D8005D6F}
+	EndGlobalSection
+EndGlobal
