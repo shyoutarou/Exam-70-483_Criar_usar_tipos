@@ -1,6 +1,6 @@
 # Course Overview MCSD – Microsoft Certification
 
-Microsoft currently offers four MCSD certifications based on various technologies
+A Microsoft oferece atualmente quatro certificações MCSD com base em várias tecnologias
 - MCSD: Windows Store Apps
 - MCSD: Web Applications
 - MCSD: SharePoint Applications
@@ -8,10 +8,8 @@ Microsoft currently offers four MCSD certifications based on various technologie
 
 The MCSD: Windows Store Apps can be achieved by passing three exams:
 - Programming in C# (Exam 70-483)
-- Essentials of Developing Windows Store Apps Using C# (Exam 70-484)
-**Esse exame foi desativado**
--Advanced Windows Store App Development Using C# (Exam 70-485)
-**Esse exame foi desativado**
+- Essentials of Developing Windows Store Apps Using C# (Exam 70-484) **Esse exame foi desativado**
+-Advanced Windows Store App Development Using C# (Exam 70-485) **Esse exame foi desativado**
 
 ### Exame 70-483/Curso 20483B
 
@@ -42,55 +40,55 @@ Observação: Existem atualizações de exame efetivas a partir de quinta-feira,
 
 ### Criar e usar tipos (25–30%)
 - **Criar tipos** 
-    o Criar tipos de valor, incluindo structs e num; criar tipos de referência, tipos genéricos, variáveis estáticas
+    - Criar tipos de valor, incluindo structs e num; criar tipos de referência, tipos genéricos, variáveis estáticas
 - **Consumir tipos**
-    o Box ou unbox para converter entre tipos de valor; casting tipos; converter tipos; lidar com tipos dinâmicos; garantir a interoperabilidade com código que acesse APIs COM 
+    - Box ou unbox para converter entre tipos de valor; casting tipos; converter tipos; lidar com tipos dinâmicos; garantir a interoperabilidade com código que acesse APIs COM 
 - **Aplicar encapsulamento**
-    o Aplicar encapsulamento usando propriedades; forçar encapsulamento usando assessores/modificadores, incluindo público, privado, protegido e interno; forçar encapsulamento usando implementação explícita de interface, construtores, métodos, classes, métodos de extensão, parâmetros opcionais e nomeados e propriedades indexadas; criar métodos sobrecarregados(overloading) e substituídos(overriding)
+    - Aplicar encapsulamento usando propriedades; forçar encapsulamento usando assessores/modificadores, incluindo público, privado, protegido e interno; forçar encapsulamento usando implementação explícita de interface, construtores, métodos, classes, métodos de extensão, parâmetros opcionais e nomeados e propriedades indexadas; criar métodos sobrecarregados(overloading) e substituídos(overriding)
 - **Criar e implementar uma hierarquia de classe** 
-    o Projetar e implementar uma interface; herdar de uma classe base; criar e implementar classes com base nas interfaces IComparable, IEnumerable, IDisposable e IUnknown
+    - Projetar e implementar uma interface; herdar de uma classe base; criar e implementar classes com base nas interfaces IComparable, IEnumerable, IDisposable e IUnknown
 - **Localizar, executar e criar tipos em tempo de execução usando reflexão** 
-    o Criar e aplicar atributos; ler atributos; gerar código em tempo de execução usando expressões CodeDom e lambda; usar tipos do namespace System.Reflection, incluindo Assembly, PropertyInfo, MethodInfo, Type 
+    - Criar e aplicar atributos; ler atributos; gerar código em tempo de execução usando expressões CodeDom e lambda; usar tipos do namespace System.Reflection, incluindo Assembly, PropertyInfo, MethodInfo, Type 
 - **Gerenciar o ciclo de vida do objeto** 
-    o Gerenciar recursos não gerenciados; implementar IDisposable, incluindo interação com finalização; gerenciar IDisposable usando a instrução Using; gerenciar finalização e coleta de lixo
+    - Gerenciar recursos não gerenciados; implementar IDisposable, incluindo interação com finalização; gerenciar IDisposable usando a instrução Using; gerenciar finalização e coleta de lixo
 - **Manipular cadeias de caracteres** 
-    o Manipular cadeias de caracteres usando as classes StringBuilder, StringWriter e StringReader; pesquisar cadeias de caracteres; enumerar métodos de cadeias de caracteres; formatar cadeias de caracteres; usar interpolação de cadeia
+    - Manipular cadeias de caracteres usando as classes StringBuilder, StringWriter e StringReader; pesquisar cadeias de caracteres; enumerar métodos de cadeias de caracteres; formatar cadeias de caracteres; usar interpolação de cadeia
 
 ### Gerenciar fluxo de programa (25–30%)
 - **Implementar processamento multithreading e assíncrono**
-    o Usar a biblioteca Task Parallel, incluindo o Parallel.For method, PLINQ, Tasks; gerar threads usando ThreadPool; desbloquear a UI; usar palavras-chave async e await; gerenciar dados usando coleções simultâneas
+    - Usar a biblioteca Task Parallel, incluindo o Parallel.For method, PLINQ, Tasks; gerar threads usando ThreadPool; desbloquear a UI; usar palavras-chave async e await; gerenciar dados usando coleções simultâneas
 - **Gerenciar multithreading** 
-    o Sincronizar recursos; implementar bloqueio; cancelar uma tarefa de execução longa; implementar métodos thread-safe para manipular condições de corrida
+    - Sincronizar recursos; implementar bloqueio; cancelar uma tarefa de execução longa; implementar métodos thread-safe para manipular condições de corrida
 - **Implementar fluxo de programa** 
-    o Iterar em itens de coleção e de matriz; programar decisões usando instruções switch, se/então e operadores; avaliar expressões
+    - Iterar em itens de coleção e de matriz; programar decisões usando instruções switch, se/então e operadores; avaliar expressões
 - **Criar e implementar eventos e retornos de chamada**
-    o Criar manipuladores de eventos; assinar e cancelar assinatura de eventos; usar tipos delegados integrados para criar eventos; criar delegados; expressões lambda; métodos anônimos
+    - Criar manipuladores de eventos; assinar e cancelar assinatura de eventos; usar tipos delegados integrados para criar eventos; criar delegados; expressões lambda; métodos anônimos
 - **Implementar manipulação de exceções** 
-    o Manipular tipos de exceções, incluindo exceções SQL, exceções de rede (network exceptions), exceções de comunicação (communication exceptions), exceções de tempo limite de rede (network timeout exceptions); usar declarações de captura; usar uma classe base de uma exceção; implementar blocos try-catch-finally; lançar exceções; relançar uma exceção; criar exceções personalizadas; manipular exceções internas (inner exceptions); manipular exceções agregadas(aggregate exception)
+    - Manipular tipos de exceções, incluindo exceções SQL, exceções de rede (network exceptions), exceções de comunicação (communication exceptions), exceções de tempo limite de rede (network timeout exceptions); usar declarações de captura; usar uma classe base de uma exceção; implementar blocos try-catch-finally; lançar exceções; relançar uma exceção; criar exceções personalizadas; manipular exceções internas (inner exceptions); manipular exceções agregadas(aggregate exception)
 
 ### Implementar acesso aos dados (25–30%)
 - **Realizar operações de E/S** 
-    o Ler e escrever arquivos e fluxos; ler e escrever a partir da rede usando classes no namespace System.Net; implementar operações de E/S assíncronas
+    - Ler e escrever arquivos e fluxos; ler e escrever a partir da rede usando classes no namespace System.Net; implementar operações de E/S assíncronas
 - **Dados de consumo**  
-    o Recuperar dados de um banco de dados; atualizar dados em um banco de dados; consumir dados JSON e XML; recuperar dados usando serviços Web
+    - Recuperar dados de um banco de dados; atualizar dados em um banco de dados; consumir dados JSON e XML; recuperar dados usando serviços Web
 - **Consultar e manipular dados e objetos usando LINQ** 
-    o Consultar dados usando operadores, incluindo projetar, juntar, agrupar, obter, ignorar, agregar; criar consultas LINQ baseadas em método; consultar dados usando sintaxe de compreensão de consulta; selecionar dados usando tipos anônimos; forçar a execução de uma consulta; ler, filtrar, criar e modificar as estruturas de dados de usando LINQ to XML
+    - Consultar dados usando operadores, incluindo projetar, juntar, agrupar, obter, ignorar, agregar; criar consultas LINQ baseadas em método; consultar dados usando sintaxe de compreensão de consulta; selecionar dados usando tipos anônimos; forçar a execução de uma consulta; ler, filtrar, criar e modificar as estruturas de dados de usando LINQ to XML
 - **Serializar e de-serializar dados** 
-    o Serializar e de-serializar dados usando serialização binária, serialização personalizada, Serializador XML, Serializador JSON e Serializador de Contrato de Dados
+    - Serializar e de-serializar dados usando serialização binária, serialização personalizada, Serializador XML, Serializador JSON e Serializador de Contrato de Dados
 - **Armazenar dados e recuperar dados de coleções**  
-    o Armazenar e recuperar dados usando dicionários, matrizes, listas, conjuntos e filas; escolher um tipo de coleção; inicializar uma coleção; adicionar e remover itens de uma coleção; usar coleções tipificadas vs. coleções não tipificadas; implementar coleções personalizadas; implementar interfaces de coleções
+    - Armazenar e recuperar dados usando dicionários, matrizes, listas, conjuntos e filas; escolher um tipo de coleção; inicializar uma coleção; adicionar e remover itens de uma coleção; usar coleções tipificadas vs. coleções não tipificadas; implementar coleções personalizadas; implementar interfaces de coleções
 
 ### Depurar aplicativos e implementar segurança (25–30%)
 - **Validar entrada de aplicativo** 
-    o Validar dados JSON; escolher o tipo de coleta de dados adequado; gerenciar integridade de dados; avaliar uma expressão regular para validar o formato de entrada; usar funções internas para validar tipos e conteúdos
+    - Validar dados JSON; escolher o tipo de coleta de dados adequado; gerenciar integridade de dados; avaliar uma expressão regular para validar o formato de entrada; usar funções internas para validar tipos e conteúdos
 - **Realizar criptografia simétrica e assimétrica** 
-    o Escolher um algoritmo de criptografia apropriado; gerenciar e criar certificados; implementar gerenciamento de chave; implementar o namespace System.Security; fazendo hash de dados; criptografar fluxos
+    - Escolher um algoritmo de criptografia apropriado; gerenciar e criar certificados; implementar gerenciamento de chave; implementar o namespace System.Security; fazendo hash de dados; criptografar fluxos
 - **Gerenciar montagens** 
-    o Controlar versão de montagens; assinar montagens usando nomes fortes; implementar hospedagem lado a lado; colocar uma montagem no cache de montagens global; criar uma montagem WinMD
+    - Controlar versão de montagens; assinar montagens usando nomes fortes; implementar hospedagem lado a lado; colocar uma montagem no cache de montagens global; criar uma montagem WinMD
 - **Depurar um aplicativo** 
-    o Criar e gerenciar diretrizes de pré-processador; escolher um tipo de compilação apropriado; gerenciar arquivos e símbolos de banco de dados do programa (símbolos de depuração)
+    - Criar e gerenciar diretrizes de pré-processador; escolher um tipo de compilação apropriado; gerenciar arquivos e símbolos de banco de dados do programa (símbolos de depuração)
 - **Implementar diagnóstico em um aplicativo** 
-    o Implementar log e rastreamento; criação de perfil de aplicativos; criar e monitor contadores de desempenho; escrever para o log de eventos
+    - Implementar log e rastreamento; criação de perfil de aplicativos; criar e monitor contadores de desempenho; escrever para o log de eventos
 
 <p align="center">
   <img src=".github/MCSDcert.png" alt="Image" width="100%" />
@@ -114,13 +112,12 @@ PS: Neste [examcollection](http://www.examcollection.com/70-536.html) tem mais e
   <img src=".github/RefBooks.png" alt="Image" width="100%" />
 </p>
 
-   
-- The C# Programmer's Study Guide (MCSD): Exam: 70-483 (Inglês)– 23 jun 2017 
-por Ali Asad (Autor), Hamza Ali (Autor) 
-- Exam Ref 70-483 Programming in C# (MCSD) 
-de Wouter de Kort
-- MCSD Certification Toolkit (Exam 70-483): Programming in C# (Inglês)– 12 mai 2013 
-por Tiberiu Covaci (Autor), Gerry O'Brien (Autor), & 1 mais 
+
+| Título | Data | Autor |
+|:----------|------|---------------------|
+|**The C# Programmer's Study Guide (MCSD): Exam: 70-483**|  23 jun 2017 |  Ali Asad, Hamza Ali |
+|**Exam Ref 70-483 Programming in C# (MCSD)**  | 25 julho 2013  | Wouter de Kort |
+|**MCSD Certification Toolkit (Exam 70-483): Programming in C#**  |  12 mai 2013 | Tiberiu Covaci, Gerry O'Brien, & 1 mais |
 
 ## .NET Framework
 
@@ -401,10 +398,10 @@ As variáveis de alguns tipos de dados leves (tipos primitivos – int, double, 
 Vejamos os tipos de valor armazenados na Stack - pilha...
 - A quantidade de memória necessária para armazenar um tipo de valor é uma quantidade definida
 - Quando a variável não é mais necessária, ela é excluída da pilha. Exemplo:
-    o int a = 4;
-    o int b = 6;
+    - int a = 4;
+    - int b = 6;
 - Cada variável é armazenada na pilha na ordem em que foi criada
-    o int c = b;
+    - int c = b;
 - Cada variável armazena seus próprios dados
 
 <p align="center">
@@ -415,7 +412,7 @@ Vejamos os tipos de valor armazenados na Stack - pilha...
 Perceba que o valor da variável fica junto com a própria variável. Variáveis onde isso acontece são chamadas de Value-Types, justamente porque o valor delas fica junto  com a própria variável na memória stack. Assim, quando você tem o seguinte código
 
 <p align="center">
-  <img src=".github/StackHeap.png" alt="Image" width="100%" />
+  <img src=".github/StackHeap.png" alt="Image" width="400px" />
 </p>
 
 Agora, outros tipos de dados ocupam muito mais espaço de memória do que estes tipos leves que são value-types. Por isso, eles não podem ser armazenados diretamente na stack (caso fossem, rapidamente a memória stack seria “estourada”, causando o famoso erro StackOverflowException). Sendo assim, estes dados são armazenados na memória heap. Vamos imaginar que você tenha o seguinte código:
@@ -436,13 +433,13 @@ Pessoa minhaPessoa = new Pessoa();
 ```
 
 <p align="center">
-  <img src=".github/NewPessoa.png" alt="Image" width="100%" />
+  <img src=".github/NewPessoa.png" alt="Image" width="400px" />
 </p>
  
 Porém, o compilador não acessa a heap diretamente. Por que ele não acessa? Justamente porque ela é muito grande… Se ele fosse procurar o objeto minhaPessoa dentro da heap, ele iria demorar um tantinho bom de tempo. O compilador precisaria ter um jeito de acessar pela stack (que é rápida pra encontrar as coisas até mesmo por ser bem menor) o que está alocado na heap (que é bem maior). Como o compilador contorna isso? Criando uma referência dentro da stack para o objeto minhaPessoa, apontando onde na memória heap que este objeto está de fato guardado!
  
  <p align="center">
-  <img src=".github/StackRef.png" alt="Image" width="100%" />
+  <img src=".github/StackRef.png" alt="Image" width="400px" />
 </p>
 
 Essa porção de memória que é alocada na stack para apontar para uma posição de memória da heap é chamada de ponteiro. Por isso ele tem esse asterisco (*) na frente do seu nome.
@@ -1027,7 +1024,7 @@ class Program
 
 Embora uma classe seja demonstrada aqui chamada GFG<T>, você deve examinar o namespace System.Collection.Generic para determinar se o .NET Framework já contém uma classe genérica. Sempre reutilize o código existente sempre que possível. Seus tipos genéricos agem exatamente como outros tipos de referência e podem incluir construtores, variáveis de membro e métodos. Os métodos, incluindo o construtor, também podem incluir parâmetros de tipo.
 
-### Métodos Generic
+### Métodos Genéricos
 
 Métodos genéricos também serão declarados com parâmetros de tipo. Isso significa que, como a assinatura da classe, a assinatura do método usará um espaço reservado para o tipo que será passado para o método. Da mesma maneira que as classes genéricas são seguras para o tipo e não exigem boxe/unboxing ou conversão explícita, os métodos genéricos também compartilham essa mesma característica. Um dos exemplos mais simples que existem no MSDN e em vários outros exemplos de documentação está usando um método de troca (Swap). A troca é uma função comumente usada em algoritmos de ordenação simples. Um exemplo de método de troca genérico a seguir:
 
@@ -1231,11 +1228,11 @@ NodeListMult<Customer, Customer> employeeNodescust = new NodeListMult<Customer, 
 ## TIPOS ESPECIAIS EM C#
 
 O C# fornece tipos especiais que são açúcar sintático para os usuários. Esses tipos ajudam os usuários a maximizar suaprodutividade escrevendo código auxiliar dentro deles. Esses tipos especiais estão listados abaixo.
-- System.Object type	
-- Anonymous type	
-- Dynamic type	
-- Nullable type	
-- Static type
+- **System.Object type**	
+- **Anonymous type**	
+- **Dynamic type**	
+- **Nullable type**	
+- **Static type**
 
 ### Tipo System.Object 
 
@@ -1449,13 +1446,13 @@ Unboxing também consome mais memória e mais tempo. Desde que, quando um tipo d
 ```bash
 static void Main(string[] args)
 {
-    object o;
+    object ob;
     int x = 123;
 
     //BOXING: CLASSE É CONVERTIDA EM OBJETO
     //coloca um int dentro de um objeto
-    o = x;           //Boxing Implicito
-    o = (object)x;   //Boxing Explicito
+    ob = x;           //Boxing Implicito
+    ob = (object)x;   //Boxing Explicito
 
     Console.WriteLine("O objeto o = ", o); // O objeto o = 
     Console.WriteLine("x= " + x);  // x = 123
@@ -1517,7 +1514,7 @@ x = z;
   <img src=".github/erroCast.png" alt="Image" width="100%" />
 </p>
 
-Outra conversão implícita é a de um tipo de referência para um de seus tipos básicos. Por exemplo, cada tipo de referência pode ser armazenado dentro de um objeto porque, em última análise, cada tipo de referência herda de um objeto. Se um objeto implementa uma interface, ele também pode ser convertido implicitamente na interface. A Listagem 2-21 mostra a conversão implícita de um objeto em um de seus tipos básicos.
+Outra conversão implícita é a de um tipo de referência para um de seus tipos básicos. Por exemplo, cada tipo de referência pode ser armazenado dentro de um objeto porque, em última análise, cada tipo de referência herda de um objeto. Se um objeto implementa uma interface, ele também pode ser convertido implicitamente na interface. o exemplo abaixo mostra a conversão implícita de um objeto em um de seus tipos básicos.
 
 ```bash
 HttpClient client = new HttpClient();
@@ -1684,9 +1681,9 @@ Console.WriteLine(totalBits); //8
 ```
 
 Onde:
-    o O operator int informa que tipo de dados seria retornado na conversão implícita.
-    o O tipo Byte b informa qual tipo seria convertido implicitamente.
-    o O byte "b" obtem uma conversão implícita em "int" retornando o número total de bits em um byte
+    - O operator int informa que tipo de dados seria retornado na conversão implícita.
+    - O tipo Byte b informa qual tipo seria convertido implicitamente.
+    - O byte "b" obtem uma conversão implícita em "int" retornando o número total de bits em um byte
 
 - **Explícita**: Casting é necessário para converter um tipo em outro, um método estático especial é definido com uma palavra-chave explícita e operator dentro da definição de tipo. Pode haver perda de dados na conversão explícita.
 
@@ -1710,9 +1707,9 @@ Console.WriteLine(name); //Ali
 ```
 
 Onde:
-    oO operator string informa que tipo de dados seria retornado na conversão implícita.
-    oO Person per informa qual tipo seria convertido implicitamente
-    oCom o Casting (string)per; lança os dados de uma pessoa em "string" explicitamente, retornando o nome da pessoa ou mais dados.
+    - O operator string informa que tipo de dados seria retornado na conversão implícita.
+    - O Person per informa qual tipo seria convertido implicitamente
+    - Com o Casting (string)per; lança os dados de uma pessoa em "string" explicitamente, retornando o nome da pessoa ou mais dados.
 
 Suponha que você esteja trabalhando em uma classe Money que encapsule todos os tipos de algoritmos de arredondamento para trabalhar com moedas diferentes. 
 
@@ -2018,8 +2015,8 @@ O C# ajuda a encapsular o funcionamento interno de um objeto, fornecendo proprie
 - Explica a diferença entre propriedades e campos
 
 O encapsulamento é implementado de duas maneiras:
-1.	Proteção de Dados
-2.	Especificadores de acesso
+1.	**Proteção de Dados**
+2.	**Especificadores de acesso**
 
 ### PROTEÇÃO DE DADOS
 
@@ -2070,8 +2067,8 @@ public class  Person
  
 
 Em C#, os dados são armazenados em uma única variável ou em uma matriz. Para proteger esses dados contra danos acidentais, temos:
-- Propriedades
-- Indexadores
+- **Propriedades**
+- **Indexadores**
 
 As propriedades são de dois tipos:
 1.	**Propriedade Full**: nesta propriedade, declaramos campos particulares e os encapsulamos dentro da definição de uma propriedade.
@@ -2210,7 +2207,7 @@ Uma das principais funções modificadores é definir o nível de acessibilidade
 Public
 
 <p align="center">
-  <img src=".github/publicclass.png" alt="Image" width="100%" />
+  <img src=".github/publicclass.png" alt="Image" width="500px" />
 </p>
 
 
@@ -2341,7 +2338,7 @@ Os métodos têm algumas características que você deve entender
   Parametros
 - Parâmetros opcionais são definidos no final da lista de parâmetros, após todos os parâmetros necessários. Se nenhum argumento for enviado para esse parâmetro, o valor padrão será usado.
 <p align="center">
-  <img src=".github/Parametros_op.png" alt="Image" width="100%" />
+  <img src=".github/Parametros_op.png" alt="Image" width="500px" />
 </p>
 
 ### Assinatura
@@ -2349,7 +2346,7 @@ Os métodos têm algumas características que você deve entender
 - Para sobrecarga(overloading), a assinatura inclui o nome do método e os tipos de parâmetro
 - Para delegados(delegates), a assinatura inclui o tipo de retorno e os tipos de parâmetro
 <p align="center">
-  <img src=".github/Assinatura.png" alt="Image" width="100%" />
+  <img src=".github/Assinatura.png" alt="Image" width="500px" />
 </p>
 
 ### Static
@@ -2375,9 +2372,9 @@ O construtor leva o mesmo nome que a classe. Dentro dos colchetes, as declaraç�
 - Executa uma ação específica
 - Eles podem ser sobrecarregados (overloaded)
 - Existem três tipos principais de construtores
-    o **Instância (Instance)**>> Usado para criar e inicializar qualquer variável de membro da instância quando você usa a nova expressão para criar um objeto de uma classe
-    o **Particular (Private)**>> Impede que outras classes criem instâncias dessa classe. Somente classes aninhadas podem criar uma instância dessa classe
-    o **Estático (Static)**>> Usado para inicializar qualquer dado estático. O construtor estáticoé chamado apenas uma única vez antes da criação da primeira instância da classe ou da referência a qualquer membro estático
+    - **Instância (Instance)**>> Usado para criar e inicializar qualquer variável de membro da instância quando você usa a nova expressão para criar um objeto de uma classe
+    - **Particular (Private)**>> Impede que outras classes criem instâncias dessa classe. Somente classes aninhadas podem criar uma instância dessa classe
+    - **Estático (Static)**>> Usado para inicializar qualquer dado estático. O construtor estáticoé chamado apenas uma única vez antes da criação da primeira instância da classe ou da referência a qualquer membro estático
 
 ## POLIMORFISMO
 
@@ -2990,7 +2987,7 @@ Como exemplo de implementação explícita da interface, consulte o Entity Frame
 ```bash
 public interface IObjectContextAdapter
 {
-    ObjectContext ObjectContext { get; }
+    objectContext ObjectContext { get; }
 }
 ```
 
@@ -3023,7 +3020,7 @@ class Implementation : IInterfaceA
 
 A classe Implementation implementa a interface IInterfaceA explicitamente. Quando você tem uma instância de Implementação, não pode acessar o MyMethod. Mas quando você lança Implementation para IInterfaceA, você tem acesso ao MyMethod. Dessa forma, a implementação explícita da interface pode ser usada para ocultar membros de uma classe para usuários externos.
 
-Há outra situação em que a implementação explícita da interface é necessária: quando uma classe implementa duas interfaces que contêm assinaturas de método duplicadas, mas deseja uma implementação diferente para ambas. Ao implementar implicitamente essas duas interfaces, apenas um método existe na implementação. Com a implementação explícita da interface, ambas as interfaces têm sua própria implementação. A Listagem abaixo mostra como implementar uma interface explicitamente.
+Há outra situação em que a implementação explícita da interface é necessária: quando uma classe implementa duas interfaces que contêm assinaturas de método duplicadas, mas deseja uma implementação diferente para ambas. Ao implementar implicitamente essas duas interfaces, apenas um método existe na implementação. Com a implementação explícita da interface, ambas as interfaces têm sua própria implementação. O código abaixo mostra como implementar uma interface explicitamente.
 
 ```bash
 class Program
@@ -3096,14 +3093,14 @@ Herança, juntamente com o encapsulamento e polimorfismo, é uma das três carac
 Para utilizar a classe base (superclasse) em outra classe (classe derivada ou subclasse) você faz referência à classe base, colocando o símbolo : (dois pontos) após o nome da classe derivada e em seguida coloque o nome da classe base. Quando você define uma classe para derivar de outra classe, a classe derivada implicitamente ganha todos os membros da classe base, exceto seus construtores e destrutores. A herança permite criar novas classes que reutilizam, estendem e modificam o comportamento definido em outras classes podendo assim reutilizar o código na classe base. Isso elimina a duplicação de elementos nas classes reduzindo a necessidade de escrever o mesmo código em duas classes diferentes facilitando a manutenção do código. Observe nas classes abaixo que existem muitas duplicações de propriedades e métodos e existem apenas duas diferenças:
 
 <p align="center">
-  <img src=".github/AdultChild.png" alt="Image" width="100%" />
+  <img src=".github/AdultChild.png" alt="Image" width="500px" />
 </p>
 
 A herança geralmente é implementada em um modelo denominado “general down to specific” em que se é criado uma classe base, cujos membros são herdados, e classes que herdam esses membros são chamadas de classes derivadas. Uma classe derivada pode ter apenas uma classe base direta. No entanto, a herança é transitiva. Se class C é derivada da class B e class B é derivada da class A, class C herda os membros declarados em class B e class A.
 
-Conceitualmente, uma classe derivada é uma especialização da classe base. Poderíamos criar uma classe Patient que contasse com todas as propriedades e métodos que pertencem a todos os pacientes e as classes Adult e Childteriam as suas propriedades específicas com métodos mais especializados. Em que:
+Conceitualmente, uma classe derivada é uma especialização da classe base. Poderíamos criar uma classe Patient que contasse com todas as propriedades e métodos que pertencem a todos os pacientes e as classes Adult e Child teriam as suas propriedades específicas com métodos mais especializados. Em que:
 <p align="center">
-  <img src=".github/Patient.png" alt="Image" width="100%" />
+  <img src=".github/Patient.png" alt="Image" width="300px" />
 </p>
   
 - Uma classe só pode herdar de outra classe
@@ -3875,7 +3872,7 @@ Como você pode ver, a classe real no .NET Framework é chamada SerializableAttr
 
 A serialização é o processo de converter um objeto em um fluxo de bytes para armazenar o objeto ou transmiti-lo para a memória, um banco de dados ou um arquivo. Sua finalidade principal é salvar o estado de um objeto para recriá-lo quando necessário. O processo inverso é chamado desserialização. Esta ilustração mostra o processo geral de serialização:
 <p align="center">
-  <img src=".github/ObjectBytes.png" alt="Image" width="100%" />
+  <img src=".github/objbyte2.png" alt="Image" width="300px" />
 </p>
  
 
@@ -4022,7 +4019,7 @@ DEBUG is defined
 
 Um atributo também possui um destino específico ao qual se aplica. Pode ser um atributo aplicado a um assembly inteiro, uma classe, um método específico ou mesmo um parâmetro de um método.Se você olhar para o AssemblyInfo.cs de uma nova biblioteca de classes, poderá ver como o destino é explicitamente especificado.
 <p align="center">
-  <img src=".github/Condicional_Atributo.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/Condicional_Atributo.png" alt="Image" width="100%" />
 </p>
 
 
@@ -4115,11 +4112,12 @@ Os valores das propriedades podem ser atribuídos quando uma instância do atrib
 
 No parâmetro AttributeUsage, usamos AttributeTargets para restringir um atributo personalizado a ser aplicado apenas nessas enumerações (classe, método, propriedade etc.). Use um tubo de barra vertical '|' para adicionar mais de um AttributeTargets no construtor de AttributeUsage. A seguir, são apresentadas algumas enumerações de AttributeTargets usadas com freqüência, úteis para aplicar restrições no código C#.
 
+
 |  |  | AttributeTargets |  |  |
-|:----------|------|---------------------|  |  |
-|All| Class | Constructor | Delegate | Enum |
-|Field  |  Interface | Method | Property | Struct |		
-				
+|:----------|------|------|------|------|
+| All | Class | Constructor | Delegate | Enum |
+| Field  |  Interface | Method | Property | Struct |
+	
 
 Abaixo temos uma implementação onde exemplifica o uso do atributo personalizado:
 
@@ -4207,7 +4205,7 @@ Usando o método Attribute.GetCustomAttribute(), o valor armazenado nas propried
 
 O xUnit (uma estrutura popular de teste de unidade) permite categorizar seus testes de unidade aplicando um atributo a eles.
 <p align="center">
-  <img src=".github/xUnit.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/xUnit.png" alt="Image" width="100%" />
 </p>
 
 
@@ -4257,17 +4255,19 @@ namespace xUnitClassLibrary
 Compile a solução para garantir que o código seja compilado. Agora que você escreveu o primeiro teste, precisamos de uma maneira de executá-lo. Vamos instalar o pacote NuGet com o console runner.
 
 <p align="center">
-  <img src=".github/NuGet.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/NuGet.png" alt="Image" width="100%" />
 </p>
   
 
 Diferente do pacote anterior (que adicionou referências à estrutura de teste de unidade), esse pacote é conhecido como pacote em nível de solução. Em vez de ter assemblies para referência, ele adiciona algumas ferramentas na pasta da solução. Usaremos uma dessas ferramentas - o console runner- para executar seus testes de unidade.
 
 Abra um prompt de comando ou a janela de comando do PowerShell. Na janela, navegue até a pasta raiz da sua solução. Para executar o console runner, use um comando como o destacado abaixo. Você deve ver uma saída semelhante a esta:
-
+```bash
 packages\xunit.runner.console.2.4.1\tools\net46\xunit.console xUnitClassLibrary\bin\Debug\xUnitClassLibrary.dll
+```
+
 <p align="center">
-  <img src=".github/xUnitClassLibrary.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/xUnitClassLibrary.png" alt="Image" width="100%" />
 </p>
  
 
@@ -4303,7 +4303,7 @@ bool IsOdd(int value)
 Desta vez, quando compilamos e executamos os testes, vemos uma falha, para nossa teoria que foi dada 6:
 
 <p align="center">
-  <img src=".github/testesfalha.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/testesfalha.png" alt="Image" width="100%" />
 </p>
 
  
@@ -4311,19 +4311,19 @@ Embora tenhamos escrito apenas três métodos de teste, o corredor do console re
 
 Se você possui o Visual Studio Community (ou uma versão paga do Visual Studio), pode executar os testes do xUnit.net no executor de testes interno do Visual Studio (denominado Test Explorer). Infelizmente, isso não inclui as edições Express do Visual Studio (você deve atualizar para o Community Edition).
 <p align="center">
-  <img src=".github/CommunityEdition.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/CommunityEdition.png" alt="Image" width="100%" />
 </p>
  
 
 Verifique se o Test Explorer está visível (vá para Teste> Windows> Test Explorer). 
 <p align="center">
-  <img src=".github/TestExplorer.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/TestExplorer.png" alt="Image" width="100%" />
 </p>
   
 
 Toda vez que você compila seu projeto, o corredor descobre testes de unidade no seu projeto. Após um momento de descoberta, você deverá ver a lista de testes descobertos:
 <p align="center">
-  <img src=".github/testesdescobertos.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/testesdescobertos.png" alt="Image" width="100%" />
 </p>
 
 
@@ -4393,13 +4393,13 @@ O CodeDOM está localizado no namespace System.CodeDom. Você pode pensar no seu
 }
 ```
 <p align="center">
-  <img src=".github/HelloWorld.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/HelloWorld.png" alt="Image" width="100%" />
 </p>
 
 A saída gerada no HelloWorld.cs é mostrada abaixo:
 
 <p align="center">
-  <img src=".github/HelloWorldoutput.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/HelloWorldoutput.png" alt="Image" width="100%" />
 </p>
 
 Neste próximo exemplo, iremos examinar passo-a-passo como utilizar o CodeDOM para gerar a seguinte classe:
@@ -5311,8 +5311,8 @@ O ciclo de vida de um objeto é simplesmente o tempo entre quando um objeto é c
 Person person = new Person();
 Um bloco de memória está alocado. Esse bloco de memória é grande o suficiente para armazenar o objeto (o CLR lida com a alocação de memória para objetos gerenciados). O bloco de memória é convertido em um objeto inicializado na memória (podemos controlar esta etapa implementando um construtor).
 2.	**Exclusão de um objeto**: Usamos a destruição para recuperar quaisquer recursos usados por esse objeto. O objeto é limpo, por exemplo, liberando quaisquer recursos não gerenciados usados pelo aplicativo, como identificadores de arquivo e conexões com o banco de dados (podemos controlar esta etapa implementando um destruidor). C# fornece duas maneiras de lidar com o gerenciamento de memória
-    o **Garbage Collection (Coleta de lixo)**: o CLR libera a memória usada pelos objetos gerenciados
-    o **Disposal**: é necessário liberar manualmente a memória implementando IDisposable para objetos não gerenciados.
+    - **Garbage Collection (Coleta de lixo)**: o CLR libera a memória usada pelos objetos gerenciados
+    - **Disposal**: é necessário liberar manualmente a memória implementando IDisposable para objetos não gerenciados.
 
 ### Perdas de memória (Memory Leaks)
 
@@ -5332,7 +5332,7 @@ O **Garbage Collector** é um processo que automático que cuida do gerenciament
 - Apenas os objetos não utilizados são destruídos: um objeto nunca é destruído se ele mantém a referência de um outro objeto.
 - Nem todos os objetos órfãos são recuperados a cada coleção
 - Existem alguns casos em que é necessário ajudar o GC
-    o Você pode forçar a coleta de lixo chamando GC.Collect();
+    - Você pode forçar a coleta de lixo chamando GC.Collect();
 
 Você não pode destruir um objeto explicitamente no código, ou seja, você não pode determinar quando o método destruidor será chamado. Também, quando um objeto perde o escopo no final do método Main(), o processo de destruição não é necessariamente invocado. A decisão de recorrer ao processo de destruição é feita exclusivamente pelo Garbage Collector. 
 
@@ -5459,7 +5459,7 @@ O importante é entender que um finalizador aumenta a vida útil de um objeto. C
 4.	O thread do Finalizador é executado e identifica objetos na fila e executa seus métodos de finalização. Após a finalização, o objeto fica órfão. Na próxima vez que o GC ocorrer, o objeto será excluído
 
 <p align="center">
-  <img src=".github/Finalizadores.png" alt="Study Page in Mobile" width="100%" />
+  <img src=".github/Finalizadores.png" alt="Image" width="100%" />
 </p>
  
 Os finalizadores devem ser usados somente quando necessário, pois:
@@ -5632,21 +5632,21 @@ Há algumas coisas a serem observadas sobre essa implementação:
 - Foi criado uma flag que vai controlar se o recurso já foi liberado ou não (bool disposed);
 - O finalizador chama Dispose apenas passando false para disposing.
 - O método Dispose extra com o argumento booleano faz o trabalho real. Este método deve ser protected virtual por causa da hierarquia de herança. É assinado com protected para limitar sua visibilidade por outras classes fora da hierarquia. Este método verifica se está sendo chamado em um Dispose explícito ou se está sendo chamado a partir do finalizador:
-    o Se o finalizador chamar Dispose, você não fará nada porque o objeto Stream também implementa um finalizador e o Garbage Collector se encarrega de chamar o finalizador da instância do Stream. Você não pode ter certeza se já foi chamado, por isso é melhor deixar isso para o coletor de lixo.
-    o Se Dispose for chamado explicitamente, feche o FIleStream subjacente. É importante ser defensivo ao codificar esse método; sempre verifique qualquer fonte de possíveis exceções. Pode ser que Dispose seja chamado várias vezes e isso não cause erros.
+    - Se o finalizador chamar Dispose, você não fará nada porque o objeto Stream também implementa um finalizador e o Garbage Collector se encarrega de chamar o finalizador da instância do Stream. Você não pode ter certeza se já foi chamado, por isso é melhor deixar isso para o coletor de lixo.
+    - Se Dispose for chamado explicitamente, feche o FIleStream subjacente. É importante ser defensivo ao codificar esse método; sempre verifique qualquer fonte de possíveis exceções. Pode ser que Dispose seja chamado várias vezes e isso não cause erros.
 - O método Dispose regular chama GC.SuppressFinalize (this) para garantir que o objeto seja removido da lista de finalização que o Garbage Collector está acompanhando. A instância já foi executada, portanto, não é necessário que o Garbage Collector chame o finalizador.
 - Por fim, utilize o finalizer apenas se ele não foi implementado no seu código dentro de um bloco using ou try-finally com uma chamada ao Dispose.
 
 É importante saber a diferença entre implementar o IDisposable e um finalizador. Ambos limpam seu objeto, mas um finalizador é chamado pelo Garbage Collector e o método Dispose pode ser chamado a partir do código.
 
-
-Finalize	Dispose
-Usado para liberar recursos não gerenciados como arquivos, conexões de banco de dados, recursos COM, etc. retidos por um objeto antes que objeto seja destruído. 	Ele é usado para liberar recursos não gerenciados como arquivos, conexões de banco de dados, etc COM a qualquer momento. 
-Internamente é chamado pelo Garbage Collector e não pode ser chamado pelo código do usuário. 	É chamado explicitamente pelo código do usuário, a classe que o define deve implementar a interface IDisposable. 
-Pertence a classe Object	Pertence à interface IDisposable.
-Implementar quando você tem recursos não gerenciados em seu código, e quer ter certeza de que esses recursos são liberados quando a coleta de lixo acontecer.	Implementar quando você está escrevendo uma classe personalizada que será usada por outros usuários.
-Há custo de desempenho associado.	Não há custo de desempenho associado
-
+| Finalize | Dispose | 
+|:----------|------|
+|Usado para liberar recursos não gerenciados como arquivos, conexões de banco de dados, recursos COM, etc. retidos por um objeto antes que objeto seja destruído. | Ele é usado para liberar recursos não gerenciados como arquivos, conexões de banco de dados, etc COM a qualquer momento. | 
+|Internamente é chamado pelo Garbage Collector e não pode ser chamado pelo código do usuário.  |  É chamado explicitamente pelo código do usuário, a classe que o define deve implementar a interface IDisposable.  |
+| Pertence a classe Object  |  Pertence à interface IDisposable. | 
+| Implementar quando você tem recursos não gerenciados em seu código, e quer ter certeza de que esses recursos são liberados quando a coleta de lixo acontecer.  |  Implementar quando você está escrevendo uma classe personalizada que será usada por outros usuários. | 
+| Há custo de desempenho associado.  |  Não há custo de desempenho associado | 	
+	
 A lista a seguir resume as regras e conceitos de gerenciamento de recursos:
 - Se uma classe não contém recursos gerenciados e não gerenciados, não é necessário implementarIDisposable ou ter um destruidor.
 - Se a classe tiver apenas recursos gerenciados, deverá implementar IDisposable, mas não precisa de um destruidor. O destruidor deve liberar apenas recursos não gerenciados. (Quando o destruidor é executado, você não pode ter certeza de que os objetos gerenciados ainda existem, portanto não pode chamar os métodos Dispose de qualquer maneira.)
@@ -5656,32 +5656,32 @@ A lista a seguir resume as regras e conceitos de gerenciamento de recursos:
 - Após liberar recursos, o destruidor deve chamarGC.SuppressFinalize, para que o objeto possa pular a fila de finalização.
 - Para evitar confusão, idealmente, uma classe não deve incluir recursos gerenciados e não gerenciados. Se a classe tiver recursos não gerenciados, deverá gerenciar apenas um recurso
 
-WeakReference - Referências fracas
+### WeakReference - Referências fracas
 
 Um WeakReference permite que o coletor de lixo colete o objeto enquanto ainda permite que o aplicativo o acesse. Uma referência fraca é válida somente durante o período indeterminado até que o objeto seja coletado quando não há nenhuma referência forte. Quando você usa uma referência fraca, o aplicativo ainda pode obter uma referência forte para o objeto, o que impede que ele seja coletado. No entanto, sempre há o risco de o coletor de lixo obter o objeto primeiro antes de uma referência forte ser restabelecida.
-Propriedades	Descrição
-IsAlive
-Obtém uma indicação se o objeto referenciado pelo objeto WeakReference atual passou pela coleta de lixo.
-Target
-Obtém ou define o objeto (o destino) referenciado pelo objeto WeakReference atual.
 
-TrackResurrection
-Obtém uma indicação se o objeto referenciado pelo objeto WeakReference atual é acompanhado depois de finalizado.
+| Propriedades | Descrição | 
+|:----------|------|
+| IsAlive | Obtém uma indicação se o objeto referenciado pelo objeto WeakReference atual passou pela coleta de lixo. | 
+| Target  |  Obtém ou define o objeto (o destino) referenciado pelo objeto WeakReference atual. |
+| TrackResurrection  |  Obtém uma indicação se o objeto referenciado pelo objeto WeakReference atual é acompanhado depois de finalizado. | 
 
+```bash
 static WeakReference _weak;
- static void Main(string[] args)
+
+static void Main(string[] args)
 {
     _weak = new WeakReference(new StringBuilder("perls"));
 
-// See if weak reference is alive.
-if (_weak.IsAlive)
+    // See if weak reference is alive.
+    if (_weak.IsAlive)
         Console.WriteLine((_weak.Target as StringBuilder).ToString());
 
-// Invoke GC.Collect.
-    GC.Collect();
+    // Invoke GC.Collect.
+        GC.Collect();
 
-// Check alive.
-if (_weak.IsAlive)
+    // Check alive.
+    if (_weak.IsAlive)
     {
         Console.Write("stillAlive: ");
         Console.WriteLine((_weak.Target as StringBuilder).ToString());
@@ -5689,50 +5689,54 @@ if (_weak.IsAlive)
 
     Console.ReadKey();
 }
+```
 
 Você pode criar uma referência fraca curta ou uma referência fraca longa:
-- Short: O destino de uma referência fraca curta se torna null quando o objeto é recuperado pela coleta de lixo. A referência fraca é um objeto gerenciado e está sujeita à coleta de lixo assim como qualquer outro objeto gerenciado. Uma referência fraca curta é o construtor sem parâmetros para WeakReference.
-- Long: Uma referência fraca longa é mantida após o método Finalize do objeto ter sido chamado. Isso permite que o objeto seja recriado, mas o estado do objeto permanece imprevisível. Para usar uma referência longa, especifique true no construtor WeakReference.
+- **Short**: O destino de uma referência fraca curta se torna null quando o objeto é recuperado pela coleta de lixo. A referência fraca é um objeto gerenciado e está sujeita à coleta de lixo assim como qualquer outro objeto gerenciado. Uma referência fraca curta é o construtor sem parâmetros para WeakReference.
+- **Long**: Uma referência fraca longa é mantida após o método Finalize do objeto ter sido chamado. Isso permite que o objeto seja recriado, mas o estado do objeto permanece imprevisível. Para usar uma referência longa, especifique true no construtor WeakReference.
 Se o tipo de objeto não tiver um método Finalize, a funcionalidade de referência fraca curta é aplicada e a referência fraca é válida apenas até o destino ser coletado, o que pode ocorrer a qualquer momento após o finalizador ser executado.
 
 Para estabelecer uma referência forte e usar o objeto novamente, converta a propriedade Target de um WeakReference para o tipo do objeto. Se a propriedade Target retornar null, o objeto terá sido coletado, caso contrário, continue usando o objeto, pois o aplicativo recuperou uma referência forte para ele.
 
 Às vezes, você precisa trabalhar com objetos grandes que exigem muito tempo para serem criados. Por exemplo, uma lista de objetos que precisam ser recuperados de um banco de dados. Seria bom se você pudesse apenas manter os itens na memória; no entanto, isso aumenta a carga de memória do seu aplicativo e talvez a lista não seja mais necessária. Mas se a coleta de lixo ainda não ocorreu, seria bom se você pudesse reutilizar a lista que criou.
 
+```bash
 static WeakReference data;
 
 public static void Run()
 {
-
-object result = GetData();
-// GC.Collect(); Uncommenting this line will make data.Target null
+    object result = GetData();
+    // GC.Collect(); Uncommenting this line will make data.Target null
     result = GetData();
 }
 
-privatestaticobject GetData()
+private static object GetData()
 {
-if (data == null)
+    if (data == null)
     {
         data = new WeakReference(LoadLargeList());
     }
-if (data.Target == null)
+
+    if (data.Target == null)
     {
         data.Target = LoadLargeList();
     }
-return data.Target;
+
+    return data.Target;
 }
 
-privatestaticobject LoadLargeList()
+private static object LoadLargeList()
 {
-throw new NotImplementedException();
+    throw new NotImplementedException();
 }
+```
 
 A função GetData verifica se o WeakReference ainda contém dados. Caso contrário, os dados serão carregados novamente e salvos no WeakReference. O interessante é que descomentar a linha GC.Collect () libera a memória que o WeakReference aponta. Se a coleta de lixo não ocorreu, os dados dentro de WeakReference.Target podem ser acessados e retornados ao chamador.
 
 Usar o WeakReference não é uma solução completa para um cenário de armazenamento em cache. Se você deseja implementar um cache, defina um algoritmo que decida quais itens devem ser removidos do cache. Ao remover, você transforma uma referência em WeakReference e deixa para o coletor de lixo.
 
-Manipular cadeias de caracteres 
-- Manipular cadeias de caracteres usando as classes StringBuilder, StringWriter e StringReader; pesquisar cadeias de caracteres; enumerar métodos de cadeias de caracteres; formatar cadeias de caracteres; usar interpolação de cadeia($)
+## Manipular cadeias de caracteres 
+- **Manipular cadeias de caracteres usando as classes StringBuilder, StringWriter e StringReader; pesquisar cadeias de caracteres; enumerar métodos de cadeias de caracteres; formatar cadeias de caracteres; usar interpolação de cadeia($)**
 
 Strings são diferentes de outros tipos de dados. Os programas geralmente os tratam como se fossem qualquer outro dado de valor, mas nos bastidores a classe string é notavelmente complexa. Por exemplo, se você entender Como as strings são armazenadas, saberá quando seria melhor usar a classe StringBuilder em vez de simplesmente concatenar as strings juntas.
 
@@ -5744,43 +5748,55 @@ Uma das características mais incomuns do Strings é que eles são imutáveis. I
 
 Para economizar memória, o CLR mantém uma tabela chamada pool interno que contém uma única referência a cada único valor de texto usado por um programa. Qualquer variável String que se refere a uma parte específica do texto é na verdade uma referência ao pool interno. Múltiplas Strings que representam o mesmo valor referem-se à mesma entrada no pool interno.Tudo isso requer alguma sobrecarga, portanto, trabalhar com Strings não é tão rápido quanto trabalhar com tipos de valor. Se um programa deve executar um grande número de concatenações, cada um cria uma nova instância de String que deve ser internada e que leva tempo. Nesse caso, o uso da classe StringBuilder pode oferecer melhor desempenho. 
 
-Construtores de String
+### Construtores de String
 
 Três das maneiras mais comuns de inicializar uma variável String são:
 - Setagem por uma string literal. (string mystring = "test";)
 - Setagem por um controle TextBox ou ComboBox. (string mystring = TextBox.Text)
 - Setagem por resultado de um cálculo. (string mystring = (1 + 2).ToString())
+
 O último deles inclui métodos que formatam uma variável para produzir uma String, como usar o método ToString ou o método String.Format. Além desses métodos, a classe String fornece vários construtores que às vezes podem ser úteis:
 1.	Inicializa a String a partir de uma matriz unidimensional de caracteres.
+```bash
 var hello = newchar[] { 'H', 'e', 'l', 'l', 'o', '!' };
 string ctor1 = newstring(hello);
 Console.WriteLine(ctor1); //Hello!
+```
+
 2.	Um segundo construtor usa apenas parte de uma matriz de caracteres, tomando como parâmetros a matriz, uma posição inicial e o comprimento dos caracteres a serem usados.
+```bash
 var hello = newchar[] { 'H', 'e', 'l', 'l', 'o', '!' };
 string ctor2 = newstring(hello, 0, 4);
 Console.WriteLine(ctor2); //Hell
+```
+
 3.	Um terceiro construtor usa como parâmetro um caractere e o número de vezes que você deseja repetir esse caractere na nova String. Isso pode ser particularmente útil se você quiser recuar uma sequência com um certo número de espaços ou caracteres de tabulação. 
 
 Por exemplo, o código a seguir exibe os números de 1 a 10 em linhas separadas, com cada linha recuada mais quatro espaços que o anterior:
+<p align="center">
+  <img src=".github/Sequencia.png" alt="Image" width="100%" />
+</p>
 
+```bash
 for (int i = 1; i <= 10; i++)
 {
 string indent = newstring(' ', 4 * i);
     Console.WriteLine(indent + i.ToString());
 }
-
+```
 
 A maioria dos valores de String é criada por literais de string, texto digitado pelo usuário ou pelos resultados de cálculos, mas os construtores de String às vezes podem ser úteis.
 
-Campos e propriedades da sequência
+### Campos e propriedades da sequência
 
 A classe String fornece apenas três campos e propriedades: 
-- String.Empty: que retorna um objeto que representa uma sequência vazia. Você pode usar esse valor para definir o valor de uma string ou para ver se uma string contém um valor vazio. (Como alternativa, você pode usar a string vazia literal "".)
-- Length: que retorna o número de caracteres na string. 
-- Indexador read-only: que retorna os caracteres na String. Por ser um indexador, você pode obter seus valores adicionando um índice ao nome de uma variável String. Por exemplo, a instruçãousername[4] retorna o caractere 4 da stringusername. O indexador é somente leitura, portanto, você não pode definir um dos caracteres da String com uma declaração como username[4] = 'x'. Se você precisar fazer algo assim, poderá usar os métodos String descritos na próxima seção. 
+- **String.Empty**: que retorna um objeto que representa uma sequência vazia. Você pode usar esse valor para definir o valor de uma string ou para ver se uma string contém um valor vazio. (Como alternativa, você pode usar a string vazia literal "".)
+- **Length**: que retorna o número de caracteres na string. 
+- **Indexador read-only**: que retorna os caracteres na String. Por ser um indexador, você pode obter seus valores adicionando um índice ao nome de uma variável String. Por exemplo, a instruçãousername[4] retorna o caractere 4 da stringusername. O indexador é somente leitura, portanto, você não pode definir um dos caracteres da String com uma declaração como username[4] = 'x'. Se você precisar fazer algo assim, poderá usar os métodos String descritos na próxima seção. 
 
 Se for mais fácil tratar a String como se fosse uma matriz de caracteres de leitura/gravação, você pode usar o método ToCharArray para converter String em uma matriz de caracteres, manipule-os e crie uma nova String passando o construtor pela matriz modificada. Por exemplo, o código a seguir usa uma matriz para alternar os caracteres de uma string entre maiúsculas e minúsculas:
 
+```bash
 var text = "text em maiuscula e minusculas";
 
 char[] characters = text.ToCharArray();
@@ -5790,9 +5806,11 @@ else characters[i] = char.ToLower(characters[i]);
 
 text = newstring(characters);
 Console.WriteLine(text); //TeXt eM MaIuScUlA E MiNuScUlAs
+```
 
 Você também pode usar o indexador como fonte de iteração em um loop foreach:
 
+```bash
 text = "The quick brown fox jumps over the lazy dog.";
 int[] counts = newint[26];
 text = text.ToUpper();
@@ -5805,11 +5823,13 @@ int index = (int)ch - (int)'A';
         counts[index]++;
     }
 }
+```
 
-Imutabilidade
+### Imutabilidade
 
 String é usada para armazenar valores de texto. String é imutável, o que significa que, uma vez que uma variável de string armazena algum texto, ela não pode editá-lo novamente; o texto é armazenado como uma coleção somente leitura de objetos Char. Portanto, sempre que o valor de uma variável de string é atualizado, ele recria uma instância para literais de string, o que não é bom em termos de memória e consumo de processo. O código abaixo parece inocente, mas criará uma nova string para cada iteração no seu loop. Ele usa muita memória desnecessária e mostra por que você deve ter cuidado ao trabalhar com seqüências de caracteres.
 
+```bash
 Stopwatch watch = new Stopwatch();
 //Record how much time
 watch.Start();
@@ -5824,17 +5844,19 @@ for (int i = 1; i < 100000; i++)
 watch.Stop();
 float miliToSec = watch.ElapsedMilliseconds / 1000;
 Console.WriteLine("Total time: {0}s", miliToSec); // Total time: 19s
+```
 
 Esse código será executado 100.000 vezes e sempre que criará uma nova string. A referência "s" apontará apenas para o último item, para que todas as outras seqüências estejam prontas imediatamente para a coleta de lixo. Como o C# está ciente desse problema, o compilador tenta otimizar o trabalho com seqüências de caracteres para você. Ao criar dois string idênticos em uma unidade de compilação, o compilador garante que apenas um objeto de string seja criado pelo CLR. Isso é chamado de cadeia de caracteres interna (string interning), que é feita apenas no tempo de compilação. Fazer isso em tempo de execução acarretaria uma penalidade de desempenho excessiva (pesquisar todas as strings toda vez que você criar uma nova resulta em muita perda de performance).
 
 Ao trabalhar com um número tão grande de operações de string, você deve ter em mente que a string é imutável e que o .NET Framework oferece algumas classes auxiliares especiais ao lidar com strings.
 
-Stringbuilder
+### Stringbuilder
 
 StringBuilder é uma classe de System.Text que fornece melhor desempenho ao manipular dados de texto de uma maneira muito melhor que um System.String tradicional. StringBuilder é mutável, o que significa que os dados de texto podem ser editável. Seu método Append ajuda a concatenar os dados de texto, pois cria um buffer de sequência de caracteres que fornece melhor desempenho nessas situações. 
 
 A classe StringBuilder pode ser usada quando você estiver trabalhando com seqüências de caracteres em um loop restrito. Em vez de criar uma nova sequência repetidamente, você pode usar o StringBuilder, que usa um buffer de seqüências internamente para melhorar o desempenho. A classe StringBuilder ainda permite alterar o valor de caracteres individuais dentro de uma string, adicionar uma nova linha ao texto existente ou limpar todo o conteúdo.
 
+```bash
 //// Let's look at string concatenation
 string s1 = "This is an example of s1 ";            
 s1 = s1 + "string concatenation.";
@@ -5864,9 +5886,11 @@ sb2[1] = 'Ó';
 Console.WriteLine(sb2);
 // NÓis is an example of sb2 string concatenation.
 // Using the StringBuilder class......
+```
 
-	Se executar novamente a análise de performance realizada no System.String anteriormente teremos:
+Se executar novamente a análise de performance realizada no System.String anteriormente teremos:
 
+```bash
 Stopwatch watch = new Stopwatch();
 //Record how much time
 watch.Start();
@@ -5881,42 +5905,52 @@ float miliToSec = watch.ElapsedMilliseconds / 1000;
 
 Console.WriteLine("Total time: {0}ms", miliToSec); // Total time: 0ms
 Console.ReadKey();
+```
 
 Na minha máquina, foram necessários 0 milissegundos para acrescentar um texto no StringBuilder, enquanto no exemplo anterior System.String levou 19 segundos. Portanto, o StringBuilder é mais rápido que o System.String. Mas um aspecto a ter em mente é que o StringBuilder nem sempre oferece melhor desempenho. Ao concatenar uma série fixa de seqüências, o compilador pode otimizar isso e combinar operações de concatenação individuais em uma única operação. Quando você está trabalhando com um número arbitrário de strings, como no exemplo de loop, um StringBuilder é uma escolha melhor (neste exemplo, você poderia ter usado também umnew String (“x”, 10000) para criar a string; ao lidar com com dados mais variados, isso não será possível).
 
 Lembre-se também de que os tempos envolvidos para algumas operações de String são pequenos. O uso de um StringBuilder para concatenar 10 seqüências pode ser um pouco mais rápido do que executar 10 concatenações simples, mas a quantidade total de tempo economizada é medida em milissegundos. A menos que o programa repita essa operação muitas vezes ou faça concatenações muito mais longas, talvez seja melhor sacrificar alguns milissegundos para manter o código mais fácil de entender.
 
 A Tabela a seguir descreve as propriedades mais úteis da classe StringBuilder.
-Propriedade	Descrição
-Capacity	Obtém ou define o número de caracteres que podem ser mantidos pelo StringBuilder. Se a quantidade de texto armazenada no StringBuilder excede esse valor, o objeto aloca mais espaço. Se você sabe que o StringBuilder precisa armazenar pelo menos um certo número de caracteres, você pode usar essa propriedade para fazer com que o objeto pré-aloque memória em vez de alocar memória de forma incremental. Algumas versões sobrecarregadas do construtor da classe permitem especificar uma capacidade inicial.
-Length	Obtém ou define o número atual dos caracteres armazenados no StringBuilder. Se você definir esse valor como menor que o comprimento atual, o texto no StringBuilder será truncado
+
+
+| Propriedade | Descrição | 
+|:----------|------|
+| Capacity | Obtém ou define o número de caracteres que podem ser mantidos pelo StringBuilder. Se a quantidade de texto armazenada no StringBuilder excede esse valor, o objeto aloca mais espaço. Se você sabe que o StringBuilder precisa armazenar pelo menos um certo número de caracteres, você pode usar essa propriedade para fazer com que o objeto pré-aloque memória em vez de alocar memória de forma incremental. Algumas versões sobrecarregadas do construtor da classe permitem especificar uma capacidade inicial. | 
+| Length  |  Obtém ou define o número atual dos caracteres armazenados no StringBuilder. Se você definir esse valor como menor que o comprimento atual, o texto no StringBuilder será truncado |
 
 A Tabela abaixo descreve os métodos mais úteis da classe StringBuilder.
-Método	Descrição
-Append	Anexa uma representação de string de um objeto ao final do texto doStringBuilder 
-AppendFormat	Formata uma série de objetos e anexa o resultado ao final do texto do StringBuilder
-EnsureCapacity	Garante que o StringBuilder tenha pelo menos uma determinada capacidade
-Insert	Insere uma representação de seqüência de caracteres de um objeto em uma determinada posição no texto do StringBuilder
-Remove	Remove um intervalo de caracteres do texto do StringBuilder
-Replace	Substitui todas as instâncias de um caractere ou sequência por um novo caractere ou sequência
-ToString	Retorna uma representação String normal do texto do StringBuilder
 
+
+| Método | Descrição | 
+|:----------|------|
+| Append | Anexa uma representação de string de um objeto ao final do texto doStringBuilder  | 
+| AppendFormat  |  Formata uma série de objetos e anexa o resultado ao final do texto do StringBuilder |
+| EnsureCapacity  |  Garante que o StringBuilder tenha pelo menos uma determinada capacidade | 
+| Insert | Insere uma representação de seqüência de caracteres de um objeto em uma determinada posição no texto do StringBuilder | 
+| Remove | Remove um intervalo de caracteres do texto do StringBuilder | 
+| Replace  |  Substitui todas as instâncias de um caractere ou sequência por um novo caractere ou sequência |
+| ToString  |  Retorna uma representação String normal do texto do StringBuilder | 
+	
 Algumas APIs no .NET Framework esperam que um TextWriter ou TextReader funcione. Essas APIs não podem funcionar diretamente com uma string ou com o StringBuilder. Por isso, o .NET Framework adiciona uma classe StringReader e StringWriter. Essas classes adaptam a interface do StringBuilder para que possam ser usadas em locais onde é esperado um TextWriter ou TextReader. 
 
-StringReader
+### StringReader
 
 StringReader é uma classe do System.IO usada para ler linhas de uma string. Com StringReader, podemos ler um caractere com o método Read ou ReadAsync e uma string inteira com o método ReadToEnd ou ReadToEndAsync. Esse tipo ajuda a acessar dados da string por meio de uma interface orientada a fluxo (Stream).A classe StringReader fornece uma implementação TextReader que lê partes de dados obtidas de um StringBuilder subjacente. Ele fornece métodos que facilitam a leitura seqüencial de partes de texto de uma string.
-Método	Descrição
-Peek	Retorna o próximo caractere nos dados, mas não avança para o seguinte caractere.
-Read	Retorna o próximo caractere nos dados e avança para o seguinte caractere. Uma versão sobrecarregada pode ler um bloco de caracteres.
-ReadAsync	Lê assincronamente caracteres do StringReader em um buffer.
-ReadBlock	Lê até um número máximo de caracteres do StringReader em um buffer começando em um índice especificado.
-ReadBlockAsync	Lê assincronamente até um número máximo de caracteres do StringReader em um buffer começando em um índice especificado.
-ReadLine	Lê caracteres do StringReader até encontrar o final da linha.
-ReadLineAsync	Lê assincronamente caracteres do StringReader até encontrar o final da linha.
-ReadToEnd	Retorna o texto restante do StringReader como uma String.
-ReadToEndAsync	Retorna assincronamente o texto restante do StringReader como uma String
 
+| Método | Descrição | 
+|:----------|------|
+| Peek | Retorna o próximo caractere nos dados, mas não avança para o seguinte caractere. | 
+| Read  |  Retorna o próximo caractere nos dados e avança para o seguinte caractere. Uma versão sobrecarregada pode ler um bloco de caracteres. |
+| ReadAsync  |  Lê assincronamente caracteres do StringReader em um buffer. | 
+| ReadBlock  |  Lê até um número máximo de caracteres do StringReader em um buffer começando em um índice especificado. | 
+| ReadBlockAsync  |  Lê assincronamente até um número máximo de caracteres do StringReader em um buffer começando em um índice especificado. | 	
+| ReadLine  |  Lê caracteres do StringReader até encontrar o final da linha. | 	
+| ReadLineAsync  |  Lê assincronamente caracteres do StringReader até encontrar o final da linha. | 	
+| ReadToEnd  |  Retorna o texto restante do StringReader como uma String. | 	
+| ReadToEndAsync  |  Retorna assincronamente o texto restante do StringReader como uma String | 				
+	
+```bash
 //'@' It's a verbatim string literal. It ignores escape sequence
 string text = @"Hi I'm Ali Asad.
             I can help you in C# Certification Exam.
@@ -5931,26 +5965,32 @@ while ((line = reader.ReadLine()) != null)
 {
     Console.WriteLine("line{0}: {1}", ++currentLine, line.Trim());
 }
+```
 
-StringWriter
+### StringWriter
 
 StringWriter é uma classe do System.IO. É usado para gravar em uma classe StringBuilder. Com StringWriter, podemos escrever um caractere/string com o método Write ou WriteAsync e uma linha inteira de string com o método WriteLine ou WriteLineAsync. É uma maneira eficiente de usar o StringBuilder com o StringWriter para manipular a string. A classe StringWriter fornece métodos que facilitam a gravação sequencial de valores em uma string. A Tabela a seguir descreve os métodos mais úteis do StringWriter.
-Método	Descrição
-Flush	Libera todos os dados armazenados no StringWriter subjacente.
-ToString	Retorna o conteúdo atual do objeto como uma String.
-Write	Anexa um item aos dados da sequência. As versões sobrecarregadas anexam char, string, int, double e muitos outros tipos de dados.
-WriteAsync	Anexa de forma assíncrona um caractere, sequência ou matriz de caracteres ao final dos dados da sequência.
-WriteLine	Anexa um item aos dados da string da mesma forma que Write e adiciona uma nova linha.
 
+| Método | Descrição | 
+|:----------|------|
+| Flush | Libera todos os dados armazenados no StringWriter subjacente. | 
+| ToString  | Retorna o conteúdo atual do objeto como uma String. |
+| Write  |  Anexa um item aos dados da sequência. As versões sobrecarregadas anexam char, string, int, double e muitos outros tipos de dados. | 
+| WriteAsync  |  Anexa de forma assíncrona um caractere, sequência ou matriz de caracteres ao final dos dados da sequência. |
+| WriteLine  |  Anexa um item aos dados da string da mesma forma que Write e adiciona uma nova linha. | 
+
+```bash
 StringBuilder builder = new StringBuilder();
 StringWriter swriter = new StringWriter(builder);
 swriter.Write("Ali Asad");
 
 //Ali Asad
 Console.WriteLine(builder.ToString());
-
+```
+	
 Um dos métodos no .NET Framework que espera uma instância do TextWriter é o XmlWriter.Create. Normalmente, você transmite uma instância do StreamWriter para poder criar um novo arquivo XML. Mas quando você deseja o XML resultante apenas na memória, pode passar um StringWriter.
 
+```bash
 var stringWriter = new StringWriter();
 using (XmlWriter writer = XmlWriter.Create(stringWriter))
 {
@@ -5962,9 +6002,11 @@ using (XmlWriter writer = XmlWriter.Create(stringWriter))
 string xml = stringWriter.ToString();
 //<?xml version="1.0" encoding="utf-16"?><book><price>19.95</price></book>
 Console.WriteLine(xml);
+```
 
 Ao usar o XmlReader, você pode analisar um pouco de XML e acessar os elementos individuais. XmlReader espera uma instância do TextWriter, para que você possa passar um StringReader
 
+```bash
 var stringReader = new StringReader(xml);
 using (XmlReader readerxml = XmlReader.Create(stringReader))
 {
@@ -5974,14 +6016,17 @@ using (XmlReader readerxml = XmlReader.Create(stringReader))
 decimal price = decimal.Parse(readerxml.ReadInnerXml(), new CultureInfo("en-US"));
     Console.WriteLine(price); //19,95
 }
+```
 
 O método Serialize da classe XmlSerializer envia a saída para um TextWriter. Se você deseja serializar em uma string, pode enviar a saída para um StringWriter e depois usar o método ToString do StringWriter para obter o resultado. Se você precisar manipular os dados da string subjacente de outras maneiras, como remover ou substituir caracteres, o StringBuilder fornece mais flexibilidade.
 
 Internamente, StringWriter e StringReader usam um StringBuilder. A única coisa que eles fazem é adaptar a interface do StringBuilder à do TextWriter e TextReader. Conforme pode ser visto com mais clareza no seguinte exemplo:
 
+```bash
+
 class Program
 {
- static void Main(string[] args)
+    static void Main(string[] args)
     {
         StringReadWrite srw = new StringReadWrite();
     }
@@ -5991,38 +6036,38 @@ public class StringReadWrite
 {
     StringBuilder sb = new StringBuilder();
 
-public StringReadWrite()
+    public StringReadWrite()
     {
         WriteData();
         ReadData();
         Console.ReadKey();
     }
 
-public void WriteData()
+    public void WriteData()
     {
-// Note that we are passing the StringBuilder sb object to the StringWriter
+        // Note that we are passing the StringBuilder sb object to the StringWriter
         StringWriter sw = new StringWriter(sb);
         Console.WriteLine("Please enter your first and last name...");
-string name = Console.ReadLine();
+        string name = Console.ReadLine();
 
-// Write the name to the StringBuilder sb object
+        // Write the name to the StringBuilder sb object
         sw.WriteLine("Name: " + name);
 
-// Close the sw stream object
+        // Close the sw stream object
         sw.Flush();
         sw.Close();
     }
 
-public void ReadData()
+    public void ReadData()
     {
-// Note we are converting the sb object to a string and passing it to the StringReader
+        // Note we are converting the sb object to a string and passing it to the StringReader
         StringReader sr = new StringReader(sb.ToString());
         Console.WriteLine("Reading the information...");
 
-// Use Peek to see if another character exists in sb
-while (sr.Peek() > -1)
+        // Use Peek to see if another character exists in sb
+        while (sr.Peek() > -1)
         {
-// Read a line from the string and display it
+            // Read a line from the string and display it
             Console.WriteLine(sr.ReadLine());
         }
 
@@ -6035,22 +6080,25 @@ while (sr.Peek() > -1)
 //Reading the information...
 //Name: Rick Bob
 //Thank you!
+```
 
-Procurando por Strings
+### Procurando por Strings
 
 Ao trabalhar com cadeias de caracteres, você costuma procurar uma substring dentro de outra cadeia de caracteres, para analisar algum conteúdo ou verificar a entrada válida do usuário ou outro cenário.A classe String oferece alguns métodos que podem ajudá-lo a executar todos os tipos de ações de pesquisa. Os mais comuns são IndexOf, LastIndexOf, StartsWith, EndsWith e SubString.
 
 Uma coisa a ter em mente é que os métodos de string podem ser sensíveis à cultura. É por isso que a maioria dos métodos aceita uma instância da enumeração StringComparison. Ao trabalhar com seqüências de caracteres, sempre tente evitar os métodos que não usam um valor explícito de StringComparison.
 
-Método	Descrição	Exemplo value = "<mycustominput>"
-IndexOf	Retorna o índice da primeira ocorrência de um caractere ou substring em uma string. Se o valor não puder ser encontrado, ele retorna -1.	value.IndexOf('y'); // 2
-LastIndexOf	O mesmo que IndexOf, exceto que esse método começa a pesquisar no final de uma sequência e passa para o início	value.LastIndexOf('m'); // 8
-StartsWith	Verifica se o string inicia com um determinado valor. Retorna verdadeiro ou falso.	if(value.StartsWith("<")) { }
-EndsWith	Verifica se o string termina com um determinado valor. Retorna verdadeiro ou falso.	if(value.EndsWith(">")) { }
-SubString	Recupera uma cadeia parcial de outra cadeia	value.Substring(3, 6); //custom
+| Método | Descrição | Exemplo ```value = "<mycustominput>" ```  |
+|:----------|------|---------------------|
+| IndexOf | Retorna o índice da primeira ocorrência de um caractere ou substring em uma string. Se o valor não puder ser encontrado, ele retorna -1. | ```value.IndexOf('y'); // 2``` |
+| LastIndexOf  |  O mesmo que IndexOf, exceto que esse método começa a pesquisar no final de uma sequência e passa para o início | ```value.LastIndexOf('m');``` // 8 |
+| StartsWith  |  Verifica se o string inicia com um determinado valor. Retorna verdadeiro ou falso.|  ```if(value.StartsWith("<")) { }``` |
+| EndsWith  |  Verifica se o string termina com um determinado valor. Retorna verdadeiro ou falso. | ```if(value.EndsWith(">")) { }``` |
+| SubString  | Recupera uma cadeia parcial de outra cadeia |  ```value.Substring(3, 6);``` //custom |
 
 Outra maneira de pesquisar uma string é usando uma expressão regular, que usa uma notação de correspondência de padrões que pode analisar rapidamente grandes quantidades de texto procurando um formato específico. Expressões regulares podem ser úteis ao validar a entrada do usuário (como um endereço de email, CEP ou data). O código abaixo retira todos os títulos dos nomes que você passa. Imagine quanto trabalho teria sido criar isso ao usar IndexOf e SubString.
 
+```bash
 string pattern = "(Mr\\.? |Mrs\\.? |Miss |Ms\\.? )";
 string[] names = { "Mr. Henry Hunt", "Ms. Sara Samuels", "Abraham Adams", "Ms. Nicole Norris" };
 foreach (string name in names)
@@ -6059,24 +6107,30 @@ foreach (string name in names)
 //Sara Samuels
 //Abraham Adams
 //Nicole Norris
+```
 
-Enumerando Strings
+### Enumerando Strings
 
 Uma string é uma matriz de caracteres. Você pode enumerar uma sequência como se fosse uma coleção típica. Como uma string implementa IEnumerable e IEnumerable<Char>, expõe o método GetEnumerator que você pode usar para iterar sobre uma string.
 
 Você pode usar uma sequência em um loop foreach para verificar todos os caracteres individuais, como abaixo:
 
+```bash
 string value = "My Custom Value";
 foreach (char c in value)
     Console.WriteLine(c);
+```
 
 Também é possível dividir uma sequência de palavras e iterá-las. A seguinte linha divide a sentença em espaços; retorna um IEnumerable que pode ser iterado:
 
+```bash
 foreach (string word in"My sentence separated by spaces".Split(' '))
     Console.WriteLine(word);
+```
 
 Um exemplo usando apenas StringBuilders (sem Strings), podemos escrer um programa que exiba todas as subsequências iniciais das letras do alfabeto A, AB, ABC e assim por diante.
 
+```bash
 StringBuilder letters = new StringBuilder("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 StringBuilder line = new StringBuilder();
 // Create the result StringBuilder. 
@@ -6089,40 +6143,42 @@ for (int i = 0; i < 26; i++)
 // Add line to the result. 
     result.AppendLine(line.ToString());
 }
+```
 
 As String possuem muitos métodos e propriedades que ajudam a manipular dados de texto. Alguns deles estão listados abaixo.
-Método	Descrição	Exemplo value = "<mycustominput>"
-string value2 = "Ali";
-Clone	Use para criar clone de sequência no tipo de objeto.	value.Clone() asstring;
-CompareTo	Compare dois valores de sequência e retorne o valor inteiro. Retorna 0 para true e -1 para false	string value2 = "asad";
-if ((value.CompareTo(value2)) == 0)
-Equals	Compare duas strings e retorne true se forem iguais.	value.Equals(value2)//False
-IndexOf	Retorne o número do índice da primeira ocorrência de um caractere especificado.	value.IndexOf('t') //6
-ToLower	Retorne a minúscula da string.	value2.ToLower() //ali
-ToUpper	Retorne a caixa alta da string.	value.ToUpper()//<MYCUSTOMINPUT>
-Insert	Retorna uma nova string na qual um novo caractere/string é inserido em um índice especificado de uma string.	value2.Insert(3, " Asad") //Ali Asad
-Remove	Retorne uma nova string excluindo todos os caracteres de um índice especificado até o final.	value.Remove(3) //<my
-Replace	Retorna uma nova string na qual a ocorrência de caracteres especificados é substituída por outra especificada personagens.	value2.Replace("Ali","Asad") //Asad
-Split	Divida uma sequência em uma matriz de sequências baseada nos caracteres que ocorrem em uma sequência.	value2.Split(' ')
-ToCharArray	Retornar uma nova matriz de caracteres que contém um caractere de uma sequência	value2.ToCharArray()
-Trim	Remova os espaços em branco do início e do final de uma string.	value2.Trim()
 
-Formatando strings
+| Método | Descrição | ``` Exemplo value = "<mycustominput>" ``` <br> ``` string value2 = "Ali"; ```  |
+|:----------|------|---------------------|
+| Clone | Use para criar clone de sequência no tipo de objeto. | ```value.Clone() as string;```  |
+| CompareTo  |  Compare dois valores de sequência e retorne o valor inteiro. Retorna 0 para true e -1 para false | ```string value2 = "asad";``` <br> ```if ((value.CompareTo(value2)) == 0)``` |
+| Equals  |  Compare duas strings e retorne true se forem iguais. |  ```value.Equals(value2)``` //False |
+| IndexOf | Retorne o número do índice da primeira ocorrência de um caractere especificado. | ```value.IndexOf('t')```//6  | 
+| ToLower  |  Retorne a minúscula da string. | ```value2.ToLower()```//ali |
+| ToUpper  |  Retorne a caixa alta da string. |  ```value.ToUpper() //<MYCUSTOMINPUT>```|
+| Insert | Retorna uma nova string na qual um novo caractere/string é inserido em um índice especificado de uma string. |  ```value2.Insert(3, " Asad") ``` //Ali Asad |
+| Remove  |  Retorne uma nova string excluindo todos os caracteres de um índice especificado até o final. | ```value.Remove(3) //<my```  |
+| Replace  |  Retorna uma nova string na qual a ocorrência de caracteres especificados é substituída por outra especificada personagens. |  ```value2.Replace("Ali","Asad")``` //Asad |
+| Split | Divida uma sequência em uma matriz de sequências baseada nos caracteres que ocorrem em uma sequência. |  ```value2.Split(' ')``` |
+| ToCharArray  |  Retornar uma nova matriz de caracteres que contém um caractere de uma sequência | ```value2.ToCharArray()``` |
+| Trim  |  Remova os espaços em branco do início e do final de uma string. |  ```value2.Trim()```|
+
+### Formatando strings
 
 Ao exibir seqüências de caracteres para o usuário, você deseja garantir que elas estejam no formato correto. Especialmente ao trabalhar com dados sensíveis à cultura, como DateTime ou números, é importante garantir que a sequência seja exibida de maneira adequada aos usuários atuais e suas configurações.
 
 Formatar um valor para exibição é uma conversão de tipo particularmente importante. Até converter um DateTime, decimal ou double em algum tipo de String, você não pode exibi-lo para o usuário. Dois dos métodos mais úteis para realizar a “Formatação composta” de valores como strings são os métodos ToString e String.Format. Outra forma de formatação é a interpolação de strings que veremos mais adiante. As cadeias de formatação se enquadram em duas grandes categorias:
-- Formatação padrão: permitem determinar como você deseja que um valor seja exibido em um nível alto. As cadeias de formatação padrão reconhecem a localidade, portanto, permitem que o programa produza uma saída apropriada para a localidade do computador. Por exemplo, a sequência de formato de data “d” indica um padrão de data curto e produz um resultado semelhante a 14/03/2014 nos Estados Unidos ou 14/03/2014 na França.
-- Formatação personalizadas: permitem criar formatos que não são fornecidos pelas seqüências de formatação padrão. Por exemplo, a instrução a seguir produz um resultado semelhante ao: São agora 14 horas. Console.WriteLine (string.Format ("São agora {0: HH} horas", DateTime.Now)).
+- **Formatação padrão**: permitem determinar como você deseja que um valor seja exibido em um nível alto. As cadeias de formatação padrão reconhecem a localidade, portanto, permitem que o programa produza uma saída apropriada para a localidade do computador. Por exemplo, a sequência de formato de data “d” indica um padrão de data curto e produz um resultado semelhante a 14/03/2014 nos Estados Unidos ou 14/03/2014 na França.
+- **Formatação personalizadas**: permitem criar formatos que não são fornecidos pelas seqüências de formatação padrão. Por exemplo, a instrução a seguir produz um resultado semelhante ao: São agora 14 horas. Console.WriteLine (string.Format ("São agora {0: HH} horas", DateTime.Now)).
 
-ToString
+### ToString
 
 A classe de objeto fornece um método ToString que todas as outras classes herdam. Por padrão, esse método retorna o nome do tipo de um objeto como uma String, mas a maioria das classes para as quais faz sentido substitui esse método para retornar o valor do objeto como uma String. Por exemplo, se uma variável flutuante mantiver o valor 1,23, seu método ToString retornará o valor "1,23" como uma sequência. Por outro lado, se você definir uma classe Employee, por padrão, o método ToString retornará o nome da classe, semelhante ao Formatting.Employee. Se você usar o método ToString de uma variável sem parâmetros, obterá uma representação padrão de seu valor. 
 
+```bash
 classEmployee
 {
-public string  Name { get; set; }
-public decimal Salary { get; set; }
+    public string  Name { get; set; }
+    public decimal Salary { get; set; }
 }
 
 decimal inteiro = newint();
@@ -6132,63 +6188,72 @@ Console.WriteLine(inteiro); //  0
 Console.WriteLine(value); //  1,23
 Console.WriteLine(e); // Formatting.Employee
 Console.WriteLine(e.ToString()); // Formatting.Employee
+```
 
 O método ToString também pode levar como parâmetros um provedor de formato, uma string de formatação ou ambos. Usando a sequência de formatação, você pode personalizar o texto resultante. Por exemplo, se o custo variável for flutuante, a instrução value.ToString ("0,000000") produzirá uma sequência contendo o valor do custo exibido mais casas decimais.
 
+```bash
 decimal value = 1.23m;
 Console.WriteLine(value.ToString("0.000000")); // 1,230000
 Console.WriteLine(value.ToString("0,000000")); // 0.000.001
+```
 
 Quando um objeto possui várias representações de seqüência de caracteres, a substituição de ToString não é suficiente. Por exemplo, um objeto Temperatura pode exibir sua temperatura em graus Fahrenheit, Celsius ou Kelvin. Um valor inteiro também pode ser exibido de várias maneiras. Talvez represente um número de telefone ou uma quantia em dinheiro. Para habilitar esse tipo de comportamento, você pode usar seqüências de caracteres de formato, que descrevem como um objeto deve ser exibido. O .NET Framework os utiliza para tipos numéricos, datas, horas e enumerações, como mostra abaixo.
 
+```bash
 double cost = 1234.56;
 Console.WriteLine(cost.ToString("C", new CultureInfo("en-US"))); // $1,234.56
+```
+
 
 Você pode usar a mesma abordagem ao exibir um valor de data e hora. Dependendo da cultura, a saída formatada pode ser completamente diferente. A código a seguir mostra como usar cadeias de formato diferentes com um DateTime para uma cultura inglesa.
 
+```bash
 DateTime d = new DateTime(2013, 4, 22);
 CultureInfo provider = new CultureInfo("en-US");
 Console.WriteLine(d.ToString("d", provider)); // Displays 4/22/2013
 Console.WriteLine(d.ToString("D", provider)); // Displays Monday, April 22, 2013
 Console.WriteLine(d.ToString("M", provider)); // Displays April 22
+```
 
 Fornecer o CultureInfo correto é importante ao formatar valores. Ele contém todas as informações necessárias sobre como um tipo específico é exibido nessa cultura. Da mesma forma, é importante garantir que, quando você salvar valores em um banco de dados, por exemplo, você faz isso de uma maneira que não agride a cultura. Se os dados insensíveis à cultura forem carregados, eles poderão ser formatados dependendo do usuário que estiver visualizando os dados.
 
 Você também pode implementar essa formatação personalizada em seus próprios tipos. Você faz isso criando um método ToString (string) no seu tipo. Overridingo ToString é uma boa prática. Se você não fizer isso, o ToString retornará por padrão o nome do seu tipo. Ao overrideo ToString, você pode atribuir um valor mais significativo, como mostra a exemplo.
 
+```bash
 class Person
 {
-public Person(string firstName, string lastName, int age)
+    public Person(string firstName, string lastName, int age)
     {
-this.FirstName = firstName;
-this.LastName = lastName;
-this.Age = age;
+        this.FirstName = firstName;
+        this.LastName = lastName;
+        this.Age = age;
     }
 
-public string  FirstName { get; set; }
-public string  LastName { get; set; }
-public int Age { get; set; }
+    public string  FirstName { get; set; }
+    public string  LastName { get; set; }
+    public int Age { get; set; }
 
-publicoverridestring ToString()
+    public override string ToString()
     {
-return FirstName + " " + LastName;
+        return FirstName + " " + LastName;
     }
 
-public string  ToString(string format)
+    public string  ToString(string format)
     {
-if (string.IsNullOrWhiteSpace(format)) format = "FL";
+        if (string.IsNullOrWhiteSpace(format)) format = "FL";
         format = format.Trim().ToUpperInvariant();
-switch (format)
+        switch (format)
         {
-case"FL":
-return FirstName + " " + LastName;
-case"LF":
-return LastName.ToUpper() + ", " + FirstName;
-case"FSA":
-return FirstName + " " + LastName + "(" + Age + ")";
-default:
-throw new FormatException(String.Format(
-"The '{0}' format string is not supported.", format));
+            case"FL":
+            return FirstName + " " + LastName;
+            case"LF":
+            return LastName.ToUpper() + ", " + FirstName;
+            case"FSA":
+            return FirstName + " " + LastName + "(" + Age + ")";
+            default:
+            throw new FormatException(String.Format(
+            "The '{0}' format string is not supported.", format));
         }
     }
 }
@@ -6199,7 +6264,9 @@ Console.WriteLine(p.ToString()); // John Doe
 Console.WriteLine(p.ToString("LF")); // DOE, John
 Console.WriteLine(p.ToString("fsa")); // John, Doe(24)
 
-IFormatProvider e IFormattable
+```
+
+### IFormatProvider e IFormattable
 
 Ao formatar seqüências de caracteres, você também pode usar um IFormatProvider. O IFormatProvider possui um método, GetFormat (Type), que retorna informações de formatação específicas para formatar um tipo. Todos os objetos CultureInfo implementam IFormatProvider. O objeto CultureInfo retorna um NumberFormatInfo ou DateTimeFormatInfo específico da cultura se uma sequência de caracteres ou DateTime estiver formatada. Dessa forma, você pode formatar uma string como cultura específica, passando um objeto CultureInfo para o método ToString.
 
@@ -6209,64 +6276,72 @@ Ao implementar o IFormattable, você tem suporte para conversão de string pela 
 
 O método ToString permite converter o valor de uma única variável em uma String. O método Format estático da classe String permite criar uma String que pode conter os valores de muitas variáveis formatadas de maneiras diferentes. O método String.Format possui algumas versões sobrecarregadas, mas o mais comum toma como parâmetros uma string de formatação e um ou mais argumentos usados para preencher itens na cadeia de formatação. O código a seguir mostra um exemplo simples.
 
+```bash
 int a = 1;
 int b = 2;
 string result = string.Format("a: {0}, b: {1}", a, b);
 Console.WriteLine(result); // Displays ‘a: 1, b: 2’
+```
 
 Os métodos ToString e String.Format entendem centenas de seqüências de caracteres de formato padrão e personalizadas. Objetos são de vários tipos e alguns são raramente usados. Para cada tipo, os dados são armazenados ou exibidos em um formato diferente. Alguns dos formatos estão listados abaixo:
 
-Formatos numéricos padrão
+### Formatos numéricos padrão
 
-Especificador	Descrição	Exemplo
-"C" ou "c"	Usado para formatar o valor da moeda	$12,345.67
-"D" ou "d"	Usado para formatar dígitos inteiros com sinal negativo opcional	12345
-"E" ou "e"	Usado para formatar notação exponencial	1.234567E+004
-"F" ou "f"	Usado para o especificador de precisão para definir o valor flutuante fixo	12345.67
-"G" ou "g"	Geral (ponto fixo ou científico, o que for mais curto	12345.67
-"N" ou "n"	Usado para formatar números por separadores de grupos(com separadores decimais e milhares)	12,345.67
-"P" ou "p"	Usado para exibir porcentagem com número(multiplicado por 100 e% adicionada)	0.12 torna 12.00%
-"X" ou "x"	Usado para exibir o valor hexadecimal(somente tipos inteiros)	3039
+| Especificador | Descrição | Exemplo |
+|:----------|------|---------------------|
+| "C" ou "c" | Usado para formatar o valor da moeda |  ```$12,345.67``` |
+| "D" ou "d"  |  Usado para formatar dígitos inteiros com sinal negativo opcional | ```12345``` |
+| "E" ou "e"  |  Usado para formatar notação exponencial |  ```1.234567E+004```|
+| "F" ou "f"  |  Usado para o especificador de precisão para definir o valor flutuante fixo |  ```12345.67```|
+| "G" ou "g"  |  Geral (ponto fixo ou científico, o que for mais curto |  ```12345.67```|
+| "N" ou "n"  |  Usado para formatar números por separadores de grupos(com separadores decimais e milhares) |  ```12,345.67```|		
+| "P" ou "p"  |  Usado para exibir porcentagem com número(multiplicado por 100 e% adicionada) |  ```0.12 torna 12.00%```|
+| "X" ou "x"  |  Usado para exibir o valor hexadecimal(somente tipos inteiros) |  ```3039```|		
 
 Alguns desses formatos podem ter um especi ﬁ cador de precisão opcional que controla o número de dígitos exibidos. Para a maioria desses tipos, o especi ﬁ cador de precisão indica o número de dígitos a serem exibidos após o ponto decimal. Por exemplo, se o valor for 12345.67, então value.ToString ("C4") produz $ 12.345,6700. Para notação científica, o especificador de precisão indica o número de dígitos após o ponto decimal na mantissa. Por exemplo, se o valor for 12345.67, então value.ToString ("E2") produz 1,23E + 004.
 
 Formatos DateTime padrão
 
-Formato	Descrição	Exemplo
-d	Short date	3/14/2014
-D	Long date	Friday, March 14, 2012
-f	 “Full” with short time	Friday, March 14, 2012 2:15 PM
-F	“Full” with long time	Friday, March 14, 2012 2:15:16 PM
-g	“General” with short time	3/14/2014 2:15 PM
-G	“General” with long time	3/14/2014 2:15:16 PM 
-M ou m	Month/day	March 14
-t	Short time	2:15 PM
-T	Long time	2:15:16 PM
-Y ou y	Year/month	March, 2014
+| Formato | Descrição | Exemplo |
+|:----------|------|---------------------|
+| d | Short date |  ``` 3/14/2014 ``` |
+| D  |  Long date | ```Friday, March 14, 2012``` |
+| f  |  “Full” with short time |  ```Friday, March 14, 2012 2:15 PM```|
+| F | “Full” with long time |  ``` Friday, March 14, 2012 2:15:16 PM ``` |
+| g  |  “General” with short time | ```3/14/2014 2:15 PM``` |
+| G  |  “General” with long time |  ```3/14/2014 2:15:16 PM```|
+| M ou m | Month/day |  ``` March 14 ``` |
+| t | Short time |  ``` 2:15 PM ``` |
+| T  |  Long time | ```2:15:16 PM``` |
+| Y ou y  |  Year/month |  ```March, 2014```|
 
 Além desses formatos padrão, a estrutura DateTime fornece quatro métodos que produzem resultados semelhantes aos especificadores dos formatos d, D, te T. Esses métodos são ToShortDateString, ToLongDateString, ToShortTimeString e ToLongTimeString
 
-Controle de espaçamento
+### Controle de espaçamento
 
 O espaçamento é útil para formatar a saída. String pode ajudar a formatar o espaçamento.
-
+```bash
 string name = "Ali";
 int age = 22;
 //Name Ali | Age         22
 Console.WriteLine("Name {0,10} | Age {1, 10}", name, age);
+```
 
-Alinhadores de controle 
+
+### Alinhadores de controle 
 
 Por padrão, as strings estão alinhadas à direita. Para criar uma sequência alinhada à esquerda em um campo, você precisa usar um sinal negativo, como {0, -5} para definir um campo alinhado à direita de 5 caracteres.
-
+```bash
 //- Ali | end
 string name = "Ali";
 Console.WriteLine("- {0,-8} |end", name);
+```
 
-Interpolação de Strings
+### Interpolação de Strings
 
 O recurso interpolação de cadeia de caracteres baseia-se no recurso formatação composta e fornece uma sintaxe mais legível e conveniente para incluir resultados de expressão formatada em uma cadeia de caracteres de resultado. Este recurso está disponível a partir de C# 6. Para identificar uma literal de cadeia de caracteres como uma cadeia de caracteres interpolada, preceda-o com o símbolo $. Você pode inserir qualquer expressão C# válida que retorna um valor em uma cadeia de caracteres interpolada. No seguinte exemplo, assim que uma expressão é avaliada, o resultado é convertido em uma cadeia de caracteres e incluído em uma cadeia de caracteres de resultado:
 
+```bash
 string name = "Mark";
 var date = DateTime.Now;
 // Composite formatting:
@@ -6275,20 +6350,26 @@ Console.WriteLine("Hello, {0}! Today is {1}, it's {2:HH:mm} now.", name, date.Da
 Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} now.");
 // Hello, Mark! Today is Sunday, it's 12:20 now.
 
+```
+
+
 Cadeia de caracteres interpoladas são compatíveis com todos os recursos do recurso formatação composta de cadeia de caracteres. Isso as torna uma alternativa mais legível ao uso do método String.Format.
 
 A estrutura de um item com uma expressão de interpolação é a seguinte:
 
-{<interpolationExpression> [, <alignment>] [: <formatString>]}
+```{<interpolationExpression> [, <alignment>] [: <formatString>]}```
 
 Elementos em colchetes são opcionais. A tabela a seguir descreve cada elemento:
-Elemento	Descrição
-interpolationExpression	A expressão que produz um resultado a ser formatado. A representação em cadeia de null é String.Empty.
-alignment	A expressão constante cujo valor define o número mínimo de caracteres na representação de sequência do resultado da expressão. Se positivo, a representação da string está alinhada à direita; se negativo, está alinhado à esquerda. 
-formatString	Um formato string suportada pelo tipo do resultado da expressão.
+| Elemento | Descrição | 
+|:----------|------|
+| interpolationExpression | A expressão que produz um resultado a ser formatado. A representação em cadeia de null é String.Empty. | 
+| alignment  |  A expressão constante cujo valor define o número mínimo de caracteres na representação de sequência do resultado da expressão. Se positivo, a representação da string está alinhada à direita; se negativo, está alinhado à esquerda.  |
+| formatString  | Um formato string suportada pelo tipo do resultado da expressão. | 
+
 
 O exemplo a seguir usa os componentes opcionais de formatação descritos acima:
 
+```bash
 Console.WriteLine($"|{"Left",-7}|{"Right",7}|"); //| Left | Right |
 
 constint FieldWidthRightAligned = 20;
@@ -6296,36 +6377,42 @@ constint FieldWidthRightAligned = 20;
 Console.WriteLine($"{Math.PI,FieldWidthRightAligned} - default formatting of the pi number");
 //               3,142 - display only three decimal digits of the pi number
 Console.WriteLine($"{Math.PI,FieldWidthRightAligned:F3} - display only three decimal digits of the pi number");
+```
 
 Especifique uma cadeia de caracteres de formato compatível com o tipo do resultado de expressão seguindo a expressão de interpolação com dois-pontos (":") e o format string. 
 
-{<interpolationExpression>:<formatString>}
+```{<interpolationExpression>:<formatString>}```
 
 O seguinte exemplo mostra como especificar cadeias de caracteres de formato padrão e personalizadas para expressões que produzem resultados numéricos ou de data e hora:
 
+```bash
 var data = new DateTime(1731, 11, 25);
 Console.WriteLine($"On {data:dddd, MMMM dd, yyyy} Leonhard Euler introduced the letter e to denote {Math.E:F5} in a letter to Christian Goldbach.");
+```
+
 
 Você especifica a largura mínima do campo e o alinhamento do resultado da expressão formatada seguindo a expressão de interpolação com uma vírgula (",") e a expressão constante:
 
-{<interpolationExpression>, <alignment>}
+```{<interpolationExpression>, <alignment>}```
 
 Se o valor do alinhamento for positivo, o resultado da expressão formatada será alinhado à direita; se negativo, está alinhado à esquerda. Se você precisar especificar o alinhamento e uma sequência de formato, comece com o componente de alinhamento:
 
-{<interpolationExpression>, <alignment>: <formatString>}
+```{<interpolationExpression>, <alignment>: <formatString>}```
 
 O exemplo a seguir mostra como especificar o alinhamento e usa caracteres de barra vertical ("|") para delimitar os campos de texto:
 
+```bash
 double a = 3;
 double b = 4;
 Console.WriteLine($"Three classical Pythagorean means of {a} and {b}:");
 Console.WriteLine($"|{"Arithmetic",NameAlignment}|{0.5 * (a + b),ValueAlignment:F3}|"); //| Arithmetic | 3,500 |
 Console.WriteLine($"|{"Geometric",NameAlignment}|{Math.Sqrt(a * b),ValueAlignment:F3}|"); // | Geometric | 3,464 |
 Console.WriteLine($"|{"Harmonic",NameAlignment}|{2 / (1 / a + 1 / b),ValueAlignment:F3}|"); //  | Harmonic | 3,429 |
+```
 
 Como mostra a saída de exemplo, se o comprimento do resultado da expressão formatada exceder a largura do campo especificada, o valor do alinhamento será ignorado.
 
-Como usar seqüências de escape em uma sequência interpolada
+### Como usar seqüências de escape em uma sequência interpolada
 
 Seqüências de caracteres interpoladas suportam todas as seqüências de escape que podem ser usadas em literais de seqüência de caracteres comuns. Para obter mais informações, consulte Sequências de escape de string.
 
@@ -6335,6 +6422,7 @@ Para incluir um colchete, "{" ou "}", em uma sequência de resultados, use dois 
 
 O exemplo a seguir mostra como incluir chaves em uma sequência de resultados e construir uma sequência interpolada literal:
 
+```bash
 var xs = newint[] { 1, 2, 7, 9 };
 var ys = newint[] { 7, 9, 12 };
 Console.WriteLine($"Find the intersection of the {{{string.Join(", ", xs)}}} and {{{string.Join(", ", ys)}}} sets.");
@@ -6344,20 +6432,26 @@ var stringWithEscapes = $"C:\\Users\\{userName}\\Documents";
 var verbatimInterpolated = $@"C:\Users\{userName}\Documents";
 Console.WriteLine(stringWithEscapes);
 Console.WriteLine(verbatimInterpolated);
+```
 
-Como usar um operador condicional ternário
+### Como usar um operador condicional ternário
 
 Como os dois pontos (":") têm um significado especial em um item com uma expressão de interpolação, para usar um operador condicional em uma expressão, coloque-o entre parênteses, como mostra o exemplo a seguir:
 
+```bash
 var rand = new Random();
 for (int i = 0; i < 7; i++)
 {
     Console.WriteLine($"Coin flip: {(rand.NextDouble() < 0.5 ? "heads" : "tails")}");
 }
 
-Como criar uma string de resultados específica da cultura com interpolação de string
+```
+
+### Como criar uma string de resultados específica da cultura com interpolação de string
 
 Por padrão, uma cadeia de caracteres interpolada usa a cultura atual definida pela propriedade CultureInfo.CurrentCulture para todas as operações de formatação. Use a conversão implícita de uma seqüência de caracteres interpolada em uma instância System.FormattableString e chame seu método ToString (IFormatProvider) para criar uma sequência de resultados específica da cultura. O exemplo a seguir mostra como fazer isso:
+
+```bash
 
 var cultures = new System.Globalization.CultureInfo[]
 {
@@ -6375,25 +6469,31 @@ foreach (var culture in cultures)
 var cultureSpecificMessage = message.ToString(culture);
     Console.WriteLine($"{culture.Name,-10}{cultureSpecificMessage}");
 }
+```
 
 Como o exemplo mostra, você pode usar uma instância FormattableString para gerar várias seqüências de resultados para várias culturas.
 
-Como criar uma sequência de resultados usando a cultura invariável
+### Como criar uma sequência de resultados usando a cultura invariável
 
 Junto com o método FormattableString.ToString (IFormatProvider), você pode usar o método estático FormattableString.Invariant para resolver uma seqüência de caracteres interpolada em uma seqüência de resultados da InvariantCulture. O exemplo a seguir mostra como fazer isso:
 
+```bash
 string messageInInvariantCulture = FormattableString.Invariant($"Date and time in invariant culture: {DateTime.Now}");
 Console.WriteLine(messageInInvariantCulture);
+```
 
-Caracteres especiais
+### Caracteres especiais
 
 Para incluir uma chave, "{" ou "}", no texto produzido por uma cadeia de caracteres interpolada, use duas chaves, "{{" ou "}}". Como os dois-pontos (":") têm um significado especial em um item de expressão de interpolação, para usar um operador condicional em uma expressão de interpolação, coloque essa expressão entre parênteses.
 
 O seguinte exemplo mostra como incluir uma chave em uma cadeia de caracteres de resultado e como usar um operador condicional em uma expressão de interpolação:
 
+```bash
 string nome = "Horace";
 int age = 34;
 Console.WriteLine($"He asked, \"Is your name {nome}?\", but didn't wait for a reply :-{{");
 Console.WriteLine($"{nome} is {age} year{(age == 1 ? "" : "s")} old.");
 //He asked, "Is your name Horace?", but didn't wait for a reply :-{
 //Horace is 34 years old.
+```
+
