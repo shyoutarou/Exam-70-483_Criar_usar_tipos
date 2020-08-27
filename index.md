@@ -6491,7 +6491,7 @@ O seguinte exemplo mostra como incluir uma chave em uma cadeia de caracteres de 
 ```bash
 string nome = "Horace";
 int age = 34;
-Console.WriteLine($"He asked, \"Is your name {nome}?\", but didn't wait for a reply :-```{{```");
+
 Console.WriteLine($"```{nome}``` is ```{age}``` year{(age == 1 ? "" : "s")} old.");
 //He asked, "Is your name Horace?", but didn't wait for a reply :-{
 //Horace is 34 years old.
