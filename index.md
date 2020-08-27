@@ -6487,14 +6487,14 @@ Para incluir uma chave, "{" ou "}", no texto produzido por uma cadeia de caracte
 
 O seguinte exemplo mostra como incluir uma chave em uma cadeia de caracteres de resultado e como usar um operador condicional em uma expressão de interpolação:
 
-
+{% raw %} 
 ```bash
 string nome = "Horace";
 int age = 34;
-{% raw %} Console.WriteLine($"He asked, \"Is your name {nome}?\", but didn't wait for a reply :-{{"); {% endraw %}
+Console.WriteLine($"He asked, \"Is your name {nome}?\", but didn't wait for a reply :-{{"); 
 Console.WriteLine($"```{nome}``` is ```{age}``` year{(age == 1 ? "" : "s")} old.");
 //He asked, "Is your name Horace?", but didn't wait for a reply :-{
 //Horace is 34 years old.
 ```
-
+{% endraw %}
 
