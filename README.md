@@ -91,7 +91,7 @@ Observação: Existem atualizações de exame efetivas a partir de quinta-feira,
     - Implementar log e rastreamento; criação de perfil de aplicativos; criar e monitor contadores de desempenho; escrever para o log de eventos
 
 <p align="center">
-  <img src=".github/MCSDcert.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/MCSDcert.png" alt="Image" width="100%" />
 </p>
 
 [Microsoft Official Practice Test](https://global3.mindhub.com/70-483-programming-in-c-microsoft-official/p/MU-70-483?utm_source=microsoft&utm_medium=certpage&utm_campaign=msofficialpractice)
@@ -107,9 +107,8 @@ C# or VB programming skills are required to pass a number of other MCSD exams
 Um arquivo Visual CertExam exame podem ser criados e modificados usando um aplicativo incluído no software Visual CertExam Suite, enquanto outro aplicativo também vem com o programa Visual CertExam Suíte é usado para tirar esses testes ou exames armazenados em um arquivo exame CertExam Visual. O programa Visual CertExam Designer é implementado com um conjunto de funcionalidades utilizadas para a inserção de perguntas e respostas de múltipla escolha em um teste ou exame que pode ser salva como um arquivo de exame CertExam Visual. O aplicativo Visual CertExam Manager é por outro lado um programa que é usado para fazer os testes e exames armazenados em um arquivo exame Visual CertExam, e este software também oferece recursos utilizados na gestão e facilitar esses testes ou exames. O conteúdo de um arquivo de exame CertExam Visual é integrado com as especificações de codificação de dados utilizados para armazenar os dados inseridos pelo usuário Visual CertExam Designer no formato VCE. Afixada com o .vce extensão, esses testes e exames são geralmente utilizados para as avaliações de certificação ou avaliações. 
 
 PS: Neste [examcollection](http://www.examcollection.com/70-536.html) tem mais exames no formato vce pra testar os conhecimentos pra prova.
-
 <p align="center">
-  <img src=".github/RefBooks.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/RefBooks.png" alt="Image" width="100%" />
 </p>
 
 
@@ -134,7 +133,7 @@ Esta CLR é capaz de executar através da Common Language Infrastructure, uma gr
 Algumas linguagens são: 
  
  <p align="center">
-  <img src=".github/LinguagensNET.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/LinguagensNET.png" alt="Image" width="100%" />
 </p>
 
 
@@ -161,7 +160,7 @@ Por causa disso, existem ferramentas que "ofuscam" o código CIL, trocando nomes
 Para melhorar a performance de execução é possível gerar um código nativo após instalado com o NGEN (Gerador de Imagem Nativa). Este NGEN é uma ferramenta que melhora o desempenho de aplicativos gerenciados. Ngen.exe cria imagens nativas, que são arquivos que contém o código de máquina específico do processamento compilado e as instala no cache de imagem nativa do computador local. O tempo de execução pode usar imagens nativas do cache em vez de usar o compilador JIT para compilar o assembly original. 
 
  <p align="center">
-  <img src=".github/VersoesNET.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/VersoesNET.png" alt="Image" width="100%" />
 </p>
 
 O .NET Framework 4 veio para melhorar, alguns pontos do Framework anterior, como por exemplo: 
@@ -373,7 +372,7 @@ C# fornece um conjunto padrão de tipos internos
 O C# categorizou principalmente os tipos de dados em dois tipos: tipos de valor e tipos de referência. Os tipos de valor incluem tipos simples (por exemplo, int, float, bool e char), tipos de enumeração, tipos de estrutura e tipos de valor Nullable. Os tipos de referência incluem tipos de classe, tipos de interface, tipos de delegados e tipos de matriz. 
 
 <p align="center">
-  <img src=".github/ValueTypes.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/ValueTypes.png" alt="Image" width="100%" />
 </p>
  
 
@@ -405,14 +404,14 @@ Vejamos os tipos de valor armazenados na Stack - pilha...
 - Cada variável armazena seus próprios dados
 
 <p align="center">
-  <img src=".github/StackPilha.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackPilha.png" alt="Image" width="100%" />
 </p>
  
 
 Perceba que o valor da variável fica junto com a própria variável. Variáveis onde isso acontece são chamadas de Value-Types, justamente porque o valor delas fica junto  com a própria variável na memória stack. Assim, quando você tem o seguinte código
 
 <p align="center">
-  <img src=".github/StackHeap.png" alt="Image" width="400px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackHeap.png" alt="Image" width="400px" />
 </p>
 
 Agora, outros tipos de dados ocupam muito mais espaço de memória do que estes tipos leves que são value-types. Por isso, eles não podem ser armazenados diretamente na stack (caso fossem, rapidamente a memória stack seria “estourada”, causando o famoso erro StackOverflowException). Sendo assim, estes dados são armazenados na memória heap. Vamos imaginar que você tenha o seguinte código:
@@ -433,13 +432,13 @@ Pessoa minhaPessoa = new Pessoa();
 ```
 
 <p align="center">
-  <img src=".github/NewPessoa.png" alt="Image" width="400px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/NewPessoa.png" alt="Image" width="400px" />
 </p>
  
 Porém, o compilador não acessa a heap diretamente. Por que ele não acessa? Justamente porque ela é muito grande… Se ele fosse procurar o objeto minhaPessoa dentro da heap, ele iria demorar um tantinho bom de tempo. O compilador precisaria ter um jeito de acessar pela stack (que é rápida pra encontrar as coisas até mesmo por ser bem menor) o que está alocado na heap (que é bem maior). Como o compilador contorna isso? Criando uma referência dentro da stack para o objeto minhaPessoa, apontando onde na memória heap que este objeto está de fato guardado!
  
  <p align="center">
-  <img src=".github/StackRef.png" alt="Image" width="400px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackRef.png" alt="Image" width="400px" />
 </p>
 
 Essa porção de memória que é alocada na stack para apontar para uma posição de memória da heap é chamada de ponteiro. Por isso ele tem esse asterisco (*) na frente do seu nome.
@@ -462,7 +461,7 @@ Car f = d;
 f.hp = 100; <- altera o valor em d também
 ```
  <p align="center">
-  <img src=".github/Carclass.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Carclass.png" alt="Image" width="100%" />
 </p>
 
 
@@ -899,7 +898,7 @@ class Program
 }
 ```
 <p align="center">
-  <img src=".github/ErroListGeneric.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/ErroListGeneric.png" alt="Image" width="100%" />
 </p>
  
 O .NET fornece várias classes e interfaces genéricas. Isso existe no namespace System.Collections.Generic. Alguns estão listados abaixo:
@@ -1134,14 +1133,14 @@ OpEqualsTest<string>(s1, s2);
 public class NodeList<T>where T : struct
 ```
 <p align="center">
-  <img src=".github/restricaowhere.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaowhere.png" alt="Image" width="100%" />
 </p>
 
 ```bash
 public class NodeList<T>where T : class
 ```
 <p align="center">
-  <img src=".github/restricaoint.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaoint.png" alt="Image" width="100%" />
 </p>
  
 ```bash
@@ -1158,7 +1157,7 @@ public class  Customer
 public class NodeList<T>where T : new()
 ```
 <p align="center">
-  <img src=".github/restricaoNodeList.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaoNodeList.png" alt="Image" width="100%" />
 </p>
 
 
@@ -1179,7 +1178,7 @@ public class  Customer
 public class NodeList<T>where T : Base
 ```
 <p align="center">
-  <img src=".github/restricaoBase.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaoBase.png" alt="Image" width="100%" />
 </p>
  
 ```bash
@@ -1198,7 +1197,7 @@ public class  Customer
 public class NodeList<T>where T : IEmployee
 ```
 <p align="center">
-  <img src=".github/restricaoIEmployee.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaoIEmployee.png" alt="Image" width="100%" />
 </p>
 
 ```bash
@@ -1238,7 +1237,7 @@ O C# fornece tipos especiais que são açúcar sintático para os usuários. Ess
 
 Todos os tipos de valor e referência são derivados do tipo system.object. No .NET, o objeto é a base de toda a hierarquia de tipos. A figura abaixo mostra a hierarquia de tipos de system.object.
  <p align="center">
-  <img src=".github/SystemObject.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/SystemObject.png" alt="Image" width="100%" />
 </p>
  
 Como todos os tipos no .NET são derivados de system.object, ele pode manipular valores de todos os tipos. Por exemplo, no seguinte snippet de código, o objeto armazenou os valores de string e int.
@@ -1511,7 +1510,7 @@ z = x;
 x = z;
 ```
 <p align="center">
-  <img src=".github/erroCast.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/erroCast.png" alt="Image" width="100%" />
 </p>
 
 Outra conversão implícita é a de um tipo de referência para um de seus tipos básicos. Por exemplo, cada tipo de referência pode ser armazenado dentro de um objeto porque, em última análise, cada tipo de referência herda de um objeto. Se um objeto implementa uma interface, ele também pode ser convertido implicitamente na interface. o exemplo abaixo mostra a conversão implícita de um objeto em um de seus tipos básicos.
@@ -1641,7 +1640,7 @@ A Tabela abaixo lista os métodos de conversão mais úteis fornecidos pela clas
 Básicamente não só no char como em int, float entre outros, temos os tipos signed e o unsigned (há outros além desses), a diferença é que o bit mais significativo que faz a alteração de valores positivos para negativos é ignorado e utilizado como espaço, sendo assim é liberado mas espaço, já em contrapartida os números negativos não são possíveis. Veja a tabela a seguir, todos os unsigneds começam com 0. Vale ressaltar que por padrão é utilizado o signed portanto você declarar
 
 <p align="center">
-  <img src=".github/tabminmax.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/tabminmax.png" alt="Image" width="100%" />
 </p>
  
 ```bash
@@ -1930,7 +1929,7 @@ class Program
 ```
 
 <p align="center">
-  <img src=".github/DymanicExcel.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/DymanicExcel.png" alt="Image" width="100%" />
 </p>
 
 
@@ -2062,7 +2061,7 @@ public class  Person
 ```
 
 <p align="center">
-  <img src=".github/publicstring.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/publicstring.png" alt="Image" width="100%" />
 </p>
  
 
@@ -2207,7 +2206,7 @@ Uma das principais funções modificadores é definir o nível de acessibilidade
 Public
 
 <p align="center">
-  <img src=".github/publicclass.png" alt="Image" width="500px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/publicclass.png" alt="Image" width="500px" />
 </p>
 
 
@@ -2327,7 +2326,7 @@ Os métodos têm algumas características que você deve entender
 - Uma instrução 'return' dentro do método interrompe a execução e retorna um valor para o chamador se o valor corresponder ao tipo de retorno
  
 <p align="center">
-  <img src=".github/Tpretorno.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Tpretorno.png" alt="Image" width="100%" />
 </p>
 
 ### Parâmetros
@@ -2338,7 +2337,7 @@ Os métodos têm algumas características que você deve entender
   Parametros
 - Parâmetros opcionais são definidos no final da lista de parâmetros, após todos os parâmetros necessários. Se nenhum argumento for enviado para esse parâmetro, o valor padrão será usado.
 <p align="center">
-  <img src=".github/Parametros_op.png" alt="Image" width="500px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Parametros_op.png" alt="Image" width="500px" />
 </p>
 
 ### Assinatura
@@ -2346,7 +2345,7 @@ Os métodos têm algumas características que você deve entender
 - Para sobrecarga(overloading), a assinatura inclui o nome do método e os tipos de parâmetro
 - Para delegados(delegates), a assinatura inclui o tipo de retorno e os tipos de parâmetro
 <p align="center">
-  <img src=".github/Assinatura.png" alt="Image" width="500px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Assinatura.png" alt="Image" width="500px" />
 </p>
 
 ### Static
@@ -2356,7 +2355,7 @@ O modificador estático altera o comportamento dos tipos e membros de C#. Uma cl
 - Em uma classe estática, todos os métodos devem ser marcados como estáticos
 - Apenas uma instância do objeto existe
 <p align="center">
-  <img src=".github/Mod_static.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Mod_static.png" alt="Image" width="100%" />
 </p>
 
 ## CONSTRUTORES
@@ -2659,7 +2658,7 @@ Ao instanciarmos BaseClass dc = new DerivedClass(); dc mantém objeto de sua cla
 Os campos não podem ser virtuais, apenas os métodos, propriedades, eventos e indexadores podem ser virtuais. 
 
 <p align="center">
-  <img src=".github/Workfield.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Workfield.png" alt="Image" width="100%" />
 </p>
  
 Quando uma classe derivada substitui um membro virtual, esse membro é chamado, mesmo quando uma instância dessa classe está sendo acessada como uma instância da classe base. O código a seguir mostra um exemplo:
@@ -2814,7 +2813,7 @@ public class SealedThirdClass : DerivedClass
 No exemplo anterior, o método DoWork não será mais virtual para qualquer classe derivada de SealedThirdClass. Ele ainda será virtual para instâncias de SealedThirdClass, mesmo se elas forem convertidas em métodos tipo DerivedClass ou tipo BaseClass. 
  
  <p align="center">
-  <img src=".github/DoWork.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/DoWork.png" alt="Image" width="100%" />
 </p>
  
 
@@ -2825,7 +2824,7 @@ Se invés do método o selead estiver na classe como abaixo, não será possíve
 public sealed class SealedThirdClass : DerivedClass
 ```
 <p align="center">
-  <img src=".github/DerivaSeal.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/DerivaSeal.png" alt="Image" width="100%" />
 </p>
 
 
@@ -3093,14 +3092,14 @@ Herança, juntamente com o encapsulamento e polimorfismo, é uma das três carac
 Para utilizar a classe base (superclasse) em outra classe (classe derivada ou subclasse) você faz referência à classe base, colocando o símbolo : (dois pontos) após o nome da classe derivada e em seguida coloque o nome da classe base. Quando você define uma classe para derivar de outra classe, a classe derivada implicitamente ganha todos os membros da classe base, exceto seus construtores e destrutores. A herança permite criar novas classes que reutilizam, estendem e modificam o comportamento definido em outras classes podendo assim reutilizar o código na classe base. Isso elimina a duplicação de elementos nas classes reduzindo a necessidade de escrever o mesmo código em duas classes diferentes facilitando a manutenção do código. Observe nas classes abaixo que existem muitas duplicações de propriedades e métodos e existem apenas duas diferenças:
 
 <p align="center">
-  <img src=".github/AdultChild.png" alt="Image" width="500px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/AdultChild.png" alt="Image" width="500px" />
 </p>
 
 A herança geralmente é implementada em um modelo denominado “general down to specific” em que se é criado uma classe base, cujos membros são herdados, e classes que herdam esses membros são chamadas de classes derivadas. Uma classe derivada pode ter apenas uma classe base direta. No entanto, a herança é transitiva. Se class C é derivada da class B e class B é derivada da class A, class C herda os membros declarados em class B e class A.
 
 Conceitualmente, uma classe derivada é uma especialização da classe base. Poderíamos criar uma classe Patient que contasse com todas as propriedades e métodos que pertencem a todos os pacientes e as classes Adult e Child teriam as suas propriedades específicas com métodos mais especializados. Em que:
 <p align="center">
-  <img src=".github/Patient.png" alt="Image" width="300px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Patient.png" alt="Image" width="300px" />
 </p>
   
 - Uma classe só pode herdar de outra classe
@@ -3184,7 +3183,7 @@ Quando um construtor usa a palavra-chave base para chamar um construtor da class
 Child pctor = new Child("Daryl", null);
 ```
 <p align="center">
-  <img src=".github/PublicPatiente.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/PublicPatiente.png" alt="Image" width="100%" />
 </p>
  
 Agora imagine uma situação onde tivéssemos muitos campos dentro de uma classe e precisássemos criar vários construtores que setassem determinados campos, como no exemplo abaixo:
@@ -3337,12 +3336,12 @@ interface IControls_2
 
 ```
 <p align="center">
-  <img src=".github/Machine3.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Machine3.png" alt="Image" width="100%" />
 </p>
 
 Neste ponto, o Visual Studio sabe que você não implementou a interface. Clique com o botão direito do mouse na declaração da interface para exibir um menu de contexto. 
 <p align="center">
-  <img src=".github/Machine3_intern.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Machine3_intern.png" alt="Image" width="100%" />
 </p>
 
 Abra o item Implementar interface e selecione Implementar interface ou Implementar explicitamente para fazer o Visual Studio inserir stubs de código que satisfaçam a interface.O código a seguir mostra o resultado produzido por esta ferramenta se você escolher o item Implementar explicitamente a interface:
@@ -3872,7 +3871,7 @@ Como você pode ver, a classe real no .NET Framework é chamada SerializableAttr
 
 A serialização é o processo de converter um objeto em um fluxo de bytes para armazenar o objeto ou transmiti-lo para a memória, um banco de dados ou um arquivo. Sua finalidade principal é salvar o estado de um objeto para recriá-lo quando necessário. O processo inverso é chamado desserialização. Esta ilustração mostra o processo geral de serialização:
 <p align="center">
-  <img src=".github/objbyte2.png" alt="Image" width="300px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/objbyte2.png" alt="Image" width="300px" />
 </p>
  
 
@@ -4019,7 +4018,7 @@ DEBUG is defined
 
 Um atributo também possui um destino específico ao qual se aplica. Pode ser um atributo aplicado a um assembly inteiro, uma classe, um método específico ou mesmo um parâmetro de um método.Se você olhar para o AssemblyInfo.cs de uma nova biblioteca de classes, poderá ver como o destino é explicitamente especificado.
 <p align="center">
-  <img src=".github/Condicional_Atributo.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Condicional_Atributo.png" alt="Image" width="100%" />
 </p>
 
 
@@ -4205,7 +4204,7 @@ Usando o método Attribute.GetCustomAttribute(), o valor armazenado nas propried
 
 O xUnit (uma estrutura popular de teste de unidade) permite categorizar seus testes de unidade aplicando um atributo a eles.
 <p align="center">
-  <img src=".github/xUnit.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/xUnit.png" alt="Image" width="100%" />
 </p>
 
 
@@ -4255,7 +4254,7 @@ namespace xUnitClassLibrary
 Compile a solução para garantir que o código seja compilado. Agora que você escreveu o primeiro teste, precisamos de uma maneira de executá-lo. Vamos instalar o pacote NuGet com o console runner.
 
 <p align="center">
-  <img src=".github/NuGet.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/NuGet.png" alt="Image" width="100%" />
 </p>
   
 
@@ -4267,7 +4266,7 @@ packages\xunit.runner.console.2.4.1\tools\net46\xunit.console xUnitClassLibrary\
 ```
 
 <p align="center">
-  <img src=".github/xUnitClassLibrary.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/xUnitClassLibrary.png" alt="Image" width="100%" />
 </p>
  
 
@@ -4303,7 +4302,7 @@ bool IsOdd(int value)
 Desta vez, quando compilamos e executamos os testes, vemos uma falha, para nossa teoria que foi dada 6:
 
 <p align="center">
-  <img src=".github/testesfalha.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/testesfalha.png" alt="Image" width="100%" />
 </p>
 
  
@@ -4311,19 +4310,19 @@ Embora tenhamos escrito apenas três métodos de teste, o corredor do console re
 
 Se você possui o Visual Studio Community (ou uma versão paga do Visual Studio), pode executar os testes do xUnit.net no executor de testes interno do Visual Studio (denominado Test Explorer). Infelizmente, isso não inclui as edições Express do Visual Studio (você deve atualizar para o Community Edition).
 <p align="center">
-  <img src=".github/CommunityEdition.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/CommunityEdition.png" alt="Image" width="100%" />
 </p>
  
 
 Verifique se o Test Explorer está visível (vá para Teste> Windows> Test Explorer). 
 <p align="center">
-  <img src=".github/TestExplorer.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/TestExplorer.png" alt="Image" width="100%" />
 </p>
   
 
 Toda vez que você compila seu projeto, o corredor descobre testes de unidade no seu projeto. Após um momento de descoberta, você deverá ver a lista de testes descobertos:
 <p align="center">
-  <img src=".github/testesdescobertos.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/testesdescobertos.png" alt="Image" width="100%" />
 </p>
 
 
@@ -4393,13 +4392,13 @@ O CodeDOM está localizado no namespace System.CodeDom. Você pode pensar no seu
 }
 ```
 <p align="center">
-  <img src=".github/HelloWorld.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/HelloWorld.png" alt="Image" width="100%" />
 </p>
 
 A saída gerada no HelloWorld.cs é mostrada abaixo:
 
 <p align="center">
-  <img src=".github/HelloWorldoutput.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/HelloWorldoutput.png" alt="Image" width="100%" />
 </p>
 
 Neste próximo exemplo, iremos examinar passo-a-passo como utilizar o CodeDOM para gerar a seguinte classe:
@@ -5459,7 +5458,7 @@ O importante é entender que um finalizador aumenta a vida útil de um objeto. C
 4.	O thread do Finalizador é executado e identifica objetos na fila e executa seus métodos de finalização. Após a finalização, o objeto fica órfão. Na próxima vez que o GC ocorrer, o objeto será excluído
 
 <p align="center">
-  <img src=".github/Finalizadores.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Finalizadores.png" alt="Image" width="100%" />
 </p>
  
 Os finalizadores devem ser usados somente quando necessário, pois:
@@ -5774,7 +5773,7 @@ Console.WriteLine(ctor2); //Hell
 
 Por exemplo, o código a seguir exibe os números de 1 a 10 em linhas separadas, com cada linha recuada mais quatro espaços que o anterior:
 <p align="center">
-  <img src=".github/Sequencia.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Sequencia.png" alt="Image" width="100%" />
 </p>
 
 ```bash
@@ -6491,8 +6490,8 @@ O seguinte exemplo mostra como incluir uma chave em uma cadeia de caracteres de 
 ```bash
 string nome = "Horace";
 int age = 34;
-Console.WriteLine("He asked, \"Is your name {nome}?\", but didn't wait for a reply :-{{");
-Console.WriteLine("{nome} is {age} year{(age == 1 ? "" : "s")} old.");
+Console.WriteLine($"He asked, \"Is your name {nome}?\", but didn't wait for a reply :-{{");
+Console.WriteLine($"{nome} is {age} year{(age == 1 ? "" : "s")} old.");
 //He asked, "Is your name Horace?", but didn't wait for a reply :-{
 //Horace is 34 years old.
 ```
