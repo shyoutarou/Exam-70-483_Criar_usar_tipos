@@ -6486,3 +6486,13 @@ Console.WriteLine(messageInInvariantCulture);
 Para incluir uma chave, "{" ou "}", no texto produzido por uma cadeia de caracteres interpolada, use duas chaves, "{{" ou "}}". Como os dois-pontos (":") têm um significado especial em um item de expressão de interpolação, para usar um operador condicional em uma expressão de interpolação, coloque essa expressão entre parênteses.
 
 O seguinte exemplo mostra como incluir uma chave em uma cadeia de caracteres de resultado e como usar um operador condicional em uma expressão de interpolação:
+
+
+```bash
+string nome = "Horace";
+int age = 34;
+Console.WriteLine($"He asked, \"Is your name {nome}?\", but didn't wait for a reply :-{{");
+Console.WriteLine($"{nome} is {age} year{(age == 1 ? "" : "s")} old.");
+//He asked, "Is your name Horace?", but didn't wait for a reply :-{
+//Horace is 34 years old.
+```
