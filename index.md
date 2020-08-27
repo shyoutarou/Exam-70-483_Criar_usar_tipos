@@ -6378,7 +6378,7 @@ Console.WriteLine($"{Math.PI,FieldWidthRightAligned} - default formatting of the
 Console.WriteLine($"{Math.PI,FieldWidthRightAligned:F3} - display only three decimal digits of the pi number");
 ```
 
-Especifique uma cadeia de caracteres de formato compatível com o tipo do resultado de expressão seguindo a expressão de interpolação com dois-pontos (":") e o format string. 
+Especifique uma cadeia de caracteres de formato compatível com o tipo do resultado de expressão seguindo a expressão de interpolação com dois-pontos ```(":")``` e o format string. 
 
 ```{<interpolationExpression>:<formatString>}```
 
@@ -6438,7 +6438,7 @@ Console.WriteLine(verbatimInterpolated);
 
 ### Como usar um operador condicional ternário
 
-Como os dois pontos (":") têm um significado especial em um item com uma expressão de interpolação, para usar um operador condicional em uma expressão, coloque-o entre parênteses, como mostra o exemplo a seguir:
+Como os dois pontos ```(":")``` têm um significado especial em um item com uma expressão de interpolação, para usar um operador condicional em uma expressão, coloque-o entre parênteses, como mostra o exemplo a seguir:
 
 ```bash
 var rand = new Random();
@@ -6488,7 +6488,7 @@ Console.WriteLine(messageInInvariantCulture);
 
 {% raw %}
 
-Para incluir uma chave, "{" ou "}", no texto produzido por uma cadeia de caracteres interpolada, use duas chaves, "{{" ou "}}". Como os dois-pontos ```(":") têm um significado especial em um item de expressão de interpolação, para usar um operador condicional em uma expressão de interpolação, coloque essa expressão entre parênteses.
+Para incluir uma chave, "{" ou "}", no texto produzido por uma cadeia de caracteres interpolada, use duas chaves, "{{" ou "}}". Como os dois-pontos ```(":")``` têm um significado especial em um item de expressão de interpolação, para usar um operador condicional em uma expressão de interpolação, coloque essa expressão entre parênteses.
 
 O seguinte exemplo mostra como incluir uma chave em uma cadeia de caracteres de resultado e como usar um operador condicional em uma expressão de interpolação:
 
