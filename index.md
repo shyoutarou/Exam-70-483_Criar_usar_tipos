@@ -6417,6 +6417,8 @@ Seqüências de caracteres interpoladas suportam todas as seqüências de escape
 
 Para interpretar seqüências de escape literalmente, use uma string literal literal. Uma sequência literal interpolada começa com o caractere $ seguido pelo caractere @. A partir do C# 8.0, você pode usar os tokens $ e @ em qualquer ordem: $ @ "..." e @ $ "..." são cadeias verbais interpoladas válidas.
 
+{% raw %}
+
 Para incluir um colchete, "{" ou "}", em uma sequência de resultados, use dois colchetes, "{{" ou "}}". Para obter mais informações, consulte a seção Escapando chaves do tópico Formatação composta.
 
 O exemplo a seguir mostra como incluir chaves em uma sequência de resultados e construir uma sequência interpolada literal:
@@ -6432,6 +6434,7 @@ var verbatimInterpolated = $@"C:\Users\{userName}\Documents";
 Console.WriteLine(stringWithEscapes);
 Console.WriteLine(verbatimInterpolated);
 ```
+{% endraw %}
 
 ### Como usar um operador condicional ternário
 
@@ -6483,18 +6486,21 @@ Console.WriteLine(messageInInvariantCulture);
 
 ### Caracteres especiais
 
-Para incluir uma chave, "{" ou "}", no texto produzido por uma cadeia de caracteres interpolada, use duas chaves, "{{" ou "}}". Como os dois-pontos (":") têm um significado especial em um item de expressão de interpolação, para usar um operador condicional em uma expressão de interpolação, coloque essa expressão entre parênteses.
+{% raw %}
+
+Para incluir uma chave, "{" ou "}", no texto produzido por uma cadeia de caracteres interpolada, use duas chaves, "{{" ou "}}". Como os dois-pontos ```(":") têm um significado especial em um item de expressão de interpolação, para usar um operador condicional em uma expressão de interpolação, coloque essa expressão entre parênteses.
 
 O seguinte exemplo mostra como incluir uma chave em uma cadeia de caracteres de resultado e como usar um operador condicional em uma expressão de interpolação:
 
-{% raw %} 
+
 ```bash
 string nome = "Horace";
 int age = 34;
 Console.WriteLine($"He asked, \"Is your name {nome}?\", but didn't wait for a reply :-{{"); 
-Console.WriteLine($"```{nome}``` is ```{age}``` year{(age == 1 ? "" : "s")} old.");
+Console.WriteLine($"{nome} is {age} year{(age == 1 ? "" : "s")} old.");
 //He asked, "Is your name Horace?", but didn't wait for a reply :-{
 //Horace is 34 years old.
 ```
 {% endraw %}
+
 
