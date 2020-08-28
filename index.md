@@ -3,7 +3,7 @@
 <ul>
 {% for post in site.posts %}
 <li>
-<a href="{{ post.url }}">{{ post.title }}</a>
+<a href="{{ post.2020-08-27-new-blog.md }}">{{ post.title }}</a>
 </li>
 {% endfor %}
 </ul>
