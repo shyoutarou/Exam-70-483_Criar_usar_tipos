@@ -1,5 +1,13 @@
 # Course Overview MCSD – Microsoft Certification
 
+GitHub Pages:
+1. [Criar_usar_tipos](https://shyoutarou.github.io/Exam-70-483_Criar_usar_tipos/)
+2. [Gerenciar_fluxo]()
+3. [Acesso_dados]()
+4. [Depurar_segurança]()
+5. [Csharp8]()
+5. [Questions]()
+
 A Microsoft oferece atualmente quatro certificações MCSD com base em várias tecnologias
 - MCSD: Windows Store Apps
 - MCSD: Web Applications
@@ -293,7 +301,7 @@ Herança é um princípio de orientação a objetos, que permite que classes com
 
 Oferece a capacidade de estender e modificar o comportamento em um ambiente de fácil manutenção. A classe cujos membros são herdados é chamada classe base e a classe que herdou esses membros é chamada classe derivada.
 
-```bash
+```csharp
 class Parent1
 {
     public string  SurName { get; set; }
@@ -417,7 +425,7 @@ Perceba que o valor da variável fica junto com a própria variável. Variáveis
 Agora, outros tipos de dados ocupam muito mais espaço de memória do que estes tipos leves que são value-types. Por isso, eles não podem ser armazenados diretamente na stack (caso fossem, rapidamente a memória stack seria “estourada”, causando o famoso erro StackOverflowException). Sendo assim, estes dados são armazenados na memória heap. Vamos imaginar que você tenha o seguinte código:
 
 
-```bash
+```csharp
 class Pessoa
 {
     public int Id {get; set;}
@@ -427,7 +435,7 @@ class Pessoa
 
 Quando você cria um objeto dessa classe, este objeto será armazenado na memória heap:
 
-```bash
+```csharp
 Pessoa minhaPessoa = new Pessoa();
 ```
 
@@ -448,7 +456,7 @@ Repare então que é criada uma referência da stack para uma determinada posiç
 Agora, veja outro exemplo de valores de referência na Heap ...
 
 
-```bash
+```csharp
 class Car
 {
      int hp;
@@ -480,7 +488,7 @@ Nas variáveis de tipos de referência (reference types), somente uma referênci
 
 Todos os tipos são herdados direta ou indiretamente da classe Object. Assim, é possívelconverter qualquer tipo para object. O ato de converter um variável value type para object é chamado de Boxing. E quando um tipo object é convertido para um value type, é chamado de Unboxing. O tipo object é representado pela classe Object no .NET Framework.
 
-```bash
+```csharp
 object x = 1;
 ```
 
@@ -488,7 +496,7 @@ object x = 1;
 
 O tipo string é o mais utilizado, uma vez que todas as variáveis que não contêm númerosquase sempre são declaradas como string. O tipo string é representado por uma sequência de caracteres Unicode. Uma string deve estar cercada por aspas duplas (""):
 
-```bash
+```csharp
 string b = "texto aqui";
 char extrai = b[6];
 Console.WriteLine(extrai); //a
@@ -503,26 +511,26 @@ Console.WriteLine(extrai + 2); //99
 
 Um recurso importante é a facilidade de extrair um caractere definido na variável, como ocorre em char extrai = b[6]. O sinal de mais (+) é usado para concatenar uma string mas, devemos ter cuidado ao utilizar este recurso com outros tipos pois podem trazer resultados indesejáveis. Você pode extrair uma letra de uma palavra:
 
-```bash
+```csharp
 char extrai = "Alfredo"[3];  // r
 ```
 
 
 O arroba (@) evita que sequências de escape sejam processadas:
 
-```bash
+```csharp
 @"C:\Livro\Capitulo1\Construtores.cs"
 ```
 
 
 É o mesmo que:
-```bash
+```csharp
 "C:\\Livro\\Capitulo1\\Construtores.cs"
 ```
 
 Evita que aspas sejam interpretadas dentro de uma string cercada por aspas duplas.
 
-```bash
+```csharp
 string aspas = @"""abc"" teste";
 ```
 
@@ -557,7 +565,7 @@ Os tipos de ponto flutuante são: float, double, os quais diferem entre si na fa
 
 Se não atribuirmos um valor ao declarar uma variável, gerará um erro sobre o uso de uma variável não atribuída. Isso evita o uso de um valor que foi armazenado no local da memória antes da criação dessa variável. A atribuição é feita com um valor ou através da palavra-chave new e o alias do tipo, neste caso, essa instrução funcionará bem e imprimirá o valor padrão para esse tipo, que no exemplo abaixo caso é 0 para integer.
 
-```bash
+```csharp
 int myInt; // emite erro na compilação 
 int myNewInt = newint(); // 0
 System.Int32 myInt32 = new System.Int32();// 0
@@ -565,13 +573,13 @@ System.Int32 myInt32 = new System.Int32();// 0
 
 Além do intervalo padrão suportado por cada tipo, podemos acrescentar um valor nulo. Para isso, basta declarar o nome do tipo com um ponto de interrogação.
 
-```bash
+```csharp
 int? x = 10;
 ```
 
 Use o operador ?? para definir um valor padrão, caso o tipo seja nulo. Ou use o método GetValueOrDefault:
 
-```bash
+```csharp
 int d = x ?? 0;
 int? x = 10;
 x.GetValueOrDefault(0);
@@ -579,7 +587,7 @@ x.GetValueOrDefault(0);
 
 A propriedade HasValue verifica se um tipo contém ou não um valor nulo.
 
-```bash
+```csharp
 int? x=5;
 if (x.HasValue)Console.WriteLine(x.Value);
 else Console.WriteLine("Valor nulo.");
@@ -589,14 +597,14 @@ else Console.WriteLine("Valor nulo.");
 
 O tipo decimal é de alta precisão. Ideal para cálculos financeiros e monetários, é umtipo de dados de 128 bits que pode representar valores de aproximadamente:
 
-```bash
+```csharp
 ±1.0 × 10−28 até ±7.9 × 1028
 ```
 
 Com 28 ou 29 dígitos significantes. A precisão é dada em dígitos e não em casas decimais.
 O sufixo m ou M deve ser utilizado para declarar variáveis do tipo decimal.
 
-```bash
+```csharp
 decimal x = 102.89m;
 ```
 
@@ -607,7 +615,7 @@ Sem o sufixo m ou M, a variável será tratada como se fosse do tipo double. Um 
 O .NET Framework 4.0 inclui dois novos tipos: BigInteger e Complex, sendo que ambos fazem parte do namespace System.Numerics e não contêm intervalos fixos, ou seja, não têm limites predefinidos como um inteiro tradicional.Para utilizar um tipo BigInteger ou Complex, é preciso adicionar uma referência a namespace System.Numerics. 
 
 
-```bash
+```csharp
 using System;
 using System.Numerics;
 
@@ -630,7 +638,7 @@ long varLong = 931548458140;
 
 O tipo Complex suporta operações aritméticas e trigonométricas, bastante úteis para aplicações na área de engenharia elétrica e eletrônica.
 
-```bash
+```csharp
  static void Main(string[] args)
 {
     var c1 = new Complex(2, 5);
@@ -654,21 +662,21 @@ O tipo Complex suporta operações aritméticas e trigonométricas, bastante út
 
 Representa um único caractere Unicode de 16 bits. É utilizado para representar a maioria das linguagens no mundo. Assim, podemos criar variáveis do tipo char e adicionar caracteres:
 
-```bash
+```csharp
 char letra = 'A';
 char letra1 = 'H';
 ```
 
 Uma variável char pode conter sequências de escape hexadecimal (prefixo \x) ou uma representação Unicode (prefixo \u):
 
-```bash
+```csharp
 char letra2 = '\x0072';   // Hexadecimal
 char letra3 = '\u0072';   // Unicode
 ```
 
 Podemos transformar, de forma explícita, um integral em um char ou vice-versa.
 
-```bash
+```csharp
 char letra4 = (char)72;   // corresponde a letra H
 int numero = (int)'B';    // inteiro 66
 ```
@@ -692,7 +700,7 @@ Combinações de caracteres que consistem de uma barra invertida (\) seguida de 
 
 Representa  um  valor  verdadeiro  ou  falso.  É  usado  com  variáveis  ou  métodos  que retornam o valor true ou false. O valor-padrão do tipo bool é false:
 
-```bash
+```csharp
 bool x = true;
 bool b = false;
 ```
@@ -701,7 +709,7 @@ bool b = false;
 
 As enumerações permitem criar um tipo distinto, formado por um conjunto de cons-tantes nomeadas. A seguir, temos sua forma mais simples:
 
-```bash
+```csharp
 enum Dias { Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado };
 ```
 
@@ -709,7 +717,7 @@ Os elementos da enumeração são por padrão do tipo int. No entanto, os elemen
 
 Na  enumeração  anterior,  Domingo  é  igual  a  0  (zero),  Segunda  é  igual  a 1, Terça  é igual a 2 etc.Podemos também atribuir valores arbitrários a cada elemento:
 
-```bash
+```csharp
 enum Dias { Domingo = 10, Segunda = 25, Terça = 48, Quarta = 8, Quinta, Sexta, Sábado };
 ```
 
@@ -717,14 +725,14 @@ Os elementos aos quais não atribuímos valores arbitrários são incrementados 
 
 Um tipo integral diferente de int pode ser definido:
 
-```bash
+```csharp
 enum Dias : short { Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado };
 ```
 
 
 Para acessar o valor de cada elemento, é necessário converter, de forma explícita, cada elemento da enumeração para int:
 
-```bash
+```csharp
 int x = (int)Dias.Domingo;
 int y = (int)Dias.Sexta;
 Console.WriteLine(x);  // 0
@@ -735,7 +743,7 @@ Console.ReadKey();
 
 Para acessar o valor de vários elementos ao mesmo tempo, é preciso antes preparar a enumeração. O atributo System.FlagsAttribute deve ser usado na declaração da enumeração. O exemplo completo que segue retorna Segunda, Sexta, Sábado:
 
-```bash
+```csharp
 [Flags] public enum Dias { Segunda = 0x01, Quarta = 0x02, Sexta = 0x04, Sábado = 0x08, }
 
 static void Main(string[] args)
@@ -748,7 +756,7 @@ static void Main(string[] args)
 
 Você aprendeu anteriormente que cada tipo de valor tinha seu próprio tipo de sistema equivalente, como System.Int32 ou System.Byte. O tipo de enumeração não é diferente porque é uma instância do tipo System.Enum, que contém vários métodos que você pode usar com suas próprias enumerações. A seguir está um código de exemplo que mostra alguns dos métodos disponíveis quando você trabalha com suas enumerações
 
-```bash
+```csharp
 string name = Enum.GetName(typeof(Dias), 2);
 Console.WriteLine("The 2th day in the enum is " + name); //The 2th day in the enum is Quarta
 foreach (int values in Enum.GetValues(typeof(Dias)))
@@ -767,7 +775,7 @@ Como as estruturas são diferentes das classes
 - É um tipo de valor, não um tipo de referência (classe)
 
 
-```bash
+```csharp
 class Program
 {
     static void Main(string[] args)
@@ -828,7 +836,7 @@ Uma área do .NET Framework na qual você pode ver o uso de genéricos está no 
 
 É por isso que os Nullables foram adicionados ao C# 2.0. Um Nullable é um wrapper em torno de um tipo de valor com um sinalizador booleano que ele armazena se o Nullable tiver um valor definido. Pense nisso como algo como a seguinte estrutura.
 
-```bash
+```csharp
 [Serializable]
 public struct Nullable<T>where T : struct
 {
@@ -854,7 +862,7 @@ No caso de Nullable<T>, não faria sentido se T pudesse ser um tipo de referênc
 Ao trabalhar com um tipo de referência, o valor padrão é nulo; com um tipo de valor como int, é 0. Mas qual é o valor padrão ao trabalhar com um parâmetro de tipo genérico? Nesse caso, você pode usar a palavra-chave padrão especial (T). Isso fornece o valor padrão para o tipo específico de T. 
 
 
-```bash
+```csharp
 public void MyGenericMethod<T>()
 {
     T defaultValue = default(T);
@@ -868,7 +876,7 @@ A maioria dos tipos de coleção possui uma versão genérica e uma não genéri
 
 As coleções não genéricas podem ser encontradas em System.Collections e coleções genéricas podem ser encontradas em System.Collections.Generic. Se você usar um tipo de valor como parâmetro de tipo para uma coleção genérica, precisará eliminar todos os cenários nos quais o boxe pode ocorrer. Por exemplo, se seu tipo de valor não implementar IEquatable <T>, seu objeto precisará de um box para chamar Object.Equals (Object) para verificar a igualdade. O mesmo vale para a interface IComparable <T>. Ao usar tipos de referência, você não terá esses problemas.
 
-```bash
+```csharp
 class Program
 {
     static void Main(string[] args)
@@ -908,7 +916,7 @@ O .NET fornece várias classes e interfaces genéricas. Isso existe no namespace
 | ```HashSet<T>``` |```List<T>``` | ```Stack<T>``` | ```IComparer<T>```  |  ```IEnumerator<T>``` |
 | ```LinkedList<T>``` |  ```Queue<T>```  |  ```ICollection<T>``` |  ```IEnumerable<T>``` | 	```ILIst<T>```  |
 
-```bash
+```csharp
 public class NodeList<T>
 {
     private List<T> nodes;
@@ -967,7 +975,7 @@ class Program
 
 A definição de tipos genéricos é feita através do uso de um parâmetro de tipo genérico entre colchetes angulares, <T>.T é apenas a representação padrão para tipos genéricos usada na maioria da documentação relativa aos genéricos. Você pode usar a letra de sua própria escolha. Um exemplo de uma classe genérica a seguir:
 
-```bash
+```csharp
 // We use <> to specify Parameter type 
 public class GFG<T>
 {
@@ -1027,7 +1035,7 @@ Embora uma classe seja demonstrada aqui chamada GFG<T>, você deve examinar o na
 
 Métodos genéricos também serão declarados com parâmetros de tipo. Isso significa que, como a assinatura da classe, a assinatura do método usará um espaço reservado para o tipo que será passado para o método. Da mesma maneira que as classes genéricas são seguras para o tipo e não exigem boxe/unboxing ou conversão explícita, os métodos genéricos também compartilham essa mesma característica. Um dos exemplos mais simples que existem no MSDN e em vários outros exemplos de documentação está usando um método de troca (Swap). A troca é uma função comumente usada em algoritmos de ordenação simples. Um exemplo de método de troca genérico a seguir:
 
-```bash
+```csharp
 // example of generic method with type parameters
 public static void Swap<T>(ref T valueOne, ref T valueTwo)
 {
@@ -1052,7 +1060,7 @@ for (int i = 0; i < arrInts.Length; i++)
 
 Na assinatura do método, você ainda usa modificadores de acesso e tipos de retorno. No exemplo acima, o método é público e o tipo de retorno é nulo. Em seguida, vem o nome do método Swap que, semelhante à classe genérica, usa colchetes angulares e um espaço reservado de tipo<T>. Os parâmetros usam a palavra-chave ref e o espaço reservado T significa que os argumentos serão do tipo T, com base no tipo usado no momento em que o método é chamado. Os argumentos podem ser tipos de valor ou tipos de referência. A palavra-chave ref indica que os argumentos estão sendo passados por referência. O método atua sobre os valores reais passados através da referência ao endereço da memória para os argumentos. A seguir, alguns exemplos de métodos que utilizam Multiparâmetros onde os argumentos são passados como valor e não referência:
 
-```bash
+```csharp
 public void MultipleGenericMethodArgs<T, U>(T first, U second)
 {
     Console.WriteLine("{0}: {1}", first, second);
@@ -1073,7 +1081,7 @@ Console.WriteLine(FromMultiple); //0
 
 O C# permite adicionar uma cláusula where simples. A cláusula where em uma definição genérica especifica restrições sobre os tipos que são usados como argumentos para parâmetros de tipo em um tipo genérico, método, delegado ou função local. As restrições podem especificar interfaces, classes básicas ou exigir que um tipo genérico seja um tipo de referência, valor ou não gerenciado. Eles declaram capacidades que o argumento do tipo deve ter. 
 
-```bash
+```csharp
 public void MyGenericMethod<T>(T parameter) { /*....*/ }
 public void MyGenericMethod2<T>(T parameter) where T : class { /*....*/ }
 ```
@@ -1095,7 +1103,7 @@ Na Tabela abaixo, você pode ver as diferentes restrições que pode usar. Eles 
 
 É possível aplicar restrições a vários parâmetros e várias restrições a um único parâmetro, conforme mostrado no exemplo a seguir:
 
-```bash
+```csharp
 class Base { }
 class Test<T, U>
 where U : struct
@@ -1105,7 +1113,7 @@ where T : Base, new()
 Várias restrições podem ser aplicadas ao mesmo parâmetro de tipo e as restrições em si podem ser tipos genéricos, da seguinte maneira:
 
 
-```bash
+```csharp
 classEmployeeList<T>where T : Employee, IEmployee, System.IComparable<T>, new()
 {
 // ...
@@ -1115,7 +1123,7 @@ classEmployeeList<T>where T : Employee, IEmployee, System.IComparable<T>, new()
 
 	As restrição podem ser aplicadas também em métodos genéricos:
 
-```bash
+```csharp
 public static void OpEqualsTest<T>(T s, T t) where T : class
 {
     System.Console.WriteLine(s == t);
@@ -1129,21 +1137,21 @@ OpEqualsTest<string>(s1, s2);
 
 	Abaixo, alguns exemplos de uso de restrições de classes genéricas:
 
-```bash
+```csharp
 public class NodeList<T>where T : struct
 ```
 <p align="center">
   <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaowhere.png" alt="Image" width="100%" />
 </p>
 
-```bash
+```csharp
 public class NodeList<T>where T : class
 ```
 <p align="center">
   <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaoint.png" alt="Image" width="100%" />
 </p>
  
-```bash
+```csharp
 public class Employee
 {
     public Employee() {}
@@ -1162,7 +1170,7 @@ public class NodeList<T>where T : new()
 
 
  
-```bash
+```csharp
 public class Base { }
 
 public class Employee : Base
@@ -1181,7 +1189,7 @@ public class NodeList<T>where T : Base
   <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaoBase.png" alt="Image" width="100%" />
 </p>
  
-```bash
+```csharp
 public interface IEmployee{}
 
 public class Employee : IEmployee
@@ -1200,7 +1208,7 @@ public class NodeList<T>where T : IEmployee
   <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/restricaoIEmployee.png" alt="Image" width="100%" />
 </p>
 
-```bash
+```csharp
 public class Employee : IEmployee
 {
 public Employee() { }
@@ -1241,7 +1249,7 @@ Todos os tipos de valor e referência são derivados do tipo system.object. No .
 </p>
  
 Como todos os tipos no .NET são derivados de system.object, ele pode manipular valores de todos os tipos. Por exemplo, no seguinte snippet de código, o objeto armazenou os valores de string e int.
-```bash
+```csharp
 object name = "Ali";
 object age = 22;
 ```
@@ -1261,7 +1269,7 @@ Tipos anônimos são criados usando um novo operador com inicializador de objeto
 
 Sintaxe: var variableName = new {/ * inicializador de objetos * /};
 
-```bash
+```csharp
 var person = new { Name = "Ali", Age = 22 };
 Console.WriteLine("Name = {0}", person.Name);// Ali
 Console.WriteLine("Age = {0}", person.Age);// 22
@@ -1279,7 +1287,7 @@ Console.WriteLine("Age = {0}", person.Age);// 22
 
 O tipo dinâmico é usado para armazenar e manipular quaisquer dados cuja definição de tipos e erros de operação sejam determinados em tempo de execução. Ignora verificações em tempo de compilação. Portanto, é fácil acessar APIs COM e DOM com tipo dinâmico. É definido usando uma palavra-chave dinâmica.
 
-```bash
+```csharp
 dynamic price = 20;
 Console.WriteLine(price.GetType()); // System.Int32
 
@@ -1289,7 +1297,7 @@ Console.WriteLine(name.GetType()); // System.String
 
 Diferentemente do tipo implícito (palavra-chave var), o tipo dinâmico pode armazenar valores de tipos diferentes com a mesma variável dinâmica. Portanto, uma variável dinâmica pode alterar seu tipo em tempo de execução.
 
-```bash
+```csharp
 dynamic tipo_dinamico = "Ali";
 Console.WriteLine(tipo_dinamico.GetType()); // System.String
 
@@ -1308,7 +1316,7 @@ Console.WriteLine(tipo_dinamico.GetType()); // System.Double[]
 
 Normalmente, o tipo de valor não pode ser atribuído com valor nulo. Mas com o tipo Nullable, o tipo de valor pode ser atribuído com valor nulo. O tipo de valor pode se tornar anulável usando "?".
 
-```bash
+```csharp
 bool? isMarried = null;
 isMarried = true;
 ```
@@ -1316,14 +1324,14 @@ isMarried = true;
 
 Já o operador null-coalaescing “??” possibilita definir um valor padrão caso a variável seja nula, permitindo assim a atribuição de valor a uma variável de mesmo tipo não-anulável.
 
-```bash
+```csharp
 Nullable<int> idade = null;
 int Age = idade ?? 3;
 ```
 
 O HasValue retornará true se o objeto tiver sido atribuído a um valor; se não tiver sido atribuído nenhum valor ou tiver sido atribuído um valor nulo, ele retornará false.
 
-```bash
+```csharp
 if (i.HasValue) Console.WriteLine(i.Value); // or Console.WriteLine(i)
 else Console.WriteLine("Null");
 ```
@@ -1331,7 +1339,7 @@ else Console.WriteLine("Null");
 
 Nulo é considerado menor que qualquer valor. Portanto, os operadores de comparação não funcionarão com nulo. Considere o seguinte exemplo em que i não é menor que j, maior que j nem igual a j:
 
-```bash
+```csharp
 int? i = null;
 int j = 10;
 
@@ -1342,7 +1350,7 @@ else Console.WriteLine("Could not compare");
 A classe estática Nullable fornece um método de comparação para comparar tipos anuláveis. 
 
 
-```bash
+```csharp
 if (Nullable.Compare<int>(i, j) < 0) Console.WriteLine("i < j");
 elseif (Nullable.Compare<int>(i, j) > 0) Console.WriteLine("i > j");
 else Console.WriteLine("i = j");
@@ -1350,7 +1358,7 @@ else Console.WriteLine("i = j");
 
 
 Ele também possui um método GetUnderlyingType que retorna o argumento de tipo subjacente de tipos anuláveis.
-```bash
+```csharp
 public class Example
 {
     public int? MyMethod()
@@ -1384,7 +1392,7 @@ Diferentemente das classes normais, as classes estáticas não pode ser instanci
 
 Diferente da classe normal, a classe estática não contém um construtor de instância pública. Ele contém um construtor estático privado para inicializar membros estáticos. É chamado automaticamente antes da criação da primeira instância ou de qualquer membros estáticos são referenciados.
 
-```bash
+```csharp
 static class Helper
 {
     public static int age;
@@ -1425,7 +1433,7 @@ string.Concat (“Para encaixar ou não encaixar”, 42, verdadeiro);
 
 Se você colocar esse código no Visual Studio e passar o mouse sobre a função Concat, poderá veja que são necessários três argumentos, todos do tipo objeto. Você pode perceber que está lidando com uma string, um int e um valor booleano. Isto é onde o boxe entra. O exemplo abaixo mostra um boxing, coloca um int dentro de um objeto, e o recupera novamente.
 
-```bash
+```csharp
 int i = 42;
 object o = i;
 int x = (int)o;
@@ -1442,7 +1450,7 @@ Unboxing é uma conversão do tipo de objeto para o tipo de valor. Em Unboxing, 
 
 Unboxing também consome mais memória e mais tempo. Desde que, quando um tipo de objeto precisa ser descompactado, o valor do tipo de objeto armazenado no heap deve ser transferido para o novo tipo de valor armazenado na pilha. O tipo de objeto cujo valor foi recuperado estará agora disponível para coleta de lixo.
 
-```bash
+```csharp
 static void Main(string[] args)
 {
     object ob;
@@ -1482,7 +1490,7 @@ Se você executar uma operação unbox inválida, o tempo de execução lançar�
 
 A única outra coisa importante a saber é que, quando o boxe e o unboxing acontecem (como mostrado no exemplo, o unboxing é claro), você precisa converter explicitamente seu objeto de uma referência para um tipo de valor. O boxe, por outro lado, não é tão óbvio. Por exemplo, chamar GetType sempre coloca seu tipo de valor em caixa, porque GetType é definido apenas em um objeto e não pode ser substituído. O boxe também ocorre em outras situações. Uma coisa que pode surpreender é que um tipo de valor está em caixa quando você o usa como interface. Este trecho de caixa contém o valor 3 para que você possa usá-lo como uma interface.
 
-```bash
+```csharp
 IFormattable x = 3;
 ```
 
@@ -1501,7 +1509,7 @@ O compilador fornece garantias que alguns problemas não poderão ocorrer após 
 Porém, existem muitos casos em que uma variável de um tipo específico precisa armazenar dados de um tipo diferente. Casting e Converting são os processos fornecidos para alterar o tipo de dados. Existem dois tipos principais de conversões de tipo em C#:
 - **Implícito**: Essas conversões ocorrem automaticamente porque não há risco de perda de dados (do tipo maior para o menor). Por exemplo, uma variável maior do tipo long (8 bytes inteiros) pode armazenar qualquer valor que um int (4 bytes) possa armazenar
 
-```bash
+```csharp
 long z = 7;
 int x = 7;
 z = x;
@@ -1515,7 +1523,7 @@ x = z;
 
 Outra conversão implícita é a de um tipo de referência para um de seus tipos básicos. Por exemplo, cada tipo de referência pode ser armazenado dentro de um objeto porque, em última análise, cada tipo de referência herda de um objeto. Se um objeto implementa uma interface, ele também pode ser convertido implicitamente na interface. o exemplo abaixo mostra a conversão implícita de um objeto em um de seus tipos básicos.
 
-```bash
+```csharp
 HttpClient client = new HttpClient();
 object o = client;
 IDisposable dc = client;
@@ -1523,7 +1531,7 @@ IDisposable dc = client;
 
 - **Explícito**: Se a conversão não puder ser feita sem o risco de perda de informações, é necessária uma conversão explícita.
 
-```bash
+```csharp
 int x=7;
 double y=12.6;
 x = (int)y;
@@ -1531,7 +1539,7 @@ x = (int)y;
 
 **Operador “as”** é uma palavra-chave usada para explicitamente converter um tipo para outro. Se um tipo for convertido com êxito, ele retornará valor nesse tipo. Se um tipo não se converter adequadamente, ele retornará valor nulo.
 
-```bash
+```csharp
 public class  Person { }
 public class Employee : Person { }
 public class Manager : Person { }
@@ -1543,7 +1551,7 @@ Employee employe = person as Employee;
 
 As mesmas regras para converter dados em um tipo para outro tipo compatível também são válidas para Arrays. Até os operadores "is" e "as" funcionam para Arrays.
 
-```bash
+```csharp
 // Implicit cast to an array of Persons
 Employee[] employes = new Employee[10];
 Person[] persons = employes;
@@ -1578,7 +1586,7 @@ Cada um dos tipos de dados C# primitivos (int, bool, doubl, etc) possui um méto
 
 Você pode usar um bloco try-catch para proteger o programa dessas exceções, mas para tornar a verificação de valor ainda mais fácil, cada uma dessas classes também fornece um método TryParse. Este método tenta analisar uma string e retorna true se for bem-sucedido oufalse se falhar. Se for bem-sucedido, o método também salvará o valor analisado em uma variável de saída que você passa para o método.
 
-```bash
+```csharp
 int value = Convert.ToInt32(“42”);
 value = int.Parse(“42”);
 bool success = int.TryParse(“42”, out value);
@@ -1595,7 +1603,7 @@ A lista abaixo contém os tipos de dados mais comuns que fornecem os métodos Pa
 
 Geralmente, os métodos de análise funcionam razoavelmente bem se a entrada deles faz sentido. Por exemplo, a declaraçãoint.Parse ("645") retorna o valor 645 sem confusão. Mesmo o método Parse do tipo de dados DateTime pode fazer sentido com as entradas mais razoáveis. Por exemplo, no inglês dos EUA, as seguintes declarações são todas convertidas para 15h45 de 1º de abril de 2014.
 
-```bash
+```csharp
 DateTime.Parse("3:45 PM April 1, 2014").ToString()
 DateTime.Parse("1 apr 2014 15:45").ToString()
 DateTime.Parse("15:45 4/1/14").ToString()
@@ -1604,7 +1612,7 @@ DateTime.Parse("3:45pm 4.1.14").ToString()
 
 Por padrão, no entanto, os métodos de análise não tratam bem os valores da moeda. Por exemplo, o código a seguir lança uma FormatException (na localidade em inglês dos EUA): 
 
-```bash
+```csharp
 valor decimal = decimal.Parse ("$123.456,78");
 ```
 
@@ -1612,13 +1620,13 @@ A razão pela qual esse código falha é que, por padrão, o método decimal.Par
 
 Se você fornecer quaisquer valores NumberStyles, quaisquer valores padrão serão removidos. Por exemplo, por padrão decimal.Parse permite milhares e separadores decimais. Se você passar o valor NumberStyles.AllowCurrencySymbol para o método, ele não permitirá mais milhares e separadores decimais. Para permitir todos os três, você precisa passar o método para todos os três valores, como no código a seguir:
 
-```bash
+```csharp
 decimal amount = decimal.Parse("$123,456.78", NumberStyles.AllowCurrencySymbol | NumberStyles.AllowThousands | NumberStyles.AllowDecimalPoint);
 ```
 
 Como alternativa, você pode transmitir ao método o estilo composto Currency, conforme mostrado no código a seguir:
 
-```bash
+```csharp
 decimal amount = decimal.Parse("$123,456.78", NumberStyles.AllowCurrencySymbol);
 ```
 
@@ -1643,7 +1651,7 @@ Básicamente não só no char como em int, float entre outros, temos os tipos si
   <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/tabminmax.png" alt="Image" width="100%" />
 </p>
  
-```bash
+```csharp
 long z = 7;       
 int x = 7;
 double y = 12.6;
@@ -1662,7 +1670,7 @@ xx = Convert.ToInt32(yy);
 O C# permite que os usuários forneçam a definição de conversão para seu tipo personalizado. Sua definição é semelhante à definição de sobrecarga do operador. A conversão definida pelo usuário é de dois tipos:
 - **Implícita**: A conversão implícita ocorre automaticamente, um método estático especial é definido com uma palavra-chave implícita e de operador dentro da definição de tipo.
 
-```bash
+```csharp
 class Byte
 {
     public int
@@ -1687,7 +1695,7 @@ Onde:
 - **Explícita**: Casting é necessário para converter um tipo em outro, um método estático especial é definido com uma palavra-chave explícita e operator dentro da definição de tipo. Pode haver perda de dados na conversão explícita.
 
 
-```bash
+```csharp
 class Person
 {
     public int Age { get; set; }
@@ -1713,7 +1721,7 @@ Onde:
 Suponha que você esteja trabalhando em uma classe Money que encapsule todos os tipos de algoritmos de arredondamento para trabalhar com moedas diferentes. 
 
 
-```bash
+```csharp
 class Money
 {
     public Money(decimal amount)
@@ -1747,7 +1755,7 @@ Adicionar esses tipos de conversão pode realmente melhorar a usabilidade do seu
 A classe System.BitConverter fornece métodos para converter valores de e para matrizes de bytes. O método GetBytes retorna uma matriz de bytes que representa o valor que você passa para ele. Por exemplo, se você passar um int (que ocupa 4 bytes de memória) no método, ele retornará uma matriz de 4 bytes que representa o valor.A classe System.BitConverter também fornece métodos como ToInt32 e ToSingle para converter byte os valores armazenados nas matrizes retornam a tipos de dados específicos. Por exemplo, suponha que uma função API retorne dois valores de 16 bits compactados nas metades esquerda e direita de um número inteiro de 32 bits. Um inteiro assinado de 16 bits, que pode conter um valor entre -32.768 e 32.767. Você pode usar o seguinte código para descompactar os dois valores:
 
 
-```bash
+```csharp
 int packedValue;
 
 // The API function call sets packedValue here....
@@ -1813,7 +1821,7 @@ Para usar P/invoke para acessar um recurso não gerenciado, como uma chamada de 
 O programa aplica o atributo a uma declaração de método externo estático. A declaração inclui quaisquer parâmetros que o método requeira e define o tipo de retorno do método. Essa declaração deve estar dentro de uma classe como a classe que contém o código que usa o método.Por exemplo, o seguinte fragmento de código mostra onde a instrução using e o atributo DllImport são colocados no programa. 
 
 
-```bash
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -1853,7 +1861,7 @@ O primeiro parâmetro é o caminho do arquivo que você deseja converter para um
 
 Geralmente, o tipo de instrução DllImport mostrado anteriormente é bom o suficiente para fazer o trabalho. Se precisar de mais controle sobre como os valores são convertidos entre código gerenciado e não gerenciado, você pode adicionar o atributo MarshalAs aos parâmetros do método ou valor de retorno. O código a seguir mostra uma nova versão da instrução DllImport para o método GetShortPathName que usa os atributos MarshalAs:
 
-```bash
+```csharp
 [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
 staticexternuint GetShortPathName([MarshalAs(UnmanagedType.LPTStr)] string lpszLongPath,
     [MarshalAs(UnmanagedType.LPTStr)] StringBuilder lpszShortPath, uint cchBuffer);
@@ -1861,7 +1869,7 @@ staticexternuint GetShortPathName([MarshalAs(UnmanagedType.LPTStr)] string lpszL
 
 O primeiro atributo MarshalAs indica que o primeiro e segundo parâmetro é um tipo de dados LPTStr no código não gerenciado e deve ser tratado como uma string e StringBuilder, respectivamente, no código gerenciado.Claro, se você usar esta declaração, precisará alterar o código para usar um StringBuilder para um buffer em vez de uma matriz de caracteres.
 
-```bash
+```csharp
 var shortName = new StringBuilder();
 long length = GetShortPathName(longName, shortName, 1024);
 Console.WriteLine(shortName); // C:\Users\RICARDO\DOCUME~1
@@ -1895,7 +1903,7 @@ PM> Install-Package Microsoft.Office.Interop.Excel
 O código abaixo mostra como a palavra-chave dinâmica permite exportar alguns dados para o Excel.
 
 
-```bash
+```csharp
 
 class Program
 {
@@ -1937,7 +1945,7 @@ Neste exemplo, o tipo de planilha é dinâmico. As instruções que usam a vari�
 
 Para um exemplo mais específico de C#, considere o código a seguir, demonstrado pelo programa de exemplo CloneArray:
 
-```bash
+```csharp
 
 // Make an array of numbers.
 int[] array1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -1967,7 +1975,7 @@ A próxima instrução lança corretamente o objeto em um int[] para que ele fun
 O .NET Framework oferece duas classes especiais ao trabalhar com tipos dinâmicos: 
 1.	**DynamicObject**: é o mais flexível. Ao herdar do DynamicObject, você pode substituir membros que permitem substituir operações como obter ou definir um membro, chamar um método ou realizar conversões. Usando DynamicObject, você pode criar objetos verdadeiramente dinâmicos e ter controle total sobre como eles operam em tempo de execução. 
 
-```bash
+```csharp
 public class SampleObject : DynamicObject
 {
 public override bool TryGetMember(GetMemberBinder binder, outobject result)
@@ -1983,7 +1991,7 @@ Console.WriteLine(obj.SomeProperty); // Displays ‘SomeProperty’
 
 2.	**ExpandoObject**: é uma implementação selada que permite obter e definir propriedades em um tipo. No ASP.NET Model-View-Controller (MVC), por exemplo, existe um ViewBag que pode ser usado para passar dados do Controller para o View. ViewBag é um ExpandoObject. Em vez de criar uma nova propriedade de tipo estaticamente para cada elemento de dados que você deseja transmitir, você pode usar o ViewBag, como mostra abaixo.
 
-```bash
+```csharp
 public ActionResult Index()
 {
     ViewBag.MyDynamicValue = “This property is not statically typed”;
@@ -2030,7 +2038,7 @@ Os campos vêm em dois tipos básicos, instância e estática, e uma classe pode
 |Campo| 	- Campo é uma variável privada que só pode ser acessada por código dentro do objeto, só está disponível de dentro do objeto | 
 |Propriedade  | - Se parecem com membros de dados públicos (public data members), mas, são métodos especiais chamados accessors <br> - Uma propriedade é usada para fornecer acesso público, capacidade de ler e gravar dados, ao campo privado <br> - Especificamente, eles fornecem encapsulamento para os campos. Ele cria uma caixa de areia sobre os campos, o que a protege de salvar dados falsos. |  
 
-```bash
+```csharp
 public class  Person
 {
     //CAMPO: PRIVATE
@@ -2071,7 +2079,7 @@ Em C#, os dados são armazenados em uma única variável ou em uma matriz. Para 
 
 As propriedades são de dois tipos:
 1.	**Propriedade Full**: nesta propriedade, declaramos campos particulares e os encapsulamos dentro da definição de uma propriedade.
-```bash
+```csharp
 class Student_Full
 {
     private int age;
@@ -2100,7 +2108,7 @@ Os indexadores são usados para encapsular o valor de uma matriz. Ele se comport
 2.	Usar o valor do índice errado em uma matriz;
 3.	Alterar a referência de uma matriz do mundo exterior.
 
-```bash
+```csharp
 class Temperature
 {
     //declare private array of float type.
@@ -2212,7 +2220,7 @@ Public
 
 Membros definidos com especificadores de acesso public podem ser acessados dentro e fora da classe. Os dados públicos também podem ser acessíveis de fora do projeto.
 
-```bash
+```csharp
 class Access_Publico
 {
     public void Method()
@@ -2229,7 +2237,7 @@ publico.Method(); // Método Público
 Membros definidos com especificadores de acesso privado são acessíveis apenas dentro da classe e não podem ser acessados de fora da classe. Use métodos públicos para acessar um membro privado no mundo exterior.
 
 
-```bash
+```csharp
 class Access_Privado
 {
     private int age = 10;
@@ -2253,7 +2261,7 @@ Console.WriteLine("Private age = {0}", age); // Private age = 10
 
 Membros definidos com especificadores de acesso protegido podem ser acessados dentro da classe e também dentro de suas classes filho. Eles não podem ser acessíveis fora da classe. Base é uma palavra-chave usada para acessar membros definidos como especificadores de acesso público/protegido em umparent/classe base.
 
-```bash
+```csharp
 class Parent
 {
     protected int age;
@@ -2276,7 +2284,7 @@ filho.Display(); // Protect Age is = 0
 
 Dentro da montagem do projeto, os membros definidos com especificadores de acesso interno podem ser acessados dentro e fora da classe. Mas eles não são acessíveis a nenhuma classe definida fora da montagem do projeto.Em C#, as classes por padrão são internas, o que significa que nenhum assembly externo pode acessar as classes padrão, eles só poderão ser acessíveis a outros assemblies se as classes estiverem marcadas com especificadores de acesso público.
 
-```bash
+```csharp
 class Access_Interno
 {
     internal int age = 20;
@@ -2291,7 +2299,7 @@ Console.WriteLine("Internal age = {0}", age_int); // Internal age = 20
 
 Protegido interno é uma união de comportamento interno e protegido de especificadores de acesso, que diz que, dentro da montagem do projeto, os membros definidos com especificadores de acesso protegido interno podem ser acessados como bem como fora da classe e também para as classes filho. Mas eles não são acessíveis a qualquer classe definida fora do escopo de montagem do projeto.Membros protegidos internos não são acessíveis apenas às classes filho, mas também são acessíveis a outras classes da montagem do mesmo projeto.
 
-```bash
+```csharp
 class Person
 {
     internal protected int idade = 30;
@@ -2413,7 +2421,7 @@ Em C#, o polimorfismo estático pode ser implementado de duas maneiras:
 Os métodos são definidos pelo modificador, tipo de retorno, nome e número e tipo de argumentos. Mas um método também tem uma assinatura. A assinatura é o que identifica exclusivamente o método de qualquer outro método com o mesmo nome e consiste no nome do método mais o tipo de dados e tipo dos parâmetros no método. Podemos 'sobrecarregar' métodos com base em suas assinaturas exclusivas. Em C#, podemos sobrecarregar um método de duas maneiras:
 1.	**Por tipos de parâmetros**: sobrecarregado definindo diferentes tipos de parâmetros para cada método que compartilham o mesmo nome do método.
 
-```bash
+```csharp
 class Calculator
 {
     public void Add(int a, int b)
@@ -2436,7 +2444,7 @@ cal.Add("C", "Sharp"); // Sum of strings = CSharp
 
 2.	**Pelo comprimento dos parâmetros**:sobrecarregado definindo um comprimento de parâmetro diferente para cada método que compartilha o mesmo nome do método.
 
-```bash
+```csharp
 
 class Person
 {
@@ -2485,7 +2493,7 @@ Outro uso comum de métodos sobrecarregados está nos construtores de classes co
 Em C#, podemos sobrecarregar a definição de um operador para tipos personalizados (classe, estrutura). Para sobrecarregar a definição de um operador, definimos métodos especiais dentro de um tipo personalizado. Esses métodos ajudam o compilador a distinguir entre diferentes significados de um operador que produz resultados diferentes para um tipo diferente. Geralmente, em C#, podemos sobrecarregar três tipos de operadores:
 1.	Operadores Unários: opera em um único operando (+, -, !, ++, -, true, false). Esses são operadores unários que podem ser sobrecarregados em C#.
 
-```bash
+```csharp
 class Distance_Unitary
 {
     public int meter { get; set; }
@@ -2507,7 +2515,7 @@ distance++ é chamado método operator ++; passou seu próprio objeto para o par
 
 2.	**Operadores binários**: opera em dois operandos (+, -, *, /, %, &, |, ^, <<, >>). Esses são operadores binários que podem ser sobrecarregados em C#
 
-```bash
+```csharp
 class Student_Binary
 {
     public int Marks { get; set; }
@@ -2531,7 +2539,7 @@ Estudante s3 = s1 + s2; quando é chamado, o operador + método será executado,
 
 3.	**Operadores de comparação**: opera em dois operandos e retorna o valor booleano quando compara o valor do operando do lado esquerdo com o valor do operando do lado direito (==, !=, <, >, <=, >=). Esses são operadores de comparação que podem ser sobrecarregados em C#.
 
-```bash
+```csharp
 class Distance_Compare
 {
     public int meter { get; set; }
@@ -2568,7 +2576,7 @@ Classes abstratas não podem ser instanciadas. É usado como classe base, onde f
 
 Ao contrário do método virtual, o método abstrato não tem sua definição de método. Assim, sua classe derivada deve implementar a definição de método abstrato, caso contrário, o erro de tempo de compilação será gerado. Os métodos abstratos sempre declaram dentro de uma classe abstrata.
 
-```bash
+```csharp
 abstract class Vehicle_Abs
 {
     public abstract void Run();
@@ -2602,7 +2610,7 @@ Virtual é uma palavra-chave usada com método na classe base para definir um m�
 - Definir nova implementação não virtual desses membros que ocultam as implementações da classe base
 Portanto, ao chamar o nome do método, o tempo de execução determinará qual método chamar.Os métodos e propriedades virtuais permitem que classes derivadas estendam uma classe base sem a necessidade de usar a implementação da classe base de um método. Uma interface fornece uma outra maneira de definir um método ou conjunto de métodos cuja implementação é deixada para classes derivadas.
 
-```bash
+```csharp
 public class BaseClass
 {
     public int WorkField;
@@ -2663,7 +2671,7 @@ Os campos não podem ser virtuais, apenas os métodos, propriedades, eventos e i
  
 Quando uma classe derivada substitui um membro virtual, esse membro é chamado, mesmo quando uma instância dessa classe está sendo acessada como uma instância da classe base. O código a seguir mostra um exemplo:
 
-```bash
+```csharp
 BaseClass dc = new DerivedClass();
 dc.DoWork();
 // Calls the new method DerivedClass.
@@ -2684,7 +2692,7 @@ Mas observe aqui que, como não foi utilizado o operador new, o campo WorkField 
 Se você quiser que o seu membro derivado tenha o mesmo nome de um membro de uma classe base, mas não quiser que ele participe da invocação virtual, será possível usar a palavra-chave new. A palavra-chave new é colocada antes do tipo de retorno de um membro de classe que está sendo substituído. O código a seguir mostra um exemplo:
 
 
-```bash
+```csharp
 public class BaseClass
 {
     public int WorkField;
@@ -2749,7 +2757,7 @@ ndc_four.DoWork();
 Os membros virtuais permanecem virtuais por tempo indeterminado, independentemente de quantas classes foram declaradas entre o membro virtual e a classe que originalmente o declarou. Se a classe BaseClass declara um membro virtual, a classe DerivedClass deriva de BaseClass e a classe ThirdClass eFourthclass Deriva de DerivedClass, a classe ThirdClass/FourthClass herda o membro virtual e tem a opção de substituí-lo, independentemente de a classe DerivedClass ter declarado uma substituição para esse membro. O código a seguir mostra um exemplo, de como a herança multi-níveis pode ficar confusa e com resultados imprevisíveis se nãp possuírem um controle de heranças:
 
 
-```bash
+```csharp
 BaseClass multi_bc = new BaseClass();
 multi_bc.DoWork();
 // Calls the new method BaseClass.
@@ -2790,7 +2798,7 @@ Além das explicações mencionadas referentes às classes sealed, devemos consi
 Uma classe derivada pode interromper a herança virtual, declarando uma substituição como sealed. Isso exige a colocação da palavra-chave sealed antes da palavra-chave override na declaração de membro de classe. O código a seguir mostra um exemplo:
 
 
-```bash
+```csharp
 public class SealedThirdClass : DerivedClass
 {
     public sealed override void DoWork()
@@ -2820,7 +2828,7 @@ No exemplo anterior, o método DoWork não será mais virtual para qualquer clas
 Se invés do método o selead estiver na classe como abaixo, não será possível nem herdar da classe.
 
 
-```bash
+```csharp
 public sealed class SealedThirdClass : DerivedClass
 ```
 <p align="center">
@@ -2830,7 +2838,7 @@ public sealed class SealedThirdClass : DerivedClass
 
 Métodos lacrados podem ser substituídos por classes derivadas usando a palavra-chave new, como mostra o exemplo a seguir:
 
-```bash
+```csharp
 public class DerivaSeal_FourthClass : SealedThirdClass
 {
     public new void DoWork()
@@ -2849,7 +2857,7 @@ Neste caso, se DoWork é chamado em DerivaSeal_FourthClass usando uma variável 
 
 A classe derivada que substituiu um método ou propriedade ainda pode acessar o método ou propriedade na classe base usando a palavra-chave base. O código a seguir mostra um exemplo:
 
-```bash
+```csharp
 public class BaseClass
 {
     public int WorkField;
@@ -2910,7 +2918,7 @@ No .NET 4.0, foi adicionado um novo recurso chamado métodos de extensão. Os m�
 
 Lembre-se de que a diferença entre um método estático regular e um método de extensão é a palavra-chave especial this para o primeiro argumento. Abaixo um exemplo de método estático regular:
 
-```bash
+```csharp
 static class Helper
 {
     public static int age;
@@ -2935,7 +2943,7 @@ Console.WriteLine(Helper.isLessThan_Extension(16)); //True
 
 Agora, um método de extensão em classe não estática utilizando o parâmetro this:
 
-```bash
+```csharp
 public class  Product
 {
     public decimal Price { get; set; }
@@ -2983,7 +2991,7 @@ As interfaces são úteis ao usar o encapsulamento. Mais abaixo, na implementaç
 
 Como exemplo de implementação explícita da interface, consulte o Entity Framework (um mapeador de objeto-relacional que faz parte do .NET Framework). Ao trabalhar com o Entity Framework, você trabalha com uma classe DbContext, que é um invólucro do ObjectContext e expõe uma interface mais fácil de usar. O DbContext implementa a seguinte interface:
 
-```bash
+```csharp
 public interface IObjectContextAdapter
 {
     objectContext ObjectContext { get; }
@@ -2992,20 +3000,20 @@ public interface IObjectContextAdapter
 
 Embora a interface mostre uma propriedade ObjectContext, o código a seguir não será compilado:
 
-```bash
+```csharp
 DbContext ctx = …; // create a new context
 var context = ctx.ObjectContext;
 ```
 
 O seguinte será compilado:
 
-```bash
+```csharp
 var adaptedContext = ((IObjectContextAdapter)ctx).ObjectContext;
 ```
 
 É possível porque o DbContext implementa a interface IobjectContextAdapterexplicitamente. A implementação explícita da interface significa que um elemento do tipo de interface pode ser acessado apenas ao usar a interface diretamente. Você pode criar uma implementação explícita da interface adicionando o nome da interface e um ponto à implementação.
 
-```bash
+```csharp
 interface IInterfaceA
 {
     void MyMethod();
@@ -3021,7 +3029,7 @@ A classe Implementation implementa a interface IInterfaceA explicitamente. Quand
 
 Há outra situação em que a implementação explícita da interface é necessária: quando uma classe implementa duas interfaces que contêm assinaturas de método duplicadas, mas deseja uma implementação diferente para ambas. Ao implementar implicitamente essas duas interfaces, apenas um método existe na implementação. Com a implementação explícita da interface, ambas as interfaces têm sua própria implementação. O código abaixo mostra como implementar uma interface explicitamente.
 
-```bash
+```csharp
 class Program
 {
     static void Main(string[] args)
@@ -3107,7 +3115,7 @@ Conceitualmente, uma classe derivada é uma especialização da classe base. Pod
 - Mais de uma classe pode herdar do Patient.
 - A herança é transitiva; uma classe herdada do Adult (Over50, Over70) também tem acesso a propriedades e métodos no Patient
 
-```bash
+```csharp
 class Program
 {
     static void Main(string[] args)
@@ -3155,7 +3163,7 @@ public class  Child : Patient  // Use colon to establish inheritance from Patien
 	Se na classe base tivessámos um construtor que aceitasse parâmetros como abaixo:
 
 
-```bash
+```csharp
 public Patient(string FirstName, string LastName)
 {
     // Validate the first and last names. 
@@ -3171,7 +3179,7 @@ public Patient(string FirstName, string LastName)
 
 Para garantir que o construtor da classe derivada Childaproveite dessas validações, primeiro precisamos atribuir um construtor à classe Child com a mesma assinatura, ou seja, quantidade, tipos e nomes do argumentos iguais. A seguir, após a lista de argumentos, colocamos dois pontos, a palavra-chave base e quaisquer parâmetros que deseja passar para o construtor da classe base, como no exemplo abaixo:
 
-```bash
+```csharp
 public Child(string firstName, string lastName) : base(firstName, lastName)
 {
 }
@@ -3179,7 +3187,7 @@ public Child(string firstName, string lastName) : base(firstName, lastName)
 
 
 Quando um construtor usa a palavra-chave base para chamar um construtor da classe base, o construtor da classe base é executado antes que o corpo do construtor da classe filho seja executado.
-```bash
+```csharp
 Child pctor = new Child("Daryl", null);
 ```
 <p align="center">
@@ -3187,7 +3195,7 @@ Child pctor = new Child("Daryl", null);
 </p>
  
 Agora imagine uma situação onde tivéssemos muitos campos dentro de uma classe e precisássemos criar vários construtores que setassem determinados campos, como no exemplo abaixo:
-```bash
+```csharp
 public Patient(string FirstName, string LastName, string Gender)
 {
     this.FirstName = FirstName;
@@ -3206,7 +3214,7 @@ public Patient(string FirstName, string LastName, string Gender, int Age)
 
 Para evitar essa repetição de código dentro dos construtores temos a opção de fazer um construtor chame um segundo construtor através do uso da palavra-chave "this" em vez da palavra-chave base. O código a seguir mostra como o segundo construtor da classe Patientpode invocar seu primeiro construtor:
 
-```bash
+```csharp
 public Patient(string FirstName, string LastName, string Gender)
 {
     this.FirstName = FirstName;
@@ -3224,7 +3232,7 @@ Quando um construtor usa a palavra-chave “this” para chamar um segundo const
 
 Agora que entendemos o uso da palavra-chave “this” e “base”, podemos aplicar estas duas funcionalidades em conjunto na classe derivada Child incluindo mais um campo contendo o nome do pai, como se segue:
 
-```bash
+```csharp
 public string  Nome_Pai { get; set; }
 
 public Child(string firstName, string lastName) : base(firstName, lastName)
@@ -3242,7 +3250,7 @@ public Child(string firstName, string lastName, string nomepai)
 
 A herança é uma técnica poderosa, mas deve ser usada com cautela. Como já mencionado, a herança deve ser usada apenas quando você está lidando com um relacionamento “é uma espécie de”. O princípio de substituição de Liskov afirma que uma subclasse deve ser utilizável em cada local em que você pode usar uma das classes base. Eles não devem mudar repentinamente o comportamento do qual os usuários dependeriam. É fácil violar esse princípio. Considere o código abaixo.
 
-```bash
+```csharp
 class Rectangle
 {
     public virtual int Height { get; set; }
@@ -3257,7 +3265,7 @@ class Rectangle
 
 Ao olhar para essa classe Rectangle, você diria que um Square é uma espécie de Rectangle? Em matemática, isso seria verdade. Sabemos que um quadrado é um tipo especial de retângulo. Você pode modelar isso usando uma relação de herança:
 
-```bash
+```csharp
 class Square : Rectangle
 {
     public override int Width
@@ -3284,7 +3292,7 @@ class Square : Rectangle
 
 Como você sabe que está lidando com um quadrado, ajude o usuário da classe modificando as propriedades Width e Height juntas. Dessa forma, o retângulo sempre será um quadrado.Suponha que você queira usar a classe como mostrado:
 
-```bash
+```csharp
 Rectangle rect_squa = new Square();
 rect_squa.Width = 10;
 rect_squa.Height = 5;
@@ -3293,7 +3301,7 @@ Console.WriteLine("rect_squa Area:" + rect_squa.Area); // rect_squa Area:25
 
 Esse código produzirá 25. O usuário acha que está lidando com um Rectangle com uma Areacalculada, mas como o Rectangle está apontando para um Square, apenas o valor mais recente de Height é armazenado. Este é um exemplo típico de violação do princípio de substituição de Liskov. A classe Square não pode ser usada em todos os lugares onde você normalmente usaria um Rectangle.
 
-```bash
+```csharp
 Rectangle rect_rect = new Rectangle();
 rect_rect.Width = 10;
 rect_rect.Height = 5;
@@ -3323,7 +3331,7 @@ Observação:
 
 Às vezes, escrever todos os métodos definidos por uma interface pode ser bastante trabalhoso. A menos que a interface esteja bem documentada, pode ser difícil definir quais propriedades, métodos e eventos são necessários. Felizmente, o Visual Studio fornece uma ferramenta que cria código para implementar uma interface para você. Para usar a ferramenta, escreva a declaração da classe e especifique a interface:
 
-```bash
+```csharp
 interface IControls
 {
     void Start();
@@ -3346,7 +3354,7 @@ Neste ponto, o Visual Studio sabe que você não implementou a interface. Clique
 
 Abra o item Implementar interface e selecione Implementar interface ou Implementar explicitamente para fazer o Visual Studio inserir stubs de código que satisfaçam a interface.O código a seguir mostra o resultado produzido por esta ferramenta se você escolher o item Implementar explicitamente a interface:
 
-```bash
+```csharp
 public class Machine3 : IControls, IControls_2
 {
     void IControls.Start()
@@ -3373,7 +3381,7 @@ Interfaces implícitas são implementadas publicamente. É implementado quando a
 - A classe pode implementar mais de uma interface.
 
 
-```bash
+```csharp
 interface IVehicle
 {
     int Wheels { get; }
@@ -3397,7 +3405,7 @@ class Bike : IVehicle
 Interfaces explícitas são implementadas em particular. Nós os implementamos explicitamente quando é necessária uma definição separada do membro de cada interface. Por exemplo, quando uma classe implementa mais de uma interface que compartilha o nome de um membro comum, é necessária uma implementação explícita da interface para separar a definição de cada membro.
 
 
-```bash
+```csharp
 interface IEnglish
 {
     int Marks { get; }
@@ -3445,7 +3453,7 @@ Console.WriteLine("English Marks = {0} Math Marks = {1}",english, math);
 
 Tendo duas classes Student e TeachingAssistant que implementam a interface IStudent, portanto, elas incluem código para fornecer os recursos da interface.Você pode evitar duplicar esse código delegando o trabalho de implementar a interface para um objeto Student dentro da classe TeachingAssistant. Sempre que o objeto TeachingAssistant precisar executar alguma tarefa especificada pela interface IStudent, ele faz com que o objeto Student faça o trabalho.
 
-```bash
+```csharp
 
 public interface IStudent
 {
@@ -3512,7 +3520,7 @@ A forte verificação de tipo fornecida pela versão genérica impede que você 
 
 O código a seguir mostra a classe Personcom esse tipo de método CompareTo:
 
-```bash
+```csharp
 class Person : IComparable
 {
     public string  Name { get; set; }
@@ -3531,7 +3539,7 @@ class Person : IComparable
 
 O código a seguir mostra a classe Personimplementando a versão genérica da interface IComparable:
 
-```bash
+```csharp
 class Person_Generic : IComparable<Person_Generic>
 {
     public string  Name { get; set; }
@@ -3545,7 +3553,7 @@ class Person_Generic : IComparable<Person_Generic>
 
 Nesta versão, o nome da interface é seguido por um parâmetro genérico informando o tipo de objeto com o qual a classe pode se comparar, neste caso Person_Generic. O parâmetro do método CompareTo é um objeto desse tipo, portanto, o CompareTo não precisa verificar se o objeto é um Person_Generice não precisa converter o objeto em um Person_Generic.
 
-```bash
+```csharp
 ArrayList people_array = new ArrayList()
 {
     new Person { Name = "Sundus", Age = 21 },
@@ -3568,7 +3576,7 @@ O programa de exemplo IComparable descrito na seção anterior usou uma classe P
 
 Uma classe que implementa a interface IComparer deve fornecer um método Compare que compara dois objetos. Por exemplo, você pode criar uma classe sortAge e outra classe SortName que implemente IComparer e que tenha um método Compare que compara objetos Person por idade e nome. Como no exemplo a seguir:
 
-```bash
+```csharp
 class Person
 {
     public string  Name { get; set; }
@@ -3618,7 +3626,7 @@ foreach (Person person in people)
 
 Porém esta implementação tem muitas limitações. Aparentemente só funciona com ArrayList, pois ao tentar com Array não aceita parâmetro IComparer (só há sobrecarga com Array) e ao tentar com List<Person> há erro em relação a que nosso IComparer não é genérico. Como vimos na implementação da interface IComparable. A versão IComparer genérica também é mais simples e fornece forte verificação de tipo, portanto devemos usá-la. Então nossa classes IComparer ficariam assim:
 
-```bash
+```csharp
 
 class SortAge_Generic : IComparer<Person>
 {
@@ -3639,7 +3647,7 @@ class SortName_Generic : IComparer<Person>
 
 Isso já resolve parcialmente o problema de classificação por nome e idade mas, e se tivesse muitas outras propriedades da classe Person que gostariamos de classificar, teríamos de criar várias classes de comparadores uma para cada classificação. Uma opção seria criar uma única classe PersonComparer e dar a ela um campo que o programa possa definir para informar qual campo de carro usar ao comparar objetos de carro. O código a seguir mostra uma classe PersonComparer que demonstra essa abordagem:
 
-```bash
+```csharp
 
 class PersonComparer : IComparer<Person>
 {
@@ -3660,7 +3668,7 @@ class PersonComparer : IComparer<Person>
 
 A classe começa com uma enumeração que define os tipos de classificação que essa classe pode fornecer. Seu campo SortBy indica o campo Personque a classe deve usar ao classificar. O método Compare examina o valor SortBy e compara dois objetos Personadequadamente. O programa de exemplo abaixo, usa essa classe PersonComparer para classificar os objetos Personpor Nome eIdade e poderia ser por muitas outras propriedades:
 
-```bash
+```csharp
 var arr_per = new Person[]
 {
     new Person { Name = "Sundus", Age = 21 },
@@ -3683,7 +3691,7 @@ Array.Sort(arr_per, per_comparer);
 
 Esse método cria um objeto PersonComparer e define seu valor SortBy de acordo com o valor selecionado por algum controle do programa (aqui definido com uma constante sortPerson). Em seguida, você pode passar um objeto PersonComparer para o método Array.Sort e ele pode usar esse objeto para classificar uma matriz de objetos Person. Caso você estivesse trabalhando com uma lista de Person bastaria convertê-la usando o método ToArray, como abaixo:
 
-```bash
+```csharp
 List<Person> people_list = new List<Person>() {
 new Person { Name = "Sundus", Age = 21 },
 new Person { Name = "Ali", Age = 22 },
@@ -3697,7 +3705,7 @@ Array.Sort(people_list.ToArray(), per_comparer);
 
 IEquatable <T> é uma interface implementada por tipos cujos valores podem ser equacionados (por exemplo, as classes numéricas e de string). A interface IEquatable fornece esse recurso exigindo que uma classe forneça um método Equals. O código a seguir mostra a classe Person:
 
-```bash
+```csharp
 
 class Person_Equals : IEquatable<Person_Equals>
 {
@@ -3713,7 +3721,7 @@ class Person_Equals : IEquatable<Person_Equals>
 
 Para a maioria dos tipos de referência, o uso do IEquatable é evitado porque, se você o fizer, precisará substituir os métodos Object.Equals(Object) e GetHashCode, pois seu comportamento é consistente com o método IEquatable.Equals. Implementando todas validações na classe Person ficaria assim:
 
-```bash
+```csharp
 
 class Person : IEquatable<Person>
 {
@@ -3762,7 +3770,7 @@ Classes de coleção genérica, como Lista, Dicionário, Pilha e Fila, fornece C
 
 Isso permite criar uma lista de objetos Person que usa o método Contains da lista para verificar se a pessoa já está na lista. Se você tentar criar uma Pessoa com o mesmo nome e sobrenome que uma Pessoa criada anteriormente, o programa exibirá uma mensagem de erro. 
 
-```bash
+```csharp
 Person person1 = new Person() { Age = 21, FirstName = "Ali", LastName = "Dali" };
 Person person2 = new Person() { Age = 45, FirstName = "Ali", LastName = "Dali" };
 Console.WriteLine(person1 == person2); // True
@@ -3781,7 +3789,7 @@ O método Contains da lista usa o fato de que a classe Person implementa IEquata
 
 Uma classe que implementa a interface ICloneable deve fornecer um método Clone que retorna uma cópia do objeto para o qual é chamado. Por exemplo, o código a seguir mostra uma classe Person simples e clonável:
 
-```bash
+```csharp
 class Person : ICloneable
 {
     public string  FirstName { get; set; }
@@ -3802,7 +3810,7 @@ class Person : ICloneable
 
 O método Clone desta classe simplesmente cria um novo objeto Person com as mesmas propriedades FirstName, LastName e Manager que o original e, em seguida, retorna o novo objeto. Observe que o método Clone retorna um objeto não específico, não uma Person; portanto, o código de chamada deve converter o resultado em uma Person. O código a seguir mostra como o programa de exemplo ICloneablePerson, disponível para download no site do livro, cria dois objetos Person. e depois clona um deles:
 
-```bash
+```csharp
 Person ann = new Person() { FirstName = "Ann", LastName = "Archer", Manager = null };
 Person bob = new Person() { FirstName = "Bob", LastName = "Baker", Manager = ann };
 Person bob2 = (Person)bob.Clone();
@@ -3815,7 +3823,7 @@ Esse código cria uma pessoa chamada Ann Archer e outra chamada Bob Baker. Em se
 
 A interface ICloneable não especifica se o método Clone deve retornar um clone superficial ou profundo; portanto, você deve fazer o que fizer mais sentido para o seu aplicativo. Se desejar, também é possível criar um segundo método Clone que assume como parâmetro um valor booleano que indica se a cópia deve ser um clone profundo.O código a seguir mostra como a classe Person poderia fornecer clones profundos:
 
-```bash
+```csharp
 public object DeepClone()
 {
     Person person = new Person();
@@ -3840,7 +3848,7 @@ IUnknown é a interface base de todas as outras interfaces COM. Essa interface d
 
 Outra interface útil no .NET Framework é IDisposable. Como o C# é uma linguagem gerenciada que usa um Garbage Collector para limpar a memória, essa interface é usada somente para facilitar o trabalho com recursos externos não gerenciados, como conexões com o banco de dados ou identificadores de arquivo. O único método que a interface IDisposable possui é Dispose(), conforme mostra a definição da interface IDisposable.
 
-```bash
+```csharp
 interface pública IDisposable
 {
     Dispose ();
@@ -3858,7 +3866,7 @@ O uso de atributos é uma maneira poderosa de adicionar metadados a um aplicativ
 
 No C#, você aplica um atributo colocando-o entre colchetes ([]) acima da declaração à qual deseja aplicar o atributo.Um exemplo de atributo no .NET Framework é o atributo System.SerializableAttribute. Este atributo indica que um tipo pode ser serializado. O .NET Framework verifica a existência desse atributo ao serializar um tipo e garante que todos os membros do tipo também possam ser serializados. 
 
-```bash
+```csharp
 [Serializable]
 class Person
 {
@@ -3882,7 +3890,7 @@ O objeto é serializado para um fluxo que carrega os dados. O fluxo também pode
 - Passando um objeto através de um firewall como uma seqüência JSON ou XML
 - Manutenção de informações de segurança ou específicas do usuário entre aplicativos
 
-```bash
+```csharp
 [Serializable]
 class Person
 {
@@ -3951,7 +3959,7 @@ obj.Print();
 ```
 
 Um tipo pode ter tantos atributos aplicados quanto necessário. Alguns atributos podem até ser aplicados várias vezes. Por exemplo, você pode usar o ConditionalAttribute para indicar ao compilador que uma chamada de método deve ser ignorada, a menos que uma opção específica do compilador seja especificada. O exemplo abaixo mostra como aplicar esse atributo.
-```bash
+```csharp
 [Conditional("CONDITION1"), Conditional("CONDITION2")]
  static void MyMethod() { }
 ```
@@ -3960,7 +3968,7 @@ Conforme mostrado na listagem, um atributo pode ter parâmetros. Assim como nos 
 
 O exemplo a seguir demonstra o uso de ConditionalAttribute. O exemplo supõe que a condição seja definida com a opção de compilador /define. Você pode obter resultados diferentes alterando a opção do compilador. Opcionalmente, você pode definir as condições usando pragmas no código de exemplo em vez de identificá-las como opções do compilador.
 
-```bash
+```csharp
 
 #define CONDITION1
 //#define CONDITION2
@@ -4029,7 +4037,7 @@ Esses atributos são todos aplicados à montagem atual e descrevem alguns metada
 A aplicação de um atributo não é útil se você não puder recuperá-lo. Felizmente, o .NET Framework oferece suporte para leitura de atributos por meio de um processo chamado reflexão. A classe System.Attribute, da qual todos os outros atributos herdam, define alguns métodos estáticos que podem ser usados para verificar se um atributo é aplicado e para obter a instância atual de um atributo para que você possa inspecioná-lo ainda mais.
 
 Suponha que você queira verificar se uma classe tem o atributo Serializable aplicado. Você pode fazer isso chamando o método estático IsDefined no Attribute, como mostra abaixo.
-```bash
+```csharp
 if (Attribute.IsDefined(typeof(Person), typeof(SerializableAttribute)))
 {
     Console.WriteLine("Attribute.IsDefined as SerializableAttribute");
@@ -4037,7 +4045,7 @@ if (Attribute.IsDefined(typeof(Person), typeof(SerializableAttribute)))
 ```
 
 Você também pode recuperar a instância específica de um atributo para poder ver suas propriedades. O código abaixo mostra como você pode obter o ConditionalAttribute do exemplo anterior Conditional_Atributo.
-```bash
+```csharp
 public class  class Teste
 {
     [ConditionalAttribute("CONDITION1")]
@@ -4080,7 +4088,7 @@ Um construtor pode ser declarado em uma classe de atributo personalizado da mesm
 
 Por exemplo, veja o trecho de código abaixo, onde MyCustomAttribute é o nome de um atributo personalizado que herda uma classe "Attribute".
 
-```bash
+```csharp
 
 //Tells MyCustomAttribute can only be use on a Class, Method and Property
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method | AttributeTargets.Property)]
@@ -4105,7 +4113,7 @@ class MyCustomAttribute : Attribute
 
 Os valores das propriedades podem ser atribuídos quando uma instância do atributo personalizado é anexada a qualquer elemento de código C#.
 
-```bash
+```csharp
 [MyCustom(Nome = "Ali Asad", Idade = 30)]
 ```
 
@@ -4120,7 +4128,7 @@ No parâmetro AttributeUsage, usamos AttributeTargets para restringir um atribut
 
 Abaixo temos uma implementação onde exemplifica o uso do atributo personalizado:
 
-```bash
+```csharp
 
 namespace Reflection_CustAttribute
 {
@@ -4209,7 +4217,7 @@ O xUnit (uma estrutura popular de teste de unidade) permite categorizar seus tes
 
 
 Este pacote (xunit) é chamado de meta-pacote; isto é, é um pacote que existe apenas para que você possa obter referências a vários outros pacotes. Em particular, ele traz pacotes que incluem a estrutura de teste de unidade principal e a estrutura de asserção. Se você abrir o packages.config, verá todos os pacotes que são referenciados:
-```bash
+```csharp
 <?xmlversion="1.0"encoding="utf-8"?>
 <packages>
 <packageid="xunit"version="2.4.1"targetFramework="net461" />
@@ -4224,7 +4232,7 @@ Este pacote (xunit) é chamado de meta-pacote; isto é, é um pacote que existe 
 
 Quando você criou o projeto, o Visual Studio criou automaticamente um arquivo chamado Class1.cs e o abriu para você. Dentro desta classe, adicione alguns testes:
 
-```bash
+```csharp
 
 namespace xUnitClassLibrary
 {
@@ -4261,7 +4269,7 @@ Compile a solução para garantir que o código seja compilado. Agora que você 
 Diferente do pacote anterior (que adicionou referências à estrutura de teste de unidade), esse pacote é conhecido como pacote em nível de solução. Em vez de ter assemblies para referência, ele adiciona algumas ferramentas na pasta da solução. Usaremos uma dessas ferramentas - o console runner- para executar seus testes de unidade.
 
 Abra um prompt de comando ou a janela de comando do PowerShell. Na janela, navegue até a pasta raiz da sua solução. Para executar o console runner, use um comando como o destacado abaixo. Você deve ver uma saída semelhante a esta:
-```bash
+```csharp
 packages\xunit.runner.console.2.4.1\tools\net46\xunit.console xUnitClassLibrary\bin\Debug\xUnitClassLibrary.dll
 ```
 
@@ -4280,7 +4288,7 @@ Você deve estar se perguntando por que seus primeiros testes de unidade usam um
 
 Um bom exemplo deste teste de algoritmos numéricos. Digamos que você queira testar um algoritmo que determine se um número é ímpar ou não. Se você estiver escrevendo os testes do lado positivo (números ímpares), a inserção de números pares no teste pode causar falhas, e não porque o teste ou o algoritmo esteja errado. Vamos adicionar uma teoria aos nossos fatos existentes (incluindo alguns dados incorretos, para que possamos ver falhas):
 
-```bash
+```csharp
 
 //=== SECOND TEST EXECUTION SUMMARY ===
 [Theory]
@@ -4329,7 +4337,7 @@ Toda vez que você compila seu projeto, o corredor descobre testes de unidade no
 Você pode clicar em um teste com falha para ver a mensagem de falha e o rastreamento da pilha. Você pode clicar nas linhas de rastreamento da pilha para levá-lo diretamente para a linha de código com falha.
 
 Às vezes, precisamos apenas executar um tipo específico de testes e não outros. Para poder fazer isso, precisamos de algum mecanismo para categorizar nossos testes. O xUnit possui um mecanismo interno para esse chamado Trait. O atributo Trait recebe dois argumentos. O primeiro é o nome real da categoria e o segundo argumento é a subseção que inclui a categoria. Por exemplo, temos a categoria Category como chave e, para o valor, temos "Unit Test" e "Integration Test". 
-```bash
+```csharp
 [Fact]
 [Trait("Category", "Unit Test")]
 public void PassingTest()
@@ -4363,7 +4371,7 @@ Toda vez que você cria o mesmo código repetidamente com algumas pequenas modif
 
 O CodeDOM está localizado no namespace System.CodeDom. Você pode pensar no seu arquivo de origem como uma árvore com contêineres. Você tem um contêiner superior (chamado CodeCompileUnit) que contém outros elementos, como namespaces, classes, métodos e instruções individuais. Se você deseja gerar um aplicativo simples Hello World, é necessário criar um CodeCompileUnit, um namespace, uma classe e o método Main do seu programa que chamará Console.WriteLine como no exemplo abaixo.
 
-```bash
+```csharp
  static void Main(string[] args)
 {
     CodeCompileUnit compileUnit = new CodeCompileUnit();
@@ -4403,7 +4411,7 @@ A saída gerada no HelloWorld.cs é mostrada abaixo:
 
 Neste próximo exemplo, iremos examinar passo-a-passo como utilizar o CodeDOM para gerar a seguinte classe:
 
-```bash
+```csharp
 
 using System;
 using System.CodeDom;
@@ -4455,12 +4463,12 @@ CodeCompileUnit codeCompileUnit = new CodeCompileUnit();
 
 O próximo passo é adicionar o namespace. A classe CodeNamspace é usada para representar o namespace . O construtor usa o namespace  como parâmetro. 
 
-```bash
+```csharp
 CodeNamespace codeNamespace = new CodeNamespace("Reflection");
 ```
 
 Agora que você possui um namespace, pode anexar as instruções using. Normalmente, quando você cria um arquivo de classe, as instruções using estão acima da declaração do namespace, mas ainda funcionam se você as adicionar após o namespace. A classe CodeNamespaceImport é usada para definir o namespace que você gostaria de importar. Em C# você usa a palavra-chave using, mas no VB.NET você usaria a palavra-chave imports. Ao usar o CodeDOM, você não precisa se preocupar com a palavra-chave correta.
-```bash
+```csharp
 codeNamespace.Imports.Add(new CodeNamespaceImport("System"));
 codeNamespace.Imports.Add(new CodeNamespaceImport("System.CodeDom"));
 codeNamespace.Imports.Add(new CodeNamespaceImport("System.CodeDom.Compiler"));
@@ -4472,7 +4480,7 @@ codeNamespace.Imports.Add(new CodeNamespaceImport("System.Reflection"));
 
 O próximo passo é declarar a classe. Isso é feito usando a classe CodeTypeDeclaration.
 
-```bash
+```csharp
 CodeTypeDeclaration targetClass = new CodeTypeDeclaration("Calculator");
 targetClass.IsClass = true;
 targetClass.TypeAttributes = TypeAttributes.Public;
@@ -4484,7 +4492,7 @@ codeCompileUnit.Namespaces.Add(codeNamespace);
 
 O código anterior cria uma instância da classe CodeTypeDeclaration e define o atributo IsClass como true, que informa ao .NET Framework para gerar uma declaração de classe. A propriedade TypeAttributes permite definir atributos como público, privado e estático. Eles podem ser combinados usando o operador bit a bit (|). Depois que a classe é definida, você precisa adicioná-lo à coleção Types do namespace. O código anterior produz a seguinte saída:
 
-```bash
+```csharp
 class Calculator
 {
 }
@@ -4494,7 +4502,7 @@ class Calculator
 
 O próximo passo é adicionar os campos à turma. Isso é feito usando a classe CodeMemberField. Você simplesmente cria uma instância da classe e define sua propriedade Name, define a propriedade Type e a adiciona à coleção Members do objeto CodeTypeDeclaration. O código a seguir cria dois campos, _x e _y, ambos declarados como um duplo:
 
-```bash
+```csharp
 //Create the fields
 CodeMemberField xField = new CodeMemberField();
 xField.Name = "_x";
@@ -4509,7 +4517,7 @@ targetClass.Members.Add(yField);
 
 O código anterior produz a seguinte saída:
 
-```bash
+```csharp
 private double _x;
 private double _y;
 ```
@@ -4518,7 +4526,7 @@ private double _y;
 
 O próximo passo é criar as propriedades para os campos xe y. Você usa uma classe CodeMemberProperty para criar uma propriedade e gerar os métodos get e set. O código a seguir cria as propriedades X e Y na classe Calculadora:
 
-```bash
+```csharp
 //Create the properties
 CodeMemberProperty xProperty = new CodeMemberProperty();
 xProperty.Attributes = MemberAttributes.Public | MemberAttributes.Final;
@@ -4543,7 +4551,7 @@ targetClass.Members.Add(yProperty);
 
 A classe CodeMemberProperty possui duas propriedades (HasGet e HasSet) que você precisa definir como true para que o gerador de código possa criar os acessadores Get e Set. A propriedade de coleção GetStatements é usada para adicionar o código ao acessador Get. Neste exemplo, o método Get retorna o campo this.x. A classe CodeThisReferenceExpression é usada porque em C# você usa isso; no VB você me usa. O gerador de código sabe qual palavra-chave usar ao gerar o código. A propriedade de coleção SetStatements contém o código para definir o campo this.x. Nesse caso, você precisa criar um CodeAssignStatement junto com o CodePropertySetValueReferenceExpression. O código precedente produz a seguinte saída:
 
-```bash
+```csharp
 public double X
 {
 get { return this._x; }
@@ -4561,7 +4569,7 @@ set { this._y = value; }
 
 O próximo passo é criar o método Divide. Para criar métodos usando o CodeDOM, você precisa usar a classe CodeMemberMethod. O código a seguir cria uma instância da classe CodeMemberMethod, nomeia o método Divide, define o tipo de retorno como duplicado e define seus atributos como público e final. Se você deseja definir outros atributos, como estático, virtual ou novo, use o operador bit a bit para concatenar os atributos.
 
-```bash
+```csharp
 CodeMemberMethod divideMethod = new CodeMemberMethod();
 divideMethod.Name = "Divide";
 divideMethod.ReturnType = new CodeTypeReference(typeof(double));
@@ -4570,7 +4578,7 @@ divideMethod.Attributes = MemberAttributes.Public | MemberAttributes.Final;
 
  Agora que a assinatura do método está definida, você precisa criar o código para o corpo do método. Ométodo Divide verifica se a propriedade Y é 0 e retorna 0 ou o quociente. Se a lógica for criada usando a classe CodeConditonStatement.
 
-```bash
+```csharp
 CodeConditionStatement ifLogic = new CodeConditionStatement();
 ifLogic.Condition = new CodeBinaryOperatorExpression(new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), yProperty.Name), CodeBinaryOperatorType.ValueEquality,
 new CodePrimitiveExpression(0));
@@ -4586,7 +4594,7 @@ targetClass.Members.Add(divideMethod);
 
 Como você pode ver, a classe CodeConditonStatement possui uma propriedade Condition que é uma classe CodeBinaryOperatorExpression. Esta classe é usada para criar uma expressão binária. Neste exemplo, a expressão é igual a (this.Y == 0). A classe CodeBinaryOperatorExpression também possui uma propriedade TrueStatements e FalseStatements que permite criar o código que será gravado para as condições verdadeiras e falsas. O código anterior cria a seguinte saída:
 
-```bash
+```csharp
 public double Divide()
 {
 if (this.Y == 0)
@@ -4600,7 +4608,7 @@ return this.X / this.Y;
 
 O próximo passo é criar o método Exponent. Esse método pega um parâmetro chamado power e retorna this.Y aumentado para esse power.
 
-```bash
+```csharp
 CodeMemberMethod exponentMethod = new CodeMemberMethod();
 exponentMethod.Name = "Exponent";
 exponentMethod.ReturnType = new CodeTypeReference(typeof(double));
@@ -4619,7 +4627,7 @@ targetClass.Members.Add(exponentMethod);
 
 Você usa a classe CodeParameterDeclarationExpression para criar o parâmetro power. A classe CodeMethodInvokeExpression é usada para chamar um método e passar um parâmetro para o método. O código anterior produz a seguinte saída:
 
-```bash
+```csharp
 public double Exponent(double power)
 {
     return Math.Pow(this.X, power);
@@ -4631,7 +4639,7 @@ public double Exponent(double power)
 
 O último passo é gerar o arquivo de classe. Você usa a classe CodeDOMProvider para criar o arquivo em C#, VB ou JScript. Essa classe possui um método chamado GenerateCodeFromCompileUnit que usa uma classe CodeCompileUnit, TextWriter e CodeGeneratorOptions como parâmetros. A classe CodeGeneratorOptions possui propriedades que permitem controlar a formatação do seu código gerado automaticamente. O exemplo a seguir informa ao compilador para usar o espaçamento de linha única entre as declarações do membro. Definir a propriedade BracingStyle como "C" coloca os colchetes, {}, em linhas separadas.
 
-```bash
+```csharp
 CodeDomProvider provider = CodeDomProvider.CreateProvider("CSharp");
 CodeGeneratorOptions options = new CodeGeneratorOptions();
 options.BlankLinesBetweenMembers = false;
@@ -4651,7 +4659,7 @@ Funções Lambda foram introduzidas no C# 3.0. Você pode pensar em uma express�
 
 Antes de explorar as expressões lambda, comece com o básico. Um delegado é um tipo que faz referência a um método. Ao declarar um delegado, você especifica a assinatura do método que deseja referenciar. Por exemplo, crie uma nova classe chamada LambdaExpressione adicione o seguinte método que pega um parâmetro de string e o grava na janela do console:
 
-```bash
+```csharp
 public class LambdaExpression
 {
     public static void WriteToConsoleForward(string stringToWrite)
@@ -4664,7 +4672,7 @@ public class LambdaExpression
 
 Se você quiser fazer referência a esse método, primeiro crie um delegado com a mesma assinatura. Observe que o tipo de retorno é nulo e o tipo do parâmetro é uma string que corresponde à assinatura do método WriteToConsoleForward. Agora que você tem um representante, você precisa associar uma variável desse tipo ao método
 
-```bash
+```csharp
 delegate void MyFirstDelegate(string s);
 
  static void Main(string[] args)
@@ -4676,7 +4684,7 @@ delegate void MyFirstDelegate(string s);
 
 A variável myFirstDelegate contém essencialmente uma referência ao método. Agora você pode chamar o método usando a variável myFirstDelegate e passando um parâmetro. Agora crie um segundo método na classe LambdaExpression que usa uma string como parâmetro e grava a string para trás no console.
 
-```bash
+```csharp
 public static void WriteToConsoleBackwards(string stringToWrite)
 {
     char[] charArray = stringToWrite.ToCharArray();
@@ -4688,7 +4696,7 @@ public static void WriteToConsoleBackwards(string stringToWrite)
 
 Ambos os métodos têm a mesma assinatura, portanto, você pode criar um único representante para fazer referência a qualquer método. Agora crie outro método chamadoWriteToConsole que usa o delegado como parâmetro e chame o método.
 
-```bash
+```csharp
 delegate void MyFirstDelegate(string s);
 
  static void Main(string[] args)
@@ -4707,7 +4715,7 @@ delegate void MyFirstDelegate(string s);
 
 Você também pode adicionar  ou remover um método de uma lista de chamadas usando o operador de atribuição de incremento (+ ou +=) e decremento (- ou -=). 
 
-```bash
+```csharp
 MyFirstDelegate myFirstDelegate2 = LambdaExpression.WriteToConsoleForward;
 myFirstDelegate2 += LambdaExpression.WriteToConsoleBackwards;
 myFirstDelegate2(myLocalString);
@@ -4720,7 +4728,7 @@ Quando você atribui um método a um delegado, a assinatura do método não prec
 
 O exemplo abaixo mostra um exemplo de covariância.
 
-```bash
+```csharp
 public delegate TextWriter CovarianceDel();
 
  static void Main(string[] args)
@@ -4739,7 +4747,7 @@ public static  StringWriter MethodString() { returnnull; }
 Como o StreamWriter e o StringWriter herdam do TextWriter, você pode usar o CovarianceDel com os dois . TextWriter é a classe base abstrata de StreamWriter e StringWriter, que gravam caracteres em fluxos e cadeias, respectivamente. Crie uma instância de TextWriter para gravar um objeto em uma cadeia de caracteres, gravar cadeias de texto em um arquivo ou serializar XML. Você também pode usar uma instância de TextWriter para gravar texto em um repositório de backup personalizado usando as mesmas APIs que você usaria para uma cadeia de caracteres ou um fluxo, ou para adicionar suporte para formatação de texto.
 Um exemplo de contravariância pode ser visto abaixo.
 
-```bash
+```csharp
 public delegate void ContravarianceDel(StreamWriter tw);
 
 static void Main(string[] args)
@@ -4759,7 +4767,7 @@ Como o método DoSomething pode funcionar com um TextWriter, certamente também 
 
 Os métodos anônimos são semelhantes aos delegados, exceto que você não precisa criar o método. Você ainda cria o delegado, mas pode atribuir o método tudo dentro da mesma linha de código. Uma diferença entre um método anônimo e um delegado é que você pode fazer referência a variáveis locais que não são passadas como parâmetros. Por exemplo, o exemplo a seguir cria uma variável delegada chamada forward que não possui parâmetrose faz referência ao corpo de um método. O método pode ter quantas linhas você desejar. Em seguida, ele cria uma variável local e um método anônimo que usa a variável.
 
-```bash
+```csharp
 
 delegate void MyAnonymousMethod();
 
@@ -4777,7 +4785,7 @@ static void Main(string[] args)
 
 As expressões Lambda permitem criar uma função anônima usando sintaxe abreviada. Considere o seguinte:
 
-```bash
+```csharp
 delegate double square(double x);
 
 static void Main(string[] args)
@@ -4790,7 +4798,7 @@ static void Main(string[] args)
 
 A expressão lambda é x => x * x. Ao ler o código, você diria que x vai para (goes to) x vezes x. O => é chamado “goes to” operador. O lado esquerdo do operador vai para os parâmetros de entrada do seu método. O corpo do seu método vai no lado direito do vai para o operador. Nesse caso, o método pode enquadrar qualquer número que seja passado para o método. Se você precisar passar vários parâmetros, use a seguinte sintaxe:
 
-```bash
+```csharp
 delegate bool GreaterThan(double x, double y);
 
  static void Main(string[] args)
@@ -4802,7 +4810,7 @@ delegate bool GreaterThan(double x, double y);
 
 Ao trabalhar com lambdas, você também precisará conhecer os tipos Func<> e Action. Esses tipos genéricos foram adicionados para ter alguns tipos de delegados predefinidos no .NET Framework. Você usa Action quando tem um delegado que não retorna um valor e Func quando você deseja retornar um valor. Ambos podem receber até 16 argumentos de tipo no .NET Framework 4.0.Ao combinar lambda e o tipo Func, você pode criar facilmente um tipo que retorne a soma de dois números inteiros, conforme mostrado abaixo.
 
-```bash
+```csharp
 Func<int, int, int> addFunc = (x, y) => x + y;
 Console.WriteLine(addFunc(2, 3)); // 5
 ```
@@ -4814,7 +4822,7 @@ O lambda é do tipo Func<int, int, int>, o que significa que ele recebe dois arg
 
 Quando o método contém apenas uma única expressão, é chamado de expressão lambda. Quando você precisa de várias instruções no corpo do método, isso é chamado de Instruções lambdas. Instruções Lambdas estão entre colchetes {}. A seguir está uma expressão lambda para o método WriteToConsoleBackwardcom uma variável local:
 
-```bash
+```csharp
 MyAnonymousMethod myFirstDelegate2 = () =>
 {
     char[] charArray = myLocalString.ToCharArray();
@@ -4826,7 +4834,7 @@ myFirstDelegate2();
 
 Usando uma instrução de expressão Lambda com um parâmetro
 
-```bash
+```csharp
 delegate void MyFirstDelegate(string s);
 
 MyFirstDelegate myFirstDelegate3 = s =>
@@ -4840,7 +4848,7 @@ myFirstDelegate3(myLocalString);
 
 Você também pode usar uma expressão lambda para passar uma função para um método. A seguir, uma expressão lambda para chamar o método WriteToConsole:
 
-```bash
+```csharp
 delegate void MyFirstDelegate(string s);
 
  static void Main(string[] args)
@@ -4868,7 +4876,7 @@ Uma árvore de expressão descreve o código em vez de ser o próprio código. A
 
 O namespace System.Linq.Expressions contém todos os tipos necessários para criar uma expressão. Você tem expressões para chamar um método e criar um novo objeto ou mesmo operações básicas, como adição ou subtração. O exemplo Hello World do CodeDOM também pode ser criado como uma árvore de expressão
 
-```bash
+```csharp
 BlockExpression blockExpr = Expression.Block(
         Expression.Call(null, typeof(Console).GetMethod("Write",
 new Type[] { typeof(String) }), Expression.Constant("Hello ")),
@@ -4889,7 +4897,7 @@ O namespace System.Reflection contém várias classes que permitem criar e usar 
 
 O Reflection é mais lenta que a execução normal do código estático. No entanto, pode oferecer uma flexibilidade que o código estático não pode fornecer. O exemplo mais básico de reflexão é obter o tipo atual de um objeto que você possui, você pode usar o método GetType () em uma instância do tipo:
 
-```bash
+```csharp
 int i = 42;
 System.Type type = i.GetType();
 
@@ -4901,7 +4909,7 @@ System.Type myType = typeof (int);
 
 Isso retorna System.Int32 como o tipo de int. System.Type é uma classe no .NET Framework que você pode usar para obter todos os tipos de metadados sobre qualquer tipo. A classe System.Type representa uma classe, interface, matriz, tipo de valor, enumeração, parâmetro, definições de tipo genérico e tipos genéricos construídos abertos ou fechados. Na maioria das vezes, você geralmente usa um Type para obter informações sobre uma classe contida em uma montagem.
 
-```bash
+```csharp
 //AssmeblyQualifiedName: System.Int32, mscorlib, Version = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089
 Console.WriteLine("AssmeblyQualifiedName: {0}", myType.AssemblyQualifiedName);
 Console.WriteLine("FullName: {0}", myType.FullName); //FullName: System.Int32
@@ -4912,7 +4920,7 @@ Console.WriteLine("Namespace: {0}", myType.Namespace); //Namespace: System
 
 Agora, suponha que você deseja criar um sistema de plug-in e que você tenha um diretório em seu sistema que contenha todos os plug-ins, você precisa de alguma maneira de encontrar plug-ins, obter algumas informações e executá-los e isso é impossível sem Reflection. Você pode usar Reflection para criar uma interface IPlugin personalizada que expõe membros que fornecem informações sobre o plug-in e a capacidade de carregá-lo.
 
-```bash
+```csharp
 public interface IPlugin
 {
     string Name { get; }
@@ -4924,7 +4932,7 @@ public interface IPlugin
 
 Agora que você possui uma interface base personalizada, pode criar um plug-in herdando desta interface com uma classe de plug-in específica, como mostra abaixo.
 
-```bash
+```csharp
 public class MyPlugin : IPlugin
 {
     public string  Name
@@ -4946,7 +4954,7 @@ public class MyPlugin : IPlugin
 
 Usando a reflexão, agora você pode inspecionar uma montagem e verificar se há plug-ins disponíveis. Os tipos que você recebe podem ser usados para criar uma instância do plug-in e usá-lo. O exemplo abaixo mostra como obter todos os plug-ins de um assembly com uma consulta LINQ e construí-los.
 
-```bash
+```csharp
 
 Assembly assembly = Assembly.GetExecutingAssembly();
 Assembly pluginAssembly = Assembly.Load("Reflexion_IPlugin");
@@ -4983,7 +4991,7 @@ O namespace System.Reflection contém várias classes que podem ser usadas para 
 
 A classe System.Reflection.Assembly contém métodos e propriedades usadas para ler e manipular informações de um assembly em tempo de execução.
 
-```bash
+```csharp
 
 namespace Reflection_DemoAssembly
 {
@@ -5054,7 +5062,7 @@ Os métodos GetExportedTypes e GetTypes são todos usados para obter referência
 
 No exemplo acima, criamos um método estático Lista_Propriedades que recebe um Type para, durante o tempo de execução, usarmos a reflexão para a ler todas as informações de um tipo em uma montagem, incluindo métodos, propriedades, eventos, etc.A classe PropertyInfo é usada para armazenar informações de uma propriedade. Ele contém o método e as propriedades usadas para ler e editar dados de uma propriedade. Por padrão, Type.GetProperties() retorna todas as propriedades públicas não estáticas de um tipo. Ao executarmo o código, teríamos a saída:
 
-```bash
+```csharp
 Type Name:A, Base Type:System.Object
         Random has System.Int32 type
 Type Name:B, Base Type:Reflection_DemoAssembly.A
@@ -5067,7 +5075,7 @@ Reflection_DemoAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 O GetReferencesAssemblies é usado para descobrir as referências para o assembly. Isso pode ser útil ao solucionar problemas de implantação. 
 
-```bash
+```csharp
 Assembly Name: mscorlib
 Assembly Version: 4.0.0.0
 Assembly Name: System
@@ -5076,7 +5084,7 @@ Assembly Version: 4.0.0.0
 
 Da mesma forma que fizemos com o método estático Lista_Propriedades, podemos criar outros métodos que retornasse outras informações úteis definidos na classe System.Type como métodos, eventos, interfaces, campos etc. Por exemplo, para obtermos informações sobre os métodos:
 
-```bash
+```csharp
 public static void Lista_Metodos(Type type)
 {
     //Get all non-static methods of a type
@@ -5092,7 +5100,7 @@ public static void Lista_Metodos(Type type)
 
 MethodInfo é uma classe que armazena informações de um método. A classe MethodInfo contém métodos e propriedades que são usadas para ler e editar dados de um método. Por padrão, Type.GetMethods() retorna todos os métodos públicos não estáticos de um tipo. A saída desse método ficaria:
 
-```bash
+```csharp
 Type Name:A, Base Type:System.Object
         Random has System.Int32 type
         Method Name:get_Random, Return Type:System.Int32
@@ -5107,7 +5115,7 @@ A saída retornou também os métodos "ToString", "Equals", "GetHashCode" e "Get
 
 O método GetConstructors retorna uma matriz de objetos ConstructorInfo que você pode usar para obter informações sobre todos os construtores do tipo. O código a seguir imprime os construtores e os parâmetros para um objeto System.DataTable na janela Saída:
 
-```bash
+```csharp
 DataTable myDataTable = new DataTable();
 Type myDataTableType = myDataTable.GetType();
 ConstructorInfo[] myDataTableConstructors = myDataTableType.GetConstructors();
@@ -5135,7 +5143,7 @@ for (int i = 0; i <= myDataTableConstructors.Length - 1; i++)
 
 Quando o objeto Type representa uma enumeração, os métodos GetEnum permitem determinar todos os nomes e valores em uma enumeração. 
 
-```bash
+```csharp
 private enum MyCustomEnum { Red = 1, White = 2, Blue = 3 }
 
 for (int i = 1; i <= 3; i++)
@@ -5154,7 +5162,7 @@ Para definir um valor da propriedade, são necessárias as seguintes etapas de p
 
 Já para invocar qualquer método definido, invés de usar o GetProperty devemos utilizar o método GetMethod e o especificar o método dentro da classe e o método Invoke()  para invocar-lo. Ao usar o método InvokeMember da classe System.Type, o segundo parâmetro é BindingFlags.InvokeMethod, que aciona o método InvokeMember para invocar o método.
 
-```bash
+```csharp
 namespace Reflection_Read_Write
 {
     class Person
@@ -5224,7 +5232,7 @@ GetProperties() é usado para retornar informações de propriedade usando as en
 
 Ao chamar GetFields, você usa a enumeração BindingFlags e pode especificar mais de um valor usando o operador bit a bit.Para obter os membros estáticos públicos de um tipoutilize BindingFlags.Public e BindingFlags.Static juntos.
 
-```bash
+```csharp
 namespace Reflection_Get_Private
 {
     class Person
@@ -5278,7 +5286,7 @@ company = Microsoft
 
 O objeto FieldInfo também possui um método SetValue que permite alterar o valor do campo, mesmo que seja privado ou protegido. Para demonstrar, adicione o seguinte acessador da classe Person:
 
-```bash
+```csharp
 private string _privateField = "Hello";
 
 public string  PrivateField
@@ -5291,7 +5299,7 @@ public string  PrivateField
 
 O código a seguir altera o valor da variável privateField e imprime seu valor na janela Saída. O método SetValue é utilizado da mesma maneira que foi feito anteriormente para setar um novo valor para propriedade.
 
-```bash
+```csharp
 Type personsetprivate = typeof(Person);
 
 var setvalue = personsetprivate.GetField("_privateField", BindingFlags.NonPublic | BindingFlags.Instance);
@@ -5415,7 +5423,7 @@ Por esse motivo, o C# suporta o conceito de finalização. Esse mecanismo permit
 
 O método destruidor Finalize()é um método especial que é chamado a partir de uma classe para qual ele pertence ou a partir de classes derivadas. Um finalizador é o oposto de um construtor, enquanto o construtor é a primeira oportunidade de trabalhar com um objeto o Finalize é a última oportunidade de trabalhar com um objeto. Um finalizador em C# requer alguma sintaxe especial, assim como um construtor. Você precisa prefixar o nome da classe com um til (~) para criar um finalizador.
 
-```bash
+```csharp
 public class SomeType
 {
     ~SomeType()
@@ -5428,7 +5436,7 @@ public class SomeType
 
 Este destruidor é convertido no seguinte método Finalize:
 
-```bash
+```csharp
 protectedoverridevoid Finalize()
 {
     try
@@ -5476,7 +5484,7 @@ O método Dispose() é chamado para liberar recursos que GC não é capaz de lib
 
 Por exemplo, se você abrir um arquivo no programa e não fechá-lo após o processamento, o arquivo não estará disponível para outras operações ou ele está sendo usado por outra aplicação que não podem abrir ou modificar o arquivo. Para este fim classe FileStream fornece o método Dispose. Temos de chamar esse método após o processamento do arquivo ser concluído, caso contrário, ocorrerá uma exceção de acesso negado ou de que o arquivo está sendo usado por outro programa.
 
-```bash
+```csharp
 StreamWriter stream = File.CreateText("temp.dat");
 stream.Write("some data");
 File.Delete("temp.dat"); // Throws an IOException because the file is already open.
@@ -5484,7 +5492,7 @@ File.Delete("temp.dat"); // Throws an IOException because the file is already op
 
 Os métodos finalizers são chamados no final do ciclo de varredura do Garbage Collector e realizam a limpeza de recursos não gerenciados. É uma alternativa usada quando o objeto que consome o recurso não chama o Dispose. Você pode forçar isso adicionando uma chamada ao GC.Collect, conforme mostrado no código a seguir. A linha WaitForPendingFinalizers garante que todos os finalizadores tenham sido executados antes que o código continue. O Garbage Collector é bastante inteligente no gerenciamento de memória e não é recomendável fazer a chamada manualmente para o GC.
 
-```bash
+```csharp
 StreamWriter stream = File.CreateText("temp.dat");
 stream.Write("some data");
 GC.Collect();
@@ -5496,7 +5504,7 @@ Ao executar esse trecho de código no modo Release, o Garbage Collector verá qu
 
 No geral, você não deve depender do Garbage Collector para executar um finalizador para fechar seu arquivo. Para oferecer a você a oportunidade de liberar explicitamente recursos não gerenciados, o C# oferece a idéia da interface IDisposable.
 
-```bash
+```csharp
 public interface IDisposable
 {
     void Dispose();
@@ -5504,7 +5512,7 @@ public interface IDisposable
 ```
 
 A interface IDiposable oferece umúnico método: Dispose, que libera qualquer recurso não gerenciado imediatamente. Diferente do método Finalize() o método Dispose() não é chamado automaticamente e você precisa chamá-lo explicitamente a partir de uma aplicação cliente quando um objeto não mais for necessário.O exemplo anterior também poderia ter sido escrito utilizando o método Dispose().
-```bash
+```csharp
 StreamWriter stream = File.CreateText("temp.dat");
 stream.Write("some data");
 stream.Dispose();
@@ -5517,7 +5525,7 @@ Mas e se uma exceção ocorresse antes que stream.Dispose() fosse chamado? Para 
 
 É o jeito mais antigo de consumir recursos desde que using foi implementado no .NET Framework. Uma regra básica ao se consumir um recurso é garantir o sucesso de quem for utilizá-lo. No bloco finally vai a chamada explícita ao método Dispose. É seguro, pois o bloco finally sempre será executado. 
 
-```bash
+```csharp
 FileStream fs = null;
 string path = @"C:\temp\Teste.txt";
 try
@@ -5543,7 +5551,7 @@ finally
 
 Como o uso dos tipos que implementam IDisposable em uma instrução try/finally é muito comum, o C# possui uma instrução especial para simplicar isso: a instrução using. A instrução using é convertida pelo compilador em uma instrução try/finally que faz uma chamada implícita ao método Dispose no objeto. Por esse motivo, a instrução using pode ser usada apenas com tipos que implementam IDisposable, como StreamReader/StreamWriter, DataTable.
 
-```bash
+```csharp
 string path = @"C:\temp\outro.txt";
 string destPath = @"C:\temp\Teste.txt";
 
@@ -5561,7 +5569,7 @@ if (!File.Exists(path))
 
 Após descartar um item, você não poderá mais usá-lo. O uso de um item descartado resultará em uma ObjectDisposedException. Abaixo um exemplo de classe implementando IDisposable utilizando using.
 
-```bash
+```csharp
 class MyClass : IDisposable
 {
     public StreamReader reader;
@@ -5585,7 +5593,7 @@ O método Finalize não pode ser chamado explicitamente no código. Só pode hav
 
 Por exemplo, suponha que você tenha uma classe de wrapper em torno de um recurso de arquivo não gerenciado. Você implementa IDisposable para que os usuários da sua classe possam limpar imediatamente, se quiserem. Você também implementa um finalizador, caso eles se esqueçam de chamar Dispose. A exemplo abaixo mostra como fazer isso. 
 
-```bash
+```csharp
 class UnmangedWrapper : IDisposable
 {
     bool disposed = false;
@@ -5665,7 +5673,7 @@ Um WeakReference permite que o coletor de lixo colete o objeto enquanto ainda pe
 | Target  |  Obtém ou define o objeto (o destino) referenciado pelo objeto WeakReference atual. |
 | TrackResurrection  |  Obtém uma indicação se o objeto referenciado pelo objeto WeakReference atual é acompanhado depois de finalizado. | 
 
-```bash
+```csharp
 static WeakReference _weak;
 
 static void Main(string[] args)
@@ -5699,7 +5707,7 @@ Para estabelecer uma referência forte e usar o objeto novamente, converta a pro
 
 Às vezes, você precisa trabalhar com objetos grandes que exigem muito tempo para serem criados. Por exemplo, uma lista de objetos que precisam ser recuperados de um banco de dados. Seria bom se você pudesse apenas manter os itens na memória; no entanto, isso aumenta a carga de memória do seu aplicativo e talvez a lista não seja mais necessária. Mas se a coleta de lixo ainda não ocorreu, seria bom se você pudesse reutilizar a lista que criou.
 
-```bash
+```csharp
 static WeakReference data;
 
 public static void Run()
@@ -5756,14 +5764,14 @@ Três das maneiras mais comuns de inicializar uma variável String são:
 
 O último deles inclui métodos que formatam uma variável para produzir uma String, como usar o método ToString ou o método String.Format. Além desses métodos, a classe String fornece vários construtores que às vezes podem ser úteis:
 1.	Inicializa a String a partir de uma matriz unidimensional de caracteres.
-```bash
+```csharp
 var hello = newchar[] { 'H', 'e', 'l', 'l', 'o', '!' };
 string ctor1 = newstring(hello);
 Console.WriteLine(ctor1); //Hello!
 ```
 
 2.	Um segundo construtor usa apenas parte de uma matriz de caracteres, tomando como parâmetros a matriz, uma posição inicial e o comprimento dos caracteres a serem usados.
-```bash
+```csharp
 var hello = newchar[] { 'H', 'e', 'l', 'l', 'o', '!' };
 string ctor2 = newstring(hello, 0, 4);
 Console.WriteLine(ctor2); //Hell
@@ -5776,7 +5784,7 @@ Por exemplo, o código a seguir exibe os números de 1 a 10 em linhas separadas,
   <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Sequencia.png" alt="Image" width="100%" />
 </p>
 
-```bash
+```csharp
 for (int i = 1; i <= 10; i++)
 {
 string indent = newstring(' ', 4 * i);
@@ -5795,7 +5803,7 @@ A classe String fornece apenas três campos e propriedades:
 
 Se for mais fácil tratar a String como se fosse uma matriz de caracteres de leitura/gravação, você pode usar o método ToCharArray para converter String em uma matriz de caracteres, manipule-os e crie uma nova String passando o construtor pela matriz modificada. Por exemplo, o código a seguir usa uma matriz para alternar os caracteres de uma string entre maiúsculas e minúsculas:
 
-```bash
+```csharp
 var text = "text em maiuscula e minusculas";
 
 char[] characters = text.ToCharArray();
@@ -5809,7 +5817,7 @@ Console.WriteLine(text); //TeXt eM MaIuScUlA E MiNuScUlAs
 
 Você também pode usar o indexador como fonte de iteração em um loop foreach:
 
-```bash
+```csharp
 text = "The quick brown fox jumps over the lazy dog.";
 int[] counts = newint[26];
 text = text.ToUpper();
@@ -5828,7 +5836,7 @@ int index = (int)ch - (int)'A';
 
 String é usada para armazenar valores de texto. String é imutável, o que significa que, uma vez que uma variável de string armazena algum texto, ela não pode editá-lo novamente; o texto é armazenado como uma coleção somente leitura de objetos Char. Portanto, sempre que o valor de uma variável de string é atualizado, ele recria uma instância para literais de string, o que não é bom em termos de memória e consumo de processo. O código abaixo parece inocente, mas criará uma nova string para cada iteração no seu loop. Ele usa muita memória desnecessária e mostra por que você deve ter cuidado ao trabalhar com seqüências de caracteres.
 
-```bash
+```csharp
 Stopwatch watch = new Stopwatch();
 //Record how much time
 watch.Start();
@@ -5855,7 +5863,7 @@ StringBuilder é uma classe de System.Text que fornece melhor desempenho ao mani
 
 A classe StringBuilder pode ser usada quando você estiver trabalhando com seqüências de caracteres em um loop restrito. Em vez de criar uma nova sequência repetidamente, você pode usar o StringBuilder, que usa um buffer de seqüências internamente para melhorar o desempenho. A classe StringBuilder ainda permite alterar o valor de caracteres individuais dentro de uma string, adicionar uma nova linha ao texto existente ou limpar todo o conteúdo.
 
-```bash
+```csharp
 //// Let's look at string concatenation
 string s1 = "This is an example of s1 ";            
 s1 = s1 + "string concatenation.";
@@ -5889,7 +5897,7 @@ Console.WriteLine(sb2);
 
 Se executar novamente a análise de performance realizada no System.String anteriormente teremos:
 
-```bash
+```csharp
 Stopwatch watch = new Stopwatch();
 //Record how much time
 watch.Start();
@@ -5949,7 +5957,7 @@ StringReader é uma classe do System.IO usada para ler linhas de uma string. Com
 | ReadToEnd  |  Retorna o texto restante do StringReader como uma String. | 	
 | ReadToEndAsync  |  Retorna assincronamente o texto restante do StringReader como uma String | 				
 	
-```bash
+```csharp
 //'@' It's a verbatim string literal. It ignores escape sequence
 string text = @"Hi I'm Ali Asad.
             I can help you in C# Certification Exam.
@@ -5978,7 +5986,7 @@ StringWriter é uma classe do System.IO. É usado para gravar em uma classe Stri
 | WriteAsync  |  Anexa de forma assíncrona um caractere, sequência ou matriz de caracteres ao final dos dados da sequência. |
 | WriteLine  |  Anexa um item aos dados da string da mesma forma que Write e adiciona uma nova linha. | 
 
-```bash
+```csharp
 StringBuilder builder = new StringBuilder();
 StringWriter swriter = new StringWriter(builder);
 swriter.Write("Ali Asad");
@@ -5989,7 +5997,7 @@ Console.WriteLine(builder.ToString());
 	
 Um dos métodos no .NET Framework que espera uma instância do TextWriter é o XmlWriter.Create. Normalmente, você transmite uma instância do StreamWriter para poder criar um novo arquivo XML. Mas quando você deseja o XML resultante apenas na memória, pode passar um StringWriter.
 
-```bash
+```csharp
 var stringWriter = new StringWriter();
 using (XmlWriter writer = XmlWriter.Create(stringWriter))
 {
@@ -6005,7 +6013,7 @@ Console.WriteLine(xml);
 
 Ao usar o XmlReader, você pode analisar um pouco de XML e acessar os elementos individuais. XmlReader espera uma instância do TextWriter, para que você possa passar um StringReader
 
-```bash
+```csharp
 var stringReader = new StringReader(xml);
 using (XmlReader readerxml = XmlReader.Create(stringReader))
 {
@@ -6021,7 +6029,7 @@ O método Serialize da classe XmlSerializer envia a saída para um TextWriter. S
 
 Internamente, StringWriter e StringReader usam um StringBuilder. A única coisa que eles fazem é adaptar a interface do StringBuilder à do TextWriter e TextReader. Conforme pode ser visto com mais clareza no seguinte exemplo:
 
-```bash
+```csharp
 
 class Program
 {
@@ -6097,7 +6105,7 @@ Uma coisa a ter em mente é que os métodos de string podem ser sensíveis à cu
 
 Outra maneira de pesquisar uma string é usando uma expressão regular, que usa uma notação de correspondência de padrões que pode analisar rapidamente grandes quantidades de texto procurando um formato específico. Expressões regulares podem ser úteis ao validar a entrada do usuário (como um endereço de email, CEP ou data). O código abaixo retira todos os títulos dos nomes que você passa. Imagine quanto trabalho teria sido criar isso ao usar IndexOf e SubString.
 
-```bash
+```csharp
 string pattern = "(Mr\\.? |Mrs\\.? |Miss |Ms\\.? )";
 string[] names = { "Mr. Henry Hunt", "Ms. Sara Samuels", "Abraham Adams", "Ms. Nicole Norris" };
 foreach (string name in names)
@@ -6114,7 +6122,7 @@ Uma string é uma matriz de caracteres. Você pode enumerar uma sequência como 
 
 Você pode usar uma sequência em um loop foreach para verificar todos os caracteres individuais, como abaixo:
 
-```bash
+```csharp
 string value = "My Custom Value";
 foreach (char c in value)
     Console.WriteLine(c);
@@ -6122,14 +6130,14 @@ foreach (char c in value)
 
 Também é possível dividir uma sequência de palavras e iterá-las. A seguinte linha divide a sentença em espaços; retorna um IEnumerable que pode ser iterado:
 
-```bash
+```csharp
 foreach (string word in"My sentence separated by spaces".Split(' '))
     Console.WriteLine(word);
 ```
 
 Um exemplo usando apenas StringBuilders (sem Strings), podemos escrer um programa que exiba todas as subsequências iniciais das letras do alfabeto A, AB, ABC e assim por diante.
 
-```bash
+```csharp
 StringBuilder letters = new StringBuilder("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 StringBuilder line = new StringBuilder();
 // Create the result StringBuilder. 
@@ -6173,7 +6181,7 @@ Formatar um valor para exibição é uma conversão de tipo particularmente impo
 
 A classe de objeto fornece um método ToString que todas as outras classes herdam. Por padrão, esse método retorna o nome do tipo de um objeto como uma String, mas a maioria das classes para as quais faz sentido substitui esse método para retornar o valor do objeto como uma String. Por exemplo, se uma variável flutuante mantiver o valor 1,23, seu método ToString retornará o valor "1,23" como uma sequência. Por outro lado, se você definir uma classe Employee, por padrão, o método ToString retornará o nome da classe, semelhante ao Formatting.Employee. Se você usar o método ToString de uma variável sem parâmetros, obterá uma representação padrão de seu valor. 
 
-```bash
+```csharp
 classEmployee
 {
     public string  Name { get; set; }
@@ -6191,7 +6199,7 @@ Console.WriteLine(e.ToString()); // Formatting.Employee
 
 O método ToString também pode levar como parâmetros um provedor de formato, uma string de formatação ou ambos. Usando a sequência de formatação, você pode personalizar o texto resultante. Por exemplo, se o custo variável for flutuante, a instrução value.ToString ("0,000000") produzirá uma sequência contendo o valor do custo exibido mais casas decimais.
 
-```bash
+```csharp
 decimal value = 1.23m;
 Console.WriteLine(value.ToString("0.000000")); // 1,230000
 Console.WriteLine(value.ToString("0,000000")); // 0.000.001
@@ -6199,7 +6207,7 @@ Console.WriteLine(value.ToString("0,000000")); // 0.000.001
 
 Quando um objeto possui várias representações de seqüência de caracteres, a substituição de ToString não é suficiente. Por exemplo, um objeto Temperatura pode exibir sua temperatura em graus Fahrenheit, Celsius ou Kelvin. Um valor inteiro também pode ser exibido de várias maneiras. Talvez represente um número de telefone ou uma quantia em dinheiro. Para habilitar esse tipo de comportamento, você pode usar seqüências de caracteres de formato, que descrevem como um objeto deve ser exibido. O .NET Framework os utiliza para tipos numéricos, datas, horas e enumerações, como mostra abaixo.
 
-```bash
+```csharp
 double cost = 1234.56;
 Console.WriteLine(cost.ToString("C", new CultureInfo("en-US"))); // $1,234.56
 ```
@@ -6207,7 +6215,7 @@ Console.WriteLine(cost.ToString("C", new CultureInfo("en-US"))); // $1,234.56
 
 Você pode usar a mesma abordagem ao exibir um valor de data e hora. Dependendo da cultura, a saída formatada pode ser completamente diferente. A código a seguir mostra como usar cadeias de formato diferentes com um DateTime para uma cultura inglesa.
 
-```bash
+```csharp
 DateTime d = new DateTime(2013, 4, 22);
 CultureInfo provider = new CultureInfo("en-US");
 Console.WriteLine(d.ToString("d", provider)); // Displays 4/22/2013
@@ -6219,7 +6227,7 @@ Fornecer o CultureInfo correto é importante ao formatar valores. Ele contém to
 
 Você também pode implementar essa formatação personalizada em seus próprios tipos. Você faz isso criando um método ToString (string) no seu tipo. Overridingo ToString é uma boa prática. Se você não fizer isso, o ToString retornará por padrão o nome do seu tipo. Ao overrideo ToString, você pode atribuir um valor mais significativo, como mostra a exemplo.
 
-```bash
+```csharp
 class Person
 {
     public Person(string firstName, string lastName, int age)
@@ -6275,7 +6283,7 @@ Ao implementar o IFormattable, você tem suporte para conversão de string pela 
 
 O método ToString permite converter o valor de uma única variável em uma String. O método Format estático da classe String permite criar uma String que pode conter os valores de muitas variáveis formatadas de maneiras diferentes. O método String.Format possui algumas versões sobrecarregadas, mas o mais comum toma como parâmetros uma string de formatação e um ou mais argumentos usados para preencher itens na cadeia de formatação. O código a seguir mostra um exemplo simples.
 
-```bash
+```csharp
 int a = 1;
 int b = 2;
 string result = string.Format("a: {0}, b: {1}", a, b);
@@ -6319,7 +6327,7 @@ Além desses formatos padrão, a estrutura DateTime fornece quatro métodos que 
 ### Controle de espaçamento
 
 O espaçamento é útil para formatar a saída. String pode ajudar a formatar o espaçamento.
-```bash
+```csharp
 string name = "Ali";
 int age = 22;
 //Name Ali | Age         22
@@ -6330,7 +6338,7 @@ Console.WriteLine("Name {0,10} | Age {1, 10}", name, age);
 ### Alinhadores de controle 
 
 Por padrão, as strings estão alinhadas à direita. Para criar uma sequência alinhada à esquerda em um campo, você precisa usar um sinal negativo, como {0, -5} para definir um campo alinhado à direita de 5 caracteres.
-```bash
+```csharp
 //- Ali | end
 string name = "Ali";
 Console.WriteLine("- {0,-8} |end", name);
@@ -6340,7 +6348,7 @@ Console.WriteLine("- {0,-8} |end", name);
 
 O recurso interpolação de cadeia de caracteres baseia-se no recurso formatação composta e fornece uma sintaxe mais legível e conveniente para incluir resultados de expressão formatada em uma cadeia de caracteres de resultado. Este recurso está disponível a partir de C# 6. Para identificar uma literal de cadeia de caracteres como uma cadeia de caracteres interpolada, preceda-o com o símbolo $. Você pode inserir qualquer expressão C# válida que retorna um valor em uma cadeia de caracteres interpolada. No seguinte exemplo, assim que uma expressão é avaliada, o resultado é convertido em uma cadeia de caracteres e incluído em uma cadeia de caracteres de resultado:
 
-```bash
+```csharp
 string name = "Mark";
 var date = DateTime.Now;
 // Composite formatting:
@@ -6368,7 +6376,7 @@ Elementos em colchetes são opcionais. A tabela a seguir descreve cada elemento:
 
 O exemplo a seguir usa os componentes opcionais de formatação descritos acima:
 
-```bash
+```csharp
 Console.WriteLine($"|{"Left",-7}|{"Right",7}|"); //| Left | Right |
 
 constint FieldWidthRightAligned = 20;
@@ -6384,7 +6392,7 @@ Especifique uma cadeia de caracteres de formato compatível com o tipo do result
 
 O seguinte exemplo mostra como especificar cadeias de caracteres de formato padrão e personalizadas para expressões que produzem resultados numéricos ou de data e hora:
 
-```bash
+```csharp
 var data = new DateTime(1731, 11, 25);
 Console.WriteLine($"On {data:dddd, MMMM dd, yyyy} Leonhard Euler introduced the letter e to denote {Math.E:F5} in a letter to Christian Goldbach.");
 ```
@@ -6400,7 +6408,7 @@ Se o valor do alinhamento for positivo, o resultado da expressão formatada ser�
 
 O exemplo a seguir mostra como especificar o alinhamento e usa caracteres de barra vertical ("|") para delimitar os campos de texto:
 
-```bash
+```csharp
 double a = 3;
 double b = 4;
 Console.WriteLine($"Three classical Pythagorean means of {a} and {b}:");
@@ -6423,7 +6431,7 @@ Para incluir um colchete, "{" ou "}", em uma sequência de resultados, use dois 
 
 O exemplo a seguir mostra como incluir chaves em uma sequência de resultados e construir uma sequência interpolada literal:
 
-```bash
+```csharp
 var xs = newint[] { 1, 2, 7, 9 };
 var ys = newint[] { 7, 9, 12 };
 Console.WriteLine($"Find the intersection of the {{{string.Join(", ", xs)}}} and {{{string.Join(", ", ys)}}} sets.");
@@ -6440,7 +6448,7 @@ Console.WriteLine(verbatimInterpolated);
 
 Como os dois pontos ```(":")``` têm um significado especial em um item com uma expressão de interpolação, para usar um operador condicional em uma expressão, coloque-o entre parênteses, como mostra o exemplo a seguir:
 
-```bash
+```csharp
 var rand = new Random();
 for (int i = 0; i < 7; i++)
 {
@@ -6453,7 +6461,7 @@ for (int i = 0; i < 7; i++)
 
 Por padrão, uma cadeia de caracteres interpolada usa a cultura atual definida pela propriedade CultureInfo.CurrentCulture para todas as operações de formatação. Use a conversão implícita de uma seqüência de caracteres interpolada em uma instância System.FormattableString e chame seu método ToString (IFormatProvider) para criar uma sequência de resultados específica da cultura. O exemplo a seguir mostra como fazer isso:
 
-```bash
+```csharp
 
 var cultures = new System.Globalization.CultureInfo[]
 {
@@ -6479,7 +6487,7 @@ Como o exemplo mostra, você pode usar uma instância FormattableString para ger
 
 Junto com o método FormattableString.ToString (IFormatProvider), você pode usar o método estático FormattableString.Invariant para resolver uma seqüência de caracteres interpolada em uma seqüência de resultados da InvariantCulture. O exemplo a seguir mostra como fazer isso:
 
-```bash
+```csharp
 string messageInInvariantCulture = FormattableString.Invariant($"Date and time in invariant culture: {DateTime.Now}");
 Console.WriteLine(messageInInvariantCulture);
 ```
@@ -6493,7 +6501,7 @@ Para incluir uma chave, "{" ou "}", no texto produzido por uma cadeia de caracte
 O seguinte exemplo mostra como incluir uma chave em uma cadeia de caracteres de resultado e como usar um operador condicional em uma expressão de interpolação:
 
 
-```bash
+```csharp
 string nome = "Horace";
 int age = 34;
 Console.WriteLine($"He asked, \"Is your name {nome}?\", but didn't wait for a reply :-{{"); 
