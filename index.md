@@ -32,7 +32,7 @@ Este exame é destinado a desenvolvedores com um ano de experiência ou mais em 
 **Desenvolvendo Aplicativos Móveis**
 Candidatos para o exame são os desenvolvedores experientes que projetam e desenvolvem aplicativos para Windows 10 de implantação para Windows Store ou Windows Store for Business.
 
-Os candidatos têm, normalmente, mais de dois anos de experiência no desenvolvimento de aplicativos do Windows usando c# e XAML, além de experiência com WPF ou Silverlight para Windows Phone. Os candidatos também devem ter experiência com o padrão de projeto Model-View-ViewModel (MVVM) e Entity Framework, além das tecnologias de autenticação. Experiência com Visual Studio 2015 é altamente recomendada.
+Os candidatos têm, normalmente, mais de dois anos de experiência no desenvolvimento de aplicativos do Windows usando C# e XAML, além de experiência com WPF ou Silverlight para Windows Phone. Os candidatos também devem ter experiência com o padrão de projeto Model-View-ViewModel (MVVM) e Entity Framework, além das tecnologias de autenticação. Experiência com Visual Studio 2015 é altamente recomendada.
 
 **Exame 70-486/Curso 20486B**
 **Desenvolvendo Aplicativos Web ASP .NET MVC**
@@ -48,7 +48,7 @@ Este exame mede sua habilidade em executar as tarefas técnicas listadas abaixo.
 
 **Observe que as perguntas não estarão limitadas aos tópicos descritos no texto com marcadores.**
 
-Observação: Existem atualizações de exame efetivas a partir de quinta-feira, 14 de dezembro de 2017. Para aprender mais sobre estas mudanças e como elas afetam as habilidades medidas, por favor baixe e reveja o Exam 483 change document.
+**Observação**: Existem atualizações de exame efetivas a partir de quinta-feira, 14 de dezembro de 2017. Para aprender mais sobre estas mudanças e como elas afetam as habilidades medidas, por favor baixe e reveja o Exam 483 change document.
 
 ### Criar e usar tipos (25–30%)
 - **Criar tipos** 
@@ -108,11 +108,10 @@ Observação: Existem atualizações de exame efetivas a partir de quinta-feira,
 
 [Microsoft Official Practice Test](https://global3.mindhub.com/70-483-programming-in-c-microsoft-official/p/MU-70-483?utm_source=microsoft&utm_medium=certpage&utm_campaign=msofficialpractice)
 
-
-C# or VB programming skills are required to pass a number of other MCSD exams
-- DevelopingASP.NET MVC WebApplications (70-486)
+Habilidades de programação C# ou VB são necessárias para passar em uma série de outros exames MCSD
+- Developing ASP.NET MVC Web Applications (70-486)
 - Developing Microsoft Azure and Web Services (70-487)
-- More... See www.microsoft.com/learning for more information
+- [More...](www.microsoft.com/learning)
 
 ## VCE FILE
 
@@ -120,7 +119,7 @@ Um arquivo Visual CertExam exame podem ser criados e modificados usando um aplic
 
 PS: Neste [examcollection](http://www.examcollection.com/70-536.html) tem mais exames no formato vce pra testar os conhecimentos pra prova.
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/RefBooks.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/RefBook.png" alt="Image" width="100%" />
 </p>
 
 
@@ -195,9 +194,11 @@ Se você é um desenvolvedor Web, algumas das melhorias que são encontradas na 
 - Professional	
 - Express
 - Community
+
 ### Ultimate, Premium, Professional, Test Professional editions
 - Fornecer vários recursos para diferentes equipes de desenvolvimento
 - Varia em custo e licenciamento
+
 ### Express edition
 - Livre
 - Direcionado para plataforma específica (Web, C#, VB, etc.)
@@ -210,13 +211,14 @@ Se você é um desenvolvedor Web, algumas das melhorias que são encontradas na 
 - Não pode ser usado em ambientes corporativos ou equipes com mais de cinco pessoas
 - Pode ser usado para qualquer outro tipo de projeto comercial ou não comercial
 
-    #### Getting Visual Studio Community Edition
-    - www.visualstudio.com
+    **Getting Visual Studio Community Edition**
+    - [Visual Studio](www.visualstudio.com)
     - Free developer tools
-    - www.microsoft.com
+    - [Microsoft](www.microsoft.com)
     - Search for Visual Studio Community'
     - Download is 6.9 GB
-    #### Hardware requirements
+
+    **Hardware requirements**
     - 1.6 GHz or faster processor
     - 1 GB of RAM (1.5 GB if running on a virtual machine)
     - 20 GB of available hard disk space
@@ -243,13 +245,25 @@ Ele fornece os recursos que são mais importantes para os programadores, como pr
 | Version | .NET Framework | Visual Studio | Important Features |
 |:----------|------|---------------------|---------------------|
 |C# 1.0| .NET Framework 1.0/1.1 | Visual Studio .NET 2002 | - Basic features   |
-| C# 2.0 | .NET Framework 2.0  |  Visual Studio 2005 | - Generics <br>  - Partial types <br>  - Anonymous methods <br> - Iterators <br> - Nullable types <br> - Private setters (properties) <br> - Method group conversions (delegates)  <br> - Covariance and Contra-variance  <br>  - Static classes  |
-|C# 3.0  |  .NET Framework 3.0\3.5 |  Visual Studio 2008 | - Implicitly typed local variables <br> - Object and collection initializers <br> - Auto-Implemented properties <br> - Anonymous types <br>- Extension methods <br> - Query expressions   <br> - Lambda expressions <br> - Expression trees <br> - Partial Methods  |
+| C# 2.0 | .NET Framework 2.0  |  Visual Studio 2005 | - Generics <br>  - Partial types <br>  - Anonymous methods <br> - Iterators, a.k.a yield statement <br> - Nullable types <br> - Private Getter/setter (properties) <br> - Method group conversions (delegates)  <br> - Covariance and Contra-variance  <br>  - Static classes <br>  - Delegate inference <br>  - Type and namespace aliases  |
+|C# 3.0  |  .NET Framework 3.0\3.5 |  Visual Studio 2008 | - Implicitly typed local variables <br> - Object and collection initializers <br> - Auto-Implemented properties <br> - Anonymous types <br>- Extension methods <br> - Query expressions, a.k.a LINQ    <br> - Lambda expressions <br> - Expression trees <br> - Partial Methods <br> - Lock statement  |
 |C# 4.0| .NET Framework 4.0 | Visual Studio 2010 | - Dynamic binding (late binding) <br> - Named and optional arguments  <br> - Generic co- and contravariance <br> - Embedded interop types  |
 |C# 5.0| .NET Framework 4.5 | Visual Studio 2012/2013 | - Async features <br>  - Caller information |
-|C# 6.0| .NET Framework 4.6 | Visual Studio 2013/2015 | - Expression Bodied Methods  <br>  - Auto-property initializer <br> - nameof Expression  <br> - Primary constructor  <br> - Await in catch block  <br> - Exception Filter  <br> - String Interpolation |
-|C# 7.0| .NET Core 2.0 | Visual Studio 2017 | - out variables <br> - Tuples   <br>  - Discards  <br>   <br> - Pattern Matching  <br> - Local functions  <br>  - Generalized async return types <br> - Numeric literal syntax improvements |
-|C# 8.0| .NET Core 3.0 | Visual Studio 2019 | - Readonly members <br> - Default interface methods  <br> - Using declarations <br> - Static local functions  <br>  - Disposable ref structs  <br> - Nullable reference types <br> - Asynchronous streams  <br> - Indices and ranges <br> - Null-coalescing assignment  <br> - Unmanaged constructed types <br>  - Stackalloc in nested expressions <br> - Enhancement of interpolated verbatim strings|
+|C# 6.0| .NET Framework 4.6 | Visual Studio 2013/2015 | - Expression Bodied Methods  <br>  - Auto-property initializer <br> - nameof Expression  <br> - Primary constructor  <br> - Await in catch block  <br> - Exception Filter  <br> - String Interpolation   <br> - Compiler-as-a-service (Roslyn)  <br> - Null propagator   <br> - Dictionary initializer |
+|C# 7.0| .NET Core 2.0 <br>  .NET Framework 4.7 <br>  .NET Standard 1.x | Visual Studio 2017 | - out variables <br> - Tuples   <br>  - Discards  <br>   <br> - Pattern Matching  <br> - Local functions  <br>  - Generalized async return types <br> - Numeric literal syntax improvements  <br> - Deconstruction   <br> - Binary Literals  <br> - Ref returns and locals  <br> - Throw expressions |
+|C# 7.1| .NET Core 2.0 <br>  .NET Framework 4.7.1 <br>  .NET Standard 1.x | Visual Studio 2017 version 15.3 | - Async main <br>  - Default expressions <br> - Reference assemblies   <br>  - Inferred tuple element names  <br> - Pattern-matching with generics  |
+|C# 7.2| .NET Core 2.0 <br>  .NET Framework 4.7.2 <br>  .NET Standard 1.x | Visual Studio 2017 version 15.5 | - Span and ref-like types <br> - In parameters and readonly references   <br>  - Ref conditional  <br> - Non-trailing named arguments  <br> - Private protected accessibility  <br>  - Digit separator after base specifier |
+|C# 7.3| .NET Core 2.0 <br>  .NET Framework all <br>  .NET Standard 2.0 | Visual Studio 2017 version 15.7 | - System.Enum, System.Delegate and unmanaged constraints <br> - Ref local re-assignment   <br>  - Stackalloc initializers  <br> - Indexing movable fixed buffers  <br> - Custom fixed statement  <br>  - Expression variables in initializers and queries <br> - Tuple comparison  <br> - Attributes on backing fields   |
+|C# 8.0| .NET Core 3.0 <br>  .NET Framework 4.8 | Visual Studio 2019 | - Readonly members <br> - Default interface methods  <br> - Using declarations <br> - Static local functions  <br>  - Disposable ref structs  <br> - Nullable reference types <br> - Asynchronous streams  <br> - Indices and ranges <br> - Null-coalescing assignment  <br> - Unmanaged constructed types <br>  - Stackalloc in nested expressions <br> - Enhancement of interpolated verbatim strings |
+|C# 9.0| .NET 5 | Visual Studio 2019 em 09/04/2020 | - Records <br> - Init only setters  <br> - Top-level statements <br> - Pattern matching enhancements  <br>  - Native sized integers  <br> - Function pointers <br> - Suppress emitting localsinit flag  <br> - Target-typed new expressions <br> - static anonymous functions  <br> - Target-typed conditional expressions <br>  - Covariant return types <br> - Lambda discard parameters <br> - Attributes on local functions <br> - Module initializers <br> - New features for partial methods |
+
+Abra o Prompt de Comando do Desenvolvedor para Visual Studio e execute o seguinte comando para ver a lista de versões de idioma disponíveis em sua máquina.
+```csharp
+csc -langversion:?
+```
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/langversion.png" alt="Image" width="100%" />
+</p>
 
 ### C# foi projetado com base em sete pontos básicos
 
@@ -296,7 +310,7 @@ Vários objetos podem ser criados com base em uma única classe. Apesar de cada 
 Exemplos: um objeto da classe "Funcionário" teria como atributos "nome", "endereço", "telefone", "CPF", etc 
 O conjunto de valores dos atributos de um determinado objeto é chamado de estado. 
 
-### Herança (Veja mais detalhes em Aplicar Hierarquia, mais abaixo)
+### Herança (Veja mais detalhes em [Implementar uma Hierarquia](criar-e-implementar-uma-hierarquia-de-classe))
 
 Herança é um princípio de orientação a objetos, que permite que classes compartilhem atributos e métodos, através de "heranças". Ela é usada na intenção de reaproveitar código ou comportamento generalizado ou especializar operações ou atributos.
 - Permite que uma classe reutilize o código de outra classe
@@ -335,7 +349,7 @@ Em C#, uma classe não pode herdar de várias classes, mas pode ser herdada em v
 
 Lembre-se, na herança ao criar um objeto de uma classe derivada, o compilador sempre executa suao construtor da classe base/pai primeiro e depois executa o construtor da classe filho. Se a mesma classe pai herdou de outra classe, o construtor dessa classe será executado primeiro e, em seguida, descerá ao nível de filho e neto para executar o construtor um após o outro.
 
-### Encapsulamento (Veja mais detalhes em Encapsulamento, mais abaixo)
+### Encapsulamento (Veja mais detalhes em [Aplicar encapsulamento](#aplicar-encapsulamento))
 
 A maior parte das linguagens orientadas a objetos implementam o encapsulamento baseado em propriedades privadas, ligadas a métodos especiais chamados getters e setters, que irão retornar e setar o valor da propriedade, respectivamente. Essa atitude evita o acesso direto a propriedade do objeto, adicionando uma outra camada de segurança à aplicação.
 
@@ -345,7 +359,7 @@ Para fazermos um paralelo com o que vemos no mundo real, temos o encapsulamento 
 - Fornece segurança e facilidade de uso para objetos
 - Exemplo: fazer uma chamada usando um smartphone
 
-### Polimorfismo (Veja mais detalhes em Encapsulamento, mais abaixo)
+### Polimorfismo (Veja mais detalhes em [Polimorfismo](#polimorfismo-estático)) 
 
 Na natureza, vemos animais que são capazes de alterar sua forma conforme a necessidade, e é dessa ideia que vem o polimorfismo na orientação a objetos. Como sabemos, os objetos filhos herdam as características e ações de seus “ancestrais”. Entretanto, em alguns casos, é necessário que as ações para um mesmo método seja diferente. Em outras palavras, o polimorfismo consiste na alteração do funcionamento interno de um método herdado de um objeto pai.
 
@@ -416,14 +430,14 @@ Vejamos os tipos de valor armazenados na Stack - pilha...
 - Cada variável armazena seus próprios dados
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackPilha.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackPilha.png" alt="Image" width="500px" />
 </p>
  
 
 Perceba que o valor da variável fica junto com a própria variável. Variáveis onde isso acontece são chamadas de Value-Types, justamente porque o valor delas fica junto  com a própria variável na memória stack. Assim, quando você tem o seguinte código
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackHeap.png" alt="Image" width="400px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackHeap.png" alt="Image" width="500px" />
 </p>
 
 Agora, outros tipos de dados ocupam muito mais espaço de memória do que estes tipos leves que são value-types. Por isso, eles não podem ser armazenados diretamente na stack (caso fossem, rapidamente a memória stack seria “estourada”, causando o famoso erro StackOverflowException). Sendo assim, estes dados são armazenados na memória heap. Vamos imaginar que você tenha o seguinte código:
@@ -444,13 +458,13 @@ Pessoa minhaPessoa = new Pessoa();
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/NewPessoa.png" alt="Image" width="400px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/NewPessoa.png" alt="Image" width="500px" />
 </p>
  
 Porém, o compilador não acessa a heap diretamente. Por que ele não acessa? Justamente porque ela é muito grande… Se ele fosse procurar o objeto minhaPessoa dentro da heap, ele iria demorar um tantinho bom de tempo. O compilador precisaria ter um jeito de acessar pela stack (que é rápida pra encontrar as coisas até mesmo por ser bem menor) o que está alocado na heap (que é bem maior). Como o compilador contorna isso? Criando uma referência dentro da stack para o objeto minhaPessoa, apontando onde na memória heap que este objeto está de fato guardado!
  
  <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackRef.png" alt="Image" width="400px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/StackRef.png" alt="Image" width="500px" />
 </p>
 
 Essa porção de memória que é alocada na stack para apontar para uma posição de memória da heap é chamada de ponteiro. Por isso ele tem esse asterisco (*) na frente do seu nome.
@@ -473,7 +487,7 @@ Car f = d;
 f.hp = 100; <- altera o valor em d também
 ```
  <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Carclass.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Carclass.png" alt="Image" width="500px" />
 </p>
 
 
@@ -910,7 +924,7 @@ class Program
 }
 ```
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/ErroListGeneric.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/ErroListGeneric.png" alt="Image" width="400px" />
 </p>
  
 O .NET fornece várias classes e interfaces genéricas. Isso existe no namespace System.Collections.Generic. Alguns estão listados abaixo:
@@ -1092,7 +1106,7 @@ public void MyGenericMethod2<T>(T parameter) where T : class { /*....*/ }
 
 No primeiro, você pode chamá-lo com um tipo não ref, por exemplo. MyGenericMethod<int> (10). No segundo método, o T só pode aceitar tipo de referência(classe) e não pode ser um tipo de estrutura. No momento da instanciação da classe genérica, se o cliente fornecer parâmetro de tipo inválido, a compilação causará um erro.
 
-Na Tabela abaixo, você pode ver as diferentes restrições que pode usar. Eles diferem apenas no tempo de compilação, pois o compilador verifica se T é do tipo ref ou não.
+Na Tabela abaixo, você pode ver as diferentes restrições que pode usar. Eles diferem apenas no tempo de compilaç������o, pois o compilador verifica se T é do tipo ref ou não.
 
 | Restrição | Descrição | 
 |:----------|------|
@@ -1482,12 +1496,12 @@ static void Main(string[] args)
     Console.ReadKey();
 }
 ```
-| Base para Comparação | Boxe | Unboxing |
-|:----------|------|---------------------|
-|Basic| Tipo de objeto refere-se ao tipo de valor. | processo de recuperação de valor do objeto em caixa.|
-|Armazenamento  | O valor armazenado na pilha é copiado para o objeto armazenado na memória heap. | O valor do objeto armazenado na memória heap é copiado para o tipo de valor armazenado na pilha. |
-| Conversão  |  Conversão implícita. |  Conversão explícita. |
-| Exemplo  |  int n = 24;  objeto ob = n; |  int m = (int) ob; |
+|     Base para Comparação    |     Boxe                                                                                 |     Unboxing                                                                                              |
+|-----------------------------|------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|     Basic                   |     Tipo de objeto refere-se ao tipo de valor.                                           |     processo de recuperação de valor do objeto em caixa.                                                  |
+|     Armazenamento           |     O valor armazenado na pilha é copiado para o objeto armazenado na   memória heap.    |     O valor do objeto armazenado na memória heap é copiado para o tipo de   valor armazenado na pilha.    |
+|     Conversão               |     Conversão implícita.                                                                 |     Conversão explícita.                                                                                  |
+|     Exemplo                 |     int n = 24;  <br>   objeto ob = n;                                                       |     int m = (int) ob;                                                                                     |
 		
 		
 Se você executar uma operação unbox inválida, o tempo de execução lançará uma InvalidCastException, como ocorreu ao tentar um unboxing de int para long em y = (Int64)o . Você não verá o erro no momento da compilação porque o compilador confia em você ao fazer a chamada certa. No tempo de execução, no entanto, a conversão falha e uma exceção é lançada.
@@ -1541,7 +1555,9 @@ double y=12.6;
 x = (int)y;
 ```
 
-**Operador “as”** é uma palavra-chave usada para explicitamente converter um tipo para outro. Se um tipo for convertido com êxito, ele retornará valor nesse tipo. Se um tipo não se converter adequadamente, ele retornará valor nulo.
+### Operador “as” 
+
+É uma palavra-chave usada para explicitamente converter um tipo para outro. Se um tipo for convertido com êxito, ele retornará valor nesse tipo. Se um tipo não se converter adequadamente, ele retornará valor nulo.
 
 ```csharp
 public class  Person { }
@@ -1568,7 +1584,9 @@ employes = persons as Employee[];
 Manager[] managers = persons as Manager[];
 ```
 
-**Operador “is”** é uma palavra-chave usada para corresponder a um tipo. Se um tipo corresponde, ele retorna true; caso contrário, ele retornará false. Um uso comum deste operador vem com a conversão de tipo explícita, evitar essa exceção de convesrão de tipo.
+### Operador “is”
+
+É uma palavra-chave usada para corresponder a um tipo. Se um tipo corresponde, ele retorna true; caso contrário, ele retornará false. Um uso comum deste operador vem com a conversão de tipo explícita, evitar essa exceção de convesrão de tipo.
 
 if (persons is Employee[])
 { 
@@ -1584,7 +1602,7 @@ A conversão permite que um programa converta um valor de um tipo para outro tip
 
 Para conversão entre tipos compatíveis, você pode usar o System.Convert e os métodos Parse ou TryParse em vários tipos.Para converterentre tipos não compatíveis, você pode usar System.BitConverter. 
 
-### Métodos Parsing (veja mais detalhes no Tópico 4-Depurar)
+### Métodos Parsing (veja mais detalhes em [Depurar_segurança](https://shyoutarou.github.io/Exam-70-483_Depurar_segurança/))
 
 Cada um dos tipos de dados C# primitivos (int, bool, doubl, etc) possui um método Parse que converte uma representação de seqüência de caracteres de um valor nesse tipo de dados. Por exemplo, bool.Parse usa como argumento uma string que representa um valor booleano como true e retorna o valor correspondentevalor bool true.Estes métodos Parse lançam exceções se suas entradas estiverem em um formato não reconhecido. Por exemplo, a instrução bool.Parse("yes") lança uma FormatException porque esse método entende apenas os valores true e false.
 
@@ -1634,7 +1652,7 @@ Como alternativa, você pode transmitir ao método o estilo composto Currency, c
 decimal amount = decimal.Parse("$123,456.78", NumberStyles.AllowCurrencySymbol);
 ```
 
-### System.Convert(veja mais detalhes no arquivo 4-Depurar)
+### System.Convert(veja mais detalhes em [Depurar_segurança](https://shyoutarou.github.io/Exam-70-483_Depurar_segurança/))
 
 A classe System.Convert fornece mais de 300 métodos (incluindo versões sobrecarregadas) para converter um tipo de dados em outro. Por exemplo, o método ToInt32 converte um valor em um número inteiro de 32 bits (um int). Diferentes versões sobrecarregadas dos métodos usam parâmetros de diferentes tipos, comobools, bytes, DateTimes, duplas, seqüências de caracteres e assim por diante
 - Convert fornece funcionalidade semelhante, mas fica um pouco mais complexo
@@ -2218,7 +2236,7 @@ Uma das principais funções modificadores é definir o nível de acessibilidade
 Public
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/publicclass.png" alt="Image" width="500px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/publicclass.png" alt="Image" width="400px" />
 </p>
 
 
@@ -2338,7 +2356,7 @@ Os métodos têm algumas características que você deve entender
 - Uma instrução 'return' dentro do método interrompe a execução e retorna um valor para o chamador se o valor corresponder ao tipo de retorno
  
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Tpretorno.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Tpretorno.png" alt="Image" width="400px" />
 </p>
 
 ### Parâmetros
@@ -2349,7 +2367,7 @@ Os métodos têm algumas características que você deve entender
   Parametros
 - Parâmetros opcionais são definidos no final da lista de parâmetros, após todos os parâmetros necessários. Se nenhum argumento for enviado para esse parâmetro, o valor padrão será usado.
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Parametros_op.png" alt="Image" width="500px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Parametros_op.png" alt="Image" width="400px" />
 </p>
 
 ### Assinatura
@@ -2357,7 +2375,7 @@ Os métodos têm algumas características que você deve entender
 - Para sobrecarga(overloading), a assinatura inclui o nome do método e os tipos de parâmetro
 - Para delegados(delegates), a assinatura inclui o tipo de retorno e os tipos de parâmetro
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Assinatura.png" alt="Image" width="500px" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Assinatura.png" alt="Image" width="400px" />
 </p>
 
 ### Static
@@ -2670,7 +2688,7 @@ Ao instanciarmos BaseClass dc = new DerivedClass(); dc mantém objeto de sua cla
 Os campos não podem ser virtuais, apenas os métodos, propriedades, eventos e indexadores podem ser virtuais. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Workfield.png" alt="Image" width="100%" />
+  <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/Workfield.png" alt="Image" width="500px" />
 </p>
  
 Quando uma classe derivada substitui um membro virtual, esse membro é chamado, mesmo quando uma instância dessa classe está sendo acessada como uma instância da classe base. O código a seguir mostra um exemplo:
