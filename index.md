@@ -1121,7 +1121,7 @@ public void MyGenericMethod2<T>(T parameter) where T : class { /*....*/ }
 
 No primeiro, você pode chamá-lo com um tipo não ref, por exemplo. MyGenericMethod<int> (10). No segundo método, o T só pode aceitar tipo de referência(classe) e não pode ser um tipo de estrutura. No momento da instanciação da classe genérica, se o cliente fornecer parâmetro de tipo inválido, a compilação causará um erro.
 
-Na Tabela abaixo, você pode ver as diferentes restrições que pode usar. Eles diferem apenas no tempo de compilaç������o, pois o compilador verifica se T é do tipo ref ou não.
+Na Tabela abaixo, você pode ver as diferentes restrições que pode usar. Eles diferem apenas no tempo de compilação, pois o compilador verifica se T é do tipo ref ou não.
 
 | Restrição | Descrição | 
 |:----------|------|
