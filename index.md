@@ -4155,7 +4155,7 @@ Os valores das propriedades podem ser atribuídos quando uma instância do atrib
 [MyCustom(Nome = "Ali Asad", Idade = 30)]
 ```
 
-No parâmetro AttributeUsage, usamos AttributeTargets para restringir um atributo personalizado a ser aplicado apenas nessas enumerações (classe, método, propriedade etc.). Use um tubo de barra vertical '|' para adicionar mais de um AttributeTargets no construtor de AttributeUsage. A seguir, são apresentadas algumas enumerações de AttributeTargets usadas com freqüência, úteis para aplicar restrições no código C#.
+No parâmetro AttributeUsage, usamos AttributeTargets para restringir um atributo personalizado a ser aplicado apenas nessas enumerações (classe, método, propriedade etc.). Use um tubo de barra vertical ```|``` para adicionar mais de um AttributeTargets no construtor de AttributeUsage. A seguir, são apresentadas algumas enumerações de AttributeTargets usadas com freqüência, úteis para aplicar restrições no código C#.
 
 
 |  |  | AttributeTargets |  |  |
