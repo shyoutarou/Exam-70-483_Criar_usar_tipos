@@ -1,5 +1,5 @@
 
-### Este exame é retirado em 31 de janeiro de 2021 às 23h59, horário central. Você não poderá mais fazer o exame após essa data. Saiba mais sobre outros exames que serão retirados [aqui](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
+### Este exame será retirado em 31 de janeiro de 2021 às 23h59, horário central. Você não poderá mais fazer o exame após essa data. Saiba mais sobre outros exames que serão retirados [aqui](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
 
 # Course Overview MCSD – Microsoft Certification
 
@@ -35,7 +35,8 @@ Este exame é destinado a desenvolvedores com um ano de experiência ou mais em 
 
 **Exame 70-357: Desenvolvendo Aplicativos Móveis**
 **Desenvolvendo Aplicativos Móveis**
-**Este exame é retirado em 31 de janeiro de 2021 às 23h59** [Saiba mais](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
+
+**Este exame será retirado em 31 de janeiro de 2021 às 23h59** [Saiba mais](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
 
 Candidatos para o exame são os desenvolvedores experientes que projetam e desenvolvem aplicativos para Windows 10 de implantação para Windows Store ou Windows Store for Business.
 
@@ -45,7 +46,8 @@ Os candidatos têm, normalmente, mais de dois anos de experiência no desenvolvi
 
 **Exame 70-486/Curso 20486B**
 **Desenvolvendo Aplicativos Web ASP .NET MVC**
-**Este exame é retirado em 31 de janeiro de 2021 às 23h59** [Saiba mais](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
+
+**Este exame será retirado em 31 de janeiro de 2021 às 23h59** [Saiba mais](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
 
 Este exame é destinado a desenvolvedores com no mínimo três a cinco anos de experiência no desenvolvimento de aplicativos Web ASP .NET, incluindo dois anos ou mais desenvolvendo soluções baseadas em MVC.
 
