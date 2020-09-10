@@ -132,6 +132,7 @@ PS: Neste [examcollection](http://www.examcollection.com/70-536.html) tem mais e
   <img src="https://raw.githubusercontent.com/shyoutarou/Exam-70-483_Criar_usar_tipos/master/.github/RefBook.png" alt="Image" width="100%" />
 </p>
 
+Outro site para treinar questõe é [Exam Topics](https://www.examtopics.com/exams/microsoft/70-483/view/)
 
 | Título | Data | Autor |
 |:----------|------|---------------------|
