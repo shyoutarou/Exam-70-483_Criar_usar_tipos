@@ -1511,13 +1511,14 @@ static void Main(string[] args)
     Console.ReadKey();
 }
 ```
+
 |     Base para Comparação    |     Boxe                                                                                 |     Unboxing                                                                                              |
 |-----------------------------|------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 |     Basic                   |     Tipo de objeto refere-se ao tipo de valor.                                           |     processo de recuperação de valor do objeto em caixa.                                                  |
 |     Armazenamento           |     O valor armazenado na pilha é copiado para o objeto armazenado na   memória heap.    |     O valor do objeto armazenado na memória heap é copiado para o tipo de   valor armazenado na pilha.    |
 |     Conversão               |     Conversão implícita.                                                                 |     Conversão explícita.                                                                                  |
-|     Exemplo                 |     int n = 24;  <br>   objeto ob = n;                                                       |     int m = (int) ob;                                                                                     |
-		
+|     Exemplo                 |     int n = 24;     objeto ob = n;                                                       |     int m = (int) ob;                                                                                     |
+
 		
 Se você executar uma operação unbox inválida, o tempo de execução lançará uma InvalidCastException, como ocorreu ao tentar um unboxing de int para long em y = (Int64)o . Você não verá o erro no momento da compilação porque o compilador confia em você ao fazer a chamada certa. No tempo de execução, no entanto, a conversão falha e uma exceção é lançada.
 
