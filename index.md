@@ -23,8 +23,10 @@ A Microsoft oferece atualmente quatro certificações MCSD com base em várias t
 
 The MCSD: Windows Store Apps can be achieved by passing three exams:
 - Programming in C# (Exam 70-483)
-- Essentials of Developing Windows Store Apps Using C# (Exam 70-484) **Esse exame foi desativado**
--Advanced Windows Store App Development Using C# (Exam 70-485) **Esse exame foi desativado**
+- Essentials of Developing Windows Store Apps Using C# (Exam 70-484) 
+    - **Esse exame foi desativado**
+-Advanced Windows Store App Development Using C# (Exam 70-485) 
+    - **Esse exame foi desativado**
 
 ### Exame 70-483/Curso 20483B
 
@@ -33,7 +35,7 @@ Este exame é destinado a desenvolvedores com um ano de experiência ou mais em 
 
 **Exame 70-357: Desenvolvendo Aplicativos Móveis**
 **Desenvolvendo Aplicativos Móveis**
-**Este exame é retirado em 31 de janeiro de 2021 às 23h59** [Mais info](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
+**Este exame é retirado em 31 de janeiro de 2021 às 23h59** [Saiba mais](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
 
 Candidatos para o exame são os desenvolvedores experientes que projetam e desenvolvem aplicativos para Windows 10 de implantação para Windows Store ou Windows Store for Business.
 
@@ -43,7 +45,7 @@ Os candidatos têm, normalmente, mais de dois anos de experiência no desenvolvi
 
 **Exame 70-486/Curso 20486B**
 **Desenvolvendo Aplicativos Web ASP .NET MVC**
-**Este exame é retirado em 31 de janeiro de 2021 às 23h59** [Mais info](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
+**Este exame é retirado em 31 de janeiro de 2021 às 23h59** [Saiba mais](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
 
 Este exame é destinado a desenvolvedores com no mínimo três a cinco anos de experiência no desenvolvimento de aplicativos Web ASP .NET, incluindo dois anos ou mais desenvolvendo soluções baseadas em MVC.
 
