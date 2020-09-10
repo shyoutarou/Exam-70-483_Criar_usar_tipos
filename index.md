@@ -374,7 +374,7 @@ Para fazermos um paralelo com o que vemos no mundo real, temos o encapsulamento 
 - Fornece segurança e facilidade de uso para objetos
 - Exemplo: fazer uma chamada usando um smartphone
 
-### Polimorfismo (Veja mais detalhes em [Polimorfismo](#polimorfismo-estático)) 
+### Polimorfismo (Veja mais detalhes em [Polimorfismo](#tipos-polimorfismo)) 
 
 Na natureza, vemos animais que são capazes de alterar sua forma conforme a necessidade, e é dessa ideia que vem o polimorfismo na orientação a objetos. Como sabemos, os objetos filhos herdam as características e ações de seus “ancestrais”. Entretanto, em alguns casos, é necessário que as ações para um mesmo método seja diferente. Em outras palavras, o polimorfismo consiste na alteração do funcionamento interno de um método herdado de um objeto pai.
 
@@ -2420,7 +2420,7 @@ O construtor leva o mesmo nome que a classe. Dentro dos colchetes, as declaraç�
     - **Particular (Private)**>> Impede que outras classes criem instâncias dessa classe. Somente classes aninhadas podem criar uma instância dessa classe
     - **Estático (Static)**>> Usado para inicializar qualquer dado estático. O construtor estáticoé chamado apenas uma única vez antes da criação da primeira instância da classe ou da referência a qualquer membro estático
 
-## POLIMORFISMO
+## TIPOS POLIMORFISMO
 
 Polimorfismo é tudo sobre mudança de comportamentos; em outras palavras, são formas diferentes de um objeto. Em C#, o polimorfismo é de dois tipos:
 1.	**Polimorfismo estático (early binding)**; em tempo de compilação (Overloading/Sobrecarga);
