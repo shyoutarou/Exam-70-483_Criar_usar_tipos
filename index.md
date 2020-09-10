@@ -34,6 +34,7 @@ Este exame é destinado a desenvolvedores com um ano de experiência ou mais em 
 **Exame 70-357: Desenvolvendo Aplicativos Móveis**
 **Desenvolvendo Aplicativos Móveis**
 **Este exame é retirado em 31 de janeiro de 2021 às 23h59** [Mais info](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
+
 Candidatos para o exame são os desenvolvedores experientes que projetam e desenvolvem aplicativos para Windows 10 de implantação para Windows Store ou Windows Store for Business.
 
 Os candidatos têm, normalmente, mais de dois anos de experiência no desenvolvimento de aplicativos do Windows usando C# e XAML, além de experiência com WPF ou Silverlight para Windows Phone. Os candidatos também devem ter experiência com o padrão de projeto Model-View-ViewModel (MVVM) e Entity Framework, além das tecnologias de autenticação. Experiência com Visual Studio 2015 é altamente recomendada.
@@ -43,6 +44,7 @@ Os candidatos têm, normalmente, mais de dois anos de experiência no desenvolvi
 **Exame 70-486/Curso 20486B**
 **Desenvolvendo Aplicativos Web ASP .NET MVC**
 **Este exame é retirado em 31 de janeiro de 2021 às 23h59** [Mais info](https://docs.microsoft.com/en-us/learn/certifications/retired-certification-exams)
+
 Este exame é destinado a desenvolvedores com no mínimo três a cinco anos de experiência no desenvolvimento de aplicativos Web ASP .NET, incluindo dois anos ou mais desenvolvendo soluções baseadas em MVC.
 
 
