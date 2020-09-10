@@ -325,7 +325,7 @@ Vários objetos podem ser criados com base em uma única classe. Apesar de cada 
 Exemplos: um objeto da classe "Funcionário" teria como atributos "nome", "endereço", "telefone", "CPF", etc 
 O conjunto de valores dos atributos de um determinado objeto é chamado de estado. 
 
-### Herança (Veja mais detalhes em [Implementar uma Hierarquia](criar-e-implementar-uma-hierarquia-de-classe))
+### Herança (Veja mais detalhes em [Implementar uma Hierarquia](#criar-e-implementar-uma-hierarquia-de-classe))
 
 Herança é um princípio de orientação a objetos, que permite que classes compartilhem atributos e métodos, através de "heranças". Ela é usada na intenção de reaproveitar código ou comportamento generalizado ou especializar operações ou atributos.
 - Permite que uma classe reutilize o código de outra classe
