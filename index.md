@@ -9,26 +9,14 @@
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Gerenciar_fluxo/)
 3. [Acesso_dados](https://github.com/shyoutarou/Exam-70-483_Acesso_dados/wiki/Acesso_dados)
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Acesso_dados/)
-4. [Depurar_segurança](https://github.com/shyoutarou/Exam-70-483_Depurar_segurança/wiki/Depurar_segurança)
-     - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Depurar_segurança/)
+4. [Depurar_segurança](https://github.com/shyoutarou/Exam-70-483_Depurar_seguranca/wiki/Depurar_seguranca)
+     - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Depurar_seguranca/)
 5. [Csharp8_Csharp9](https://github.com/shyoutarou/Exam-70-483_Csharp8_Csharp9/wiki/Csharp8_Csharp9)
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Csharp8_Csharp9/)
 6. [Questions](https://github.com/shyoutarou/Exam-70-483_Questions/wiki/Questions)
 
 
 # Course Overview MCSD – Microsoft Certification
-
-<details>
-  <summary>GitHub Page</summary>
-  
- 1. [Criar_usar_tipos](https://shyoutarou.github.io/Exam-70-483_Criar_usar_tipos/)
- 2. [Gerenciar_fluxo]()
- 3. [Acesso_dados]()
- 4. [Depurar_segurança]()
- 5. [Csharp8]()
- 5. [Questions]()
-</details>
-
 
 A Microsoft oferece atualmente quatro certificações MCSD com base em várias tecnologias
 - MCSD: Windows Store Apps
