@@ -994,3 +994,113 @@ class Program
         Console.ReadKey();
     }
 }
+```
+
+O método de extensão não pode ser declarado apenas em uma classe ou estrutura.Também pode ser declarado em uma interface (como IEnumerable <T>). Normalmente, uma interface não teria nenhuma implementação. Com os métodos de extensão, no entanto, você pode adicionar métodos que estará disponível em todas as implementações concretas da interface.
+
+A Consulta Integrada à Linguagem (LINQ) é um dos melhores exemplos de como você pode usar estetécnica para aprimorar o código existente. Em vez de precisar adicionar todos os operadores LINQ a cada e todas as classes, eles são criados como métodos de extensão nas interfaces básicas de cada coleção tipo. Dessa forma, todas as coleções podem usar repentinamente o LINQ.
+
+### Interface Explicitamente(Ver também, mais a frente, Implementando Interfaces)
+
+As interfaces são úteis ao usar o encapsulamento. Mais abaixo, na implementação de hierarquia de classe, há um explicação mais detalhada de como projetar e usar interfaces. Mas com relação ao tópico do encapsulamento, é necessário entender sobre a implementação explícita da interface.
+
+Como exemplo de implementação explícita da interface, consulte o Entity Framework (um mapeador de objeto-relacional que faz parte do .NET Framework). Ao trabalhar com o Entity Framework, você trabalha com uma classe DbContext, que é um invólucro do ObjectContext e expõe uma interface mais fácil de usar. O DbContext implementa a seguinte interface:
+
+```csharp
+public interface IObjectContextAdapter
+{
+    objectContext ObjectContext { get; }
+}
+```
+
+Embora a interface mostre uma propriedade ObjectContext, o código a seguir não será compilado:
+
+```csharp
+DbContext ctx = …; // create a new context
+var context = ctx.ObjectContext;
+```
+
+O seguinte será compilado:
+
+```csharp
+var adaptedContext = ((IObjectContextAdapter)ctx).ObjectContext;
+```
+
+É possível porque o DbContext implementa a interface IobjectContextAdapterexplicitamente. A implementação explícita da interface significa que um elemento do tipo de interface pode ser acessado apenas ao usar a interface diretamente. Você pode criar uma implementação explícita da interface adicionando o nome da interface e um ponto à implementação.
+
+```csharp
+interface IInterfaceA
+{
+    void MyMethod();
+}
+
+class Implementation : IInterfaceA
+{
+    void IInterfaceA.MyMethod() { }
+}
+```
+
+A classe Implementation implementa a interface IInterfaceA explicitamente. Quando você tem uma instância de Implementação, não pode acessar o MyMethod. Mas quando você lança Implementation para IInterfaceA, você tem acesso ao MyMethod. Dessa forma, a implementação explícita da interface pode ser usada para ocultar membros de uma classe para usuários externos.
+
+Há outra situação em que a implementação explícita da interface é necessária: quando uma classe implementa duas interfaces que contêm assinaturas de método duplicadas, mas deseja uma implementação diferente para ambas. Ao implementar implicitamente essas duas interfaces, apenas um método existe na implementação. Com a implementação explícita da interface, ambas as interfaces têm sua própria implementação. O código abaixo mostra como implementar uma interface explicitamente.
+
+```csharp
+class Program
+{
+    static void Main(string[] args)
+    {
+        Machine1 m1 = new Machine1();
+        Machine3 m3 = new Machine3();
+
+        m1.Start();
+
+        m3.Start();
+        ((IControls_2)m3).Start();
+
+        Console.ReadKey();
+    }
+}
+
+public class Machine1 : IControls
+{
+    public void Start()
+    {
+        Console.WriteLine("Machine1...Start");
+    }
+}
+
+public class Machine3 : IControls, IControls_2
+{
+    public void Start()
+    {
+        Console.WriteLine("Implementation of IControls.Start()...");
+    }
+
+    int IControls_2.Start()
+    {
+        Console.WriteLine("Implementation of IControls_2.Start...");
+        return 6;
+    }
+}
+
+interface IControls
+{
+    void Start();
+}
+
+interface IControls_2
+{
+    int Start();
+}
+```
+
+**Sumário**
+- O encapsulamento é importante no software orientado a objetos. Oculta detalhes internos e melhora a usabilidade de um tipo.
+- Os dados podem ser encapsulados com propriedades e indexadores
+- As propriedades podem ter um acessador get e um set que podem executar código adicional, comumente conhecido como getters e setters.
+- Tipos e elementos de tipo podem ter modificadores de acesso para restringir a acessibilidade.
+- Os modificadores de acesso são públicos, internos, protegidos, protegidos internos e privados.
+- A classe derivada pode herdar todos os dados de sua classe base, exceto uma que é mencionada com o especificador de acesso privado.
+- O C# não permite herança múltipla, mas permite herança em vários níveis.
+- Uma classe deve implementar todos os membros de uma interface e todos os métodos abstratos de uma classe abstrata.
+- O método abstrato só pode ser escrito dentro de uma classe abstrata.
