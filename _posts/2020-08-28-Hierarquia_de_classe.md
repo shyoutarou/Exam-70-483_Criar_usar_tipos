@@ -654,3 +654,139 @@ class Person_Equals : IEquatable<Person_Equals>
     }
 }
 ```
+
+Para a maioria dos tipos de referência, o uso do IEquatable é evitado porque, se você o fizer, precisará substituir os métodos Object.Equals(Object) e GetHashCode, pois seu comportamento é consistente com o método IEquatable.Equals. Implementando todas validações na classe Person ficaria assim:
+
+```csharp
+
+class Person : IEquatable<Person>
+{
+    public string  FirstName { get; set; }
+    public string  LastName { get; set; }
+    public int Age { get; set; }
+
+    public bool Equals(Person other)
+    {
+        if ((FirstName == other.FirstName) && (LastName == other.LastName))
+        return true;
+        else return false;
+    }
+
+    public override bool Equals(object obj)
+    {
+        Person other = (Person)obj;
+        return this.Equals(other);
+    }
+
+    public override int GetHashCode()
+    {
+        //custom implementation of hashcode
+        string hash = this.FirstName + this.LastName;
+        return hash.GetHashCode();
+    }
+
+    public static bool operator ==(Person person1, Person person2)
+    {
+        if (((object)person1) == null || ((object)person2) == null)
+        return Object.Equals(person1, person2);
+        return person1.Equals(person2);
+    }
+
+    public static bool operator !=(Person person1, Person person2)
+    {
+        if (((object)person1) == null || ((object)person2) == null)
+        return !Object.Equals(person1, person2);
+        return !(person1.Equals(person2));
+    }
+}
+```
+
+
+Classes de coleção genérica, como Lista, Dicionário, Pilha e Fila, fornece Contains e outros métodos que comparam objetos para igualdade. A Microsoft recomenda que seja implementado o IEquatable em qualquer classe que esteja em qualquer dessas coleções genéricas.
+
+Isso permite criar uma lista de objetos Person que usa o método Contains da lista para verificar se a pessoa já está na lista. Se você tentar criar uma Pessoa com o mesmo nome e sobrenome que uma Pessoa criada anteriormente, o programa exibirá uma mensagem de erro. 
+
+```csharp
+Person person1 = new Person() { Age = 21, FirstName = "Ali", LastName = "Dali" };
+Person person2 = new Person() { Age = 45, FirstName = "Ali", LastName = "Dali" };
+Console.WriteLine(person1 == person2); // True
+
+List<Person> People = new List<Person>();
+People.Add(person1);
+
+if (People.Contains(person2)) // True
+    Console.WriteLine("The list already contains this person.");
+else People.Add(person2);
+```
+
+O método Contains da lista usa o fato de que a classe Person implementa IEquatable para decidir se dois objetos são iguais. Se você comentar a parte: IEquatable da declaração da classe Person, a classe não implementa mais o IEquatable; portanto, a lista trata dois objetos diferentes como diferentes, mesmo que eles tenham os mesmos valores de primeiro e último nome. 
+
+### ICloneable
+
+Uma classe que implementa a interface ICloneable deve fornecer um método Clone que retorna uma cópia do objeto para o qual é chamado. Por exemplo, o código a seguir mostra uma classe Person simples e clonável:
+
+```csharp
+class Person : ICloneable
+{
+    public string  FirstName { get; set; }
+    public string  LastName { get; set; }
+    public Person Manager { get; set; }
+
+    // Return a clone of this person. 
+    public object Clone()
+    {
+        Person person = new Person();
+        person.FirstName = FirstName;
+        person.LastName = LastName;
+        person.Manager = Manager;
+        return person;
+    }
+}
+```
+
+O método Clone desta classe simplesmente cria um novo objeto Person com as mesmas propriedades FirstName, LastName e Manager que o original e, em seguida, retorna o novo objeto. Observe que o método Clone retorna um objeto não específico, não uma Person; portanto, o código de chamada deve converter o resultado em uma Person. O código a seguir mostra como o programa de exemplo ICloneablePerson, disponível para download no site do livro, cria dois objetos Person. e depois clona um deles:
+
+```csharp
+Person ann = new Person() { FirstName = "Ann", LastName = "Archer", Manager = null };
+Person bob = new Person() { FirstName = "Bob", LastName = "Baker", Manager = ann };
+Person bob2 = (Person)bob.Clone();
+```
+
+
+Esse código cria uma pessoa chamada Ann Archer e outra chamada Bob Baker. Em seguida, clona a pessoa de Bob Baker para criar um terceiro objeto de pessoa.A classe de método Person.Clone descrita nesta seção é um clone superficial porque define a propriedade Manager do clone igual à propriedade Manager do objeto original.Existem dois tipos de clones: 
+- **Superficial**: qualquer valor de referência na cópia se refere aos mesmos objetos que os do objeto original
+- **Profundo**: os valores de referência do novo objeto são definidos para novos objetos. 
+
+A interface ICloneable não especifica se o método Clone deve retornar um clone superficial ou profundo; portanto, você deve fazer o que fizer mais sentido para o seu aplicativo. Se desejar, também é possível criar um segundo método Clone que assume como parâmetro um valor booleano que indica se a cópia deve ser um clone profundo.O código a seguir mostra como a classe Person poderia fornecer clones profundos:
+
+```csharp
+public object DeepClone()
+{
+    Person person = new Person();
+    person.FirstName = FirstName;
+    person.LastName = LastName;
+    person.Manager = Manager;
+    if (Manager != null)
+        person.Manager = (Person)Manager.Clone();
+    return person;
+}
+```
+
+### IUnknown
+
+Antes da existência do .NET, a primeira geração da API do Windows era baseada em uma biblioteca de funções contidas em uma biblioteca de vínculo dinâmico(DLL). Gerações posteriores coletaram essas funções em uma interface Component Object Model(COM). O .NET Framework fornece classes que agrupa muitas dessas APIs em uma versão gerenciada para que você quase nunca toque diretamente em nenhum componente COM.
+
+Normalmente, você apenas adiciona uma referência a um objeto COM e o compilador gera as classes de wrapper necessárias chamadas classes de interoperabilidade COM. Se isso falhar por algum motivo, você precisará criar a classe wrapper; é aqui que a interface IUnknown é usada.
+
+IUnknown é a interface base de todas as outras interfaces COM. Essa interface define três métodos: QueryInterface, AddRefe Release. QueryInterface permite que um usuário de interface solicite ao objeto um ponteiro para outra de suas interfaces. O AddRef e o Release implementam a contagem de referência na interface.
+
+### IDisposable (Mais informações em “Gerenciar o ciclo de vida do objeto” mais adiante neste documento)
+
+Outra interface útil no .NET Framework é IDisposable. Como o C# é uma linguagem gerenciada que usa um Garbage Collector para limpar a memória, essa interface é usada somente para facilitar o trabalho com recursos externos não gerenciados, como conexões com o banco de dados ou identificadores de arquivo. O único método que a interface IDisposable possui é Dispose(), conforme mostra a definição da interface IDisposable.
+
+```csharp
+interface pública IDisposable
+{
+    Dispose ();
+}
+```
