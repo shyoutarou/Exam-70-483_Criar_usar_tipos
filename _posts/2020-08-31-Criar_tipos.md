@@ -22,7 +22,37 @@
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Csharp8_Csharp9/)
 6. [Questions](https://github.com/shyoutarou/Exam-70-483_Questions/wiki/Questions)
 
-
+  - [Criar tipos](#criar-tipos)
+    - [POO - PROGRAMAÇÃO ORIENTADA A OBJETOS](#poo---programação-orientada-a-objetos)
+    - [Classes](#classes)
+    - [Objetos](#objetos)
+    - [Herança (Veja mais detalhes em Aplicar Hierarquia, mais abaixo)](#herança-veja-mais-detalhes-em-aplicar-hierarquia-mais-abaixo)
+    - [Encapsulamento (Veja mais detalhes em Encapsulamento, mais abaixo)](#encapsulamento-veja-mais-detalhes-em-encapsulamento-mais-abaixo)
+    - [Polimorfismo (Veja mais detalhes em Encapsulamento, mais abaixo)](#polimorfismo-veja-mais-detalhes-em-encapsulamento-mais-abaixo)
+  - [TIPOS DE C](#tipos-de-c)
+  - [VALUE TYPES (Tipos de Valor) E REFERENCE TYPES (Tipos de Referência)](#value-types-tipos-de-valor-e-reference-types-tipos-de-referência)
+  - [TIPOS DE REFERÊNCIA – reference types](#tipos-de-referência--reference-types)
+    - [Tipo object](#tipo-object)
+    - [Tipo string](#tipo-string)
+  - [TIPOS DE VALOR – value types](#tipos-de-valor--value-types)
+    - [Tipo decimal](#tipo-decimal)
+    - [BigInteger e Complex](#biginteger-e-complex)
+    - [Tipo char](#tipo-char)
+    - [Tipo bool](#tipo-bool)
+  - [ENUM  - Enumerações](#enum---enumerações)
+  - [STRUCTS](#structs)
+  - [GENERIC - Tipos genéricos](#generic---tipos-genéricos)
+    - [Generic Nullables](#generic-nullables)
+    - [Compreendendo genérico versus não genérico](#compreendendo-genérico-versus-não-genérico)
+    - [Métodos Genéricos](#métodos-genéricos)
+    - [Restrições Generic](#restrições-generic)
+  - [TIPOS ESPECIAIS EM C](#tipos-especiais-em-c)
+    - [Tipo System.Object](#tipo-systemobject)
+    - [Tipo anônimo](#tipo-anônimo)
+    - [Tipo Dinâmico](#tipo-dinâmico)
+    - [Tipo Nullable](#tipo-nullable)
+    - [Tipo Estático](#tipo-estático)
+    
 # Course Overview MCSD – Microsoft Certification
 
 A Microsoft oferece atualmente quatro certificações MCSD com base em várias tecnologias
