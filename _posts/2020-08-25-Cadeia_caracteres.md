@@ -813,6 +813,7 @@ Console.WriteLine($"{nome} is {age} year{(age == 1 ? "" : "s")} old.");
 //He asked, "Is your name Horace?", but didn't wait for a reply :-{
 //Horace is 34 years old.
 ```
+
 {% endraw %}    public string  Gender { get; set; }
     public int Age { get; set; }
     public int Weight { get; set; }
@@ -840,7 +841,8 @@ public class  Child : Patient  // Use colon to establish inheritance from Patien
     }
 }
 ```
-	Se na classe base tivessámos um construtor que aceitasse parâmetros como abaixo:
+
+Se na classe base tivessámos um construtor que aceitasse parâmetros como abaixo:
 
 
 ```csharp
@@ -875,6 +877,7 @@ Child pctor = new Child("Daryl", null);
 </p>
  
 Agora imagine uma situação onde tivéssemos muitos campos dentro de uma classe e precisássemos criar vários construtores que setassem determinados campos, como no exemplo abaixo:
+
 ```csharp
 public Patient(string FirstName, string LastName, string Gender)
 {
