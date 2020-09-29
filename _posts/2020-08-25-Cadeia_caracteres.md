@@ -24,6 +24,28 @@ Resumo do treinamento para o exame................
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Csharp8_Csharp9/)
 6. [Questions](https://github.com/shyoutarou/Exam-70-483_Questions/wiki/Questions)
 
+  - [Manipular cadeias de caracteres](#manipular-cadeias-de-caracteres)
+    - [Construtores de String](#construtores-de-string)
+    - [Campos e propriedades da sequência](#campos-e-propriedades-da-sequência)
+    - [Imutabilidade](#imutabilidade)
+    - [Stringbuilder](#stringbuilder)
+    - [StringReader](#stringreader)
+    - [StringWriter](#stringwriter)
+    - [Procurando por Strings](#procurando-por-strings)
+    - [Enumerando Strings](#enumerando-strings)
+    - [Formatando strings](#formatando-strings)
+    - [ToString](#tostring)
+    - [IFormatProvider e IFormattable](#iformatprovider-e-iformattable)
+    - [Formatos numéricos padrão](#formatos-numéricos-padrão)
+    - [Controle de espaçamento](#controle-de-espaçamento)
+    - [Alinhadores de controle](#alinhadores-de-controle)
+    - [Interpolação de Strings](#interpolação-de-strings)
+    - [Como usar seqüências de escape em uma sequência interpolada](#como-usar-seqüências-de-escape-em-uma-sequência-interpolada)
+    - [Como usar um operador condicional ternário](#como-usar-um-operador-condicional-ternário)
+    - [Como criar uma string de resultados específica da cultura com interpolação de string](#como-criar-uma-string-de-resultados-específica-da-cultura-com-interpolação-de-string)
+    - [Como criar uma sequência de resultados usando a cultura invariável](#como-criar-uma-sequência-de-resultados-usando-a-cultura-invariável)
+    - [Caracteres especiais](#caracteres-especiais)
+    
 ## Manipular cadeias de caracteres 
 - **Manipular cadeias de caracteres usando as classes StringBuilder, StringWriter e StringReader; pesquisar cadeias de caracteres; enumerar métodos de cadeias de caracteres; formatar cadeias de caracteres; usar interpolação de cadeia($)**
 
