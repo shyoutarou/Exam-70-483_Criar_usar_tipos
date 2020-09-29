@@ -37,31 +37,7 @@ Resumo do treinamento para o exame................
     - [ICloneable](#icloneable)
     - [IUnknown](#iunknown)
     - [IDisposable (Mais informações em “Gerenciar o ciclo de vida do objeto” mais adiante neste documento)](#idisposable-mais-informações-em-gerenciar-o-ciclo-de-vida-do-objeto-mais-adiante-neste-documento)
-  - [Usando reflexão](#usando-reflexão)
-    - [Criando e usando atributos](#criando-e-usando-atributos)
-    - [Atributos de leitura (Veja mais exemplos na seção Reflexion, mais abaixo)](#atributos-de-leitura-veja-mais-exemplos-na-seção-reflexion-mais-abaixo)
-    - [Atributo personalizado (Custom)](#atributo-personalizado-custom)
-    - [Atributos xUnit](#atributos-xunit)
-    - [Escreva sua primeira teoria](#escreva-sua-primeira-teoria)
-    - [Expressões CodeDom](#expressões-codedom)
-    - [CodeCompileUnit](#codecompileunit)
-    - [CodeNamespace e CodeNamespaceImport](#codenamespace-e-codenamespaceimport)
-    - [CodeTypeDeclaration](#codetypedeclaration)
-    - [CodeMemberField](#codememberfield)
-    - [CodeMemberProperty](#codememberproperty)
-    - [CodeMemberMethod](#codemembermethod)
-    - [CodeParameterDeclarationExpression e CodeMethodInvokeExpression](#codeparameterdeclarationexpression-e-codemethodinvokeexpression)
-    - [CodeDOMProvider](#codedomprovider)
-    - [EXPRESSÕES LAMBDA](#expressões-lambda)
-    - [Delegates e Lambda](#delegates-e-lambda)
-    - [Métodos anônimos e Lambda](#métodos-anônimos-e-lambda)
-    - [Instruções Lambdas (Statement Lambdas)](#instruções-lambdas-statement-lambdas)
-    - [Árvores de expressão](#árvores-de-expressão)
-    - [Reflection](#reflection)
-    - [Obter informações do assembly (propriedades, métodos, eventos, interfaces, campos)](#obter-informações-do-assembly-propriedades-métodos-eventos-interfaces-campos)
-    - [Ler, Gravar e Invocar método de classe](#ler-gravar-e-invocar-método-de-classe)
-    - [Obter membros privados e membros estáticos de classe](#obter-membros-privados-e-membros-estáticos-de-classe)
-    
+ 
 
 ## Criar e implementar uma hierarquia de classe 
 - **Projetar e implementar uma interface; herdar de uma classe base; criar e implementar classes com base nas interfaces IComparable, IEnumerable, IDisposable e IUnknown**
