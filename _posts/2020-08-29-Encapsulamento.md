@@ -26,6 +26,9 @@ Resumo do treinamento para o exame................
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Csharp8_Csharp9/)
 6. [Questions](https://github.com/shyoutarou/Exam-70-483_Questions/wiki/Questions)
 
+
+## Aplicar encapsulamento 
+
  - [Aplicar encapsulamento](#aplicar-encapsulamento)
     - [PROTEÇÃO DE DADOS](#proteção-de-dados)
     - [Propriedades e Campos](#propriedades-e-campos)
