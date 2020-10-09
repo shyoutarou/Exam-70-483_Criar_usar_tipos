@@ -24,25 +24,24 @@ Resumo do treinamento para o exame................
 5. [Csharp8_Csharp9](https://github.com/shyoutarou/Exam-70-483_Csharp8_Csharp9/wiki/Csharp8_Csharp9)
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Csharp8_Csharp9/)
 6. [Questions](https://github.com/shyoutarou/Exam-70-483_Questions/wiki/Questions)
-
-  - [Consumir tipos](#consumir-tipos)
-    - [BOXING E UNBOXING](#boxing-e-unboxing)
-    - [Boxing](#boxing)
-    - [Unboxing](#unboxing)
-    - [CASTING E CONVERT](#casting-e-convert)
-    - [Casting](#casting)
-    - [Convertendo valores](#convertendo-valores)
-    - [Métodos Parsing (veja mais detalhes no Tópico 4-Depurar)](#métodos-parsing-veja-mais-detalhes-no-tópico-4-depurar)
-    - [System.Convert(veja mais detalhes no arquivo 4-Depurar)](#systemconvertveja-mais-detalhes-no-arquivo-4-depurar)
-    - [Conversões definidas pelo usuário](#conversões-definidas-pelo-usuário)
-    - [System.BitConverter](#systembitconverter)
-    - [Garantindo a interoperabilidade com código não gerenciado](#garantindo-a-interoperabilidade-com-código-não-gerenciado)
-    - [Plataforma P/invoke](#plataforma-pinvoke)
-    - [Tipos Dinâmicos e Interoperabilidade COM](#tipos-dinâmicos-e-interoperabilidade-com)
-    - [DynamicObject e ExpandoObject](#dynamicobject-e-expandoobject)
-    
+   
 ## Consumir tipos 
 - **Box ou unbox para converter entre tipos de valor; tipos cast; converter tipos; lidar com tipos dinâmicos; garantir a interoperabilidade com código que acesse APIs COM** 
+
+- [BOXING E UNBOXING](#boxing-e-unboxing)
+- [Boxing](#boxing)
+- [Unboxing](#unboxing)
+- [CASTING E CONVERT](#casting-e-convert)
+- [Casting](#casting)
+- [Convertendo valores](#convertendo-valores)
+- [Métodos Parsing (veja mais detalhes no Tópico 4-Depurar)](#métodos-parsing-veja-mais-detalhes-no-tópico-4-depurar)
+- [System.Convert(veja mais detalhes no arquivo 4-Depurar)](#systemconvertveja-mais-detalhes-no-arquivo-4-depurar)
+- [Conversões definidas pelo usuário](#conversões-definidas-pelo-usuário)
+- [System.BitConverter](#systembitconverter)
+- [Garantindo a interoperabilidade com código não gerenciado](#garantindo-a-interoperabilidade-com-código-não-gerenciado)
+- [Plataforma P/invoke](#plataforma-pinvoke)
+- [Tipos Dinâmicos e Interoperabilidade COM](#tipos-dinâmicos-e-interoperabilidade-com)
+- [DynamicObject e ExpandoObject](#dynamicobject-e-expandoobject)
 
 ### BOXING E UNBOXING
 
