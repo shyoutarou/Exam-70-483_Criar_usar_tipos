@@ -25,22 +25,21 @@ Resumo do treinamento para o exame................
 6. [Questions](https://github.com/shyoutarou/Exam-70-483_Questions/wiki/Questions)
 
 
-- [Criar e implementar uma hierarquia de classe](#criar-e-implementar-uma-hierarquia-de-classe)
-    - [HERANÇA](#herança)
-    - [Princípio da substituição de Liskov](#princípio-da-substituição-de-liskov)
-    - [INTERFACES](#interfaces)
-    - [Delegando Interfaces](#delegando-interfaces)
-    - [IMPLEMENTAR INTERFACES COMUNS](#implementar-interfaces-comuns)
-    - [IComparable](#icomparable)
-    - [IComparer](#icomparer)
-    - [IEquatable](#iequatable)
-    - [ICloneable](#icloneable)
-    - [IUnknown](#iunknown)
-    - [IDisposable (Mais informações em “Gerenciar o ciclo de vida do objeto” mais adiante neste documento)](#idisposable-mais-informações-em-gerenciar-o-ciclo-de-vida-do-objeto-mais-adiante-neste-documento)
- 
-
 ## Criar e implementar uma hierarquia de classe 
 - **Projetar e implementar uma interface; herdar de uma classe base; criar e implementar classes com base nas interfaces IComparable, IEnumerable, IDisposable e IUnknown**
+
+- [HERANÇA](#herança)
+- [Princípio da substituição de Liskov](#princípio-da-substituição-de-liskov)
+- [INTERFACES](#interfaces)
+- [Delegando Interfaces](#delegando-interfaces)
+- [IMPLEMENTAR INTERFACES COMUNS](#implementar-interfaces-comuns)
+- [IComparable](#icomparable)
+- [IComparer](#icomparer)
+- [IEquatable](#iequatable)
+- [ICloneable](#icloneable)
+- [IUnknown](#iunknown)
+- [IDisposable (Mais informações em “Gerenciar o ciclo de vida do objeto” mais adiante neste documento)](#idisposable-mais-informações-em-gerenciar-o-ciclo-de-vida-do-objeto-mais-adiante-neste-documento)
+
 
 ### HERANÇA   
 
