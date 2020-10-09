@@ -25,25 +25,24 @@ Resumo do treinamento para o exame................
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Csharp8_Csharp9/)
 6. [Questions](https://github.com/shyoutarou/Exam-70-483_Questions/wiki/Questions)
 
- - [Gerenciar o ciclo de vida do objeto](#gerenciar-o-ciclo-de-vida-do-objeto)
-    - [Perdas de memória (Memory Leaks)](#perdas-de-memória-memory-leaks)
-    - [GARBAGE COLLECTOR](#garbage-collector)
-    - [Benefícios do Garbage Collector](#benefícios-do-garbage-collector)
-    - [O heap gerenciado](#o-heap-gerenciado)
-    - [Gerações](#gerações)
-    - [O ciclo de trabalho do Garbage Collector na heap](#o-ciclo-de-trabalho-do-garbage-collector-na-heap)
-    - [Sobreviventes e promoções](#sobreviventes-e-promoções)
-    - [Gerações e segmentos efêmeros](#gerações-e-segmentos-efêmeros)
-    - [Gerenciando recursos não gerenciados](#gerenciando-recursos-não-gerenciados)
-    - [Finalize ~](#finalize-)
-    - [Disposal](#disposal)
-    - [Try-finally](#try-finally)
-    - [Using](#using)
-    - [Implementando IDisposable e um finalizador](#implementando-idisposable-e-um-finalizador)
-    - [WeakReference - Referências fracas](#weakreference---referências-fracas)
-    
 ## Gerenciar o ciclo de vida do objeto 
 - **Gerenciar recursos não gerenciados; implementar IDisposable, incluindo interação com finalização; gerenciar IDisposable usando a instrução Using; gerenciar finalização e coleta de lixo**
+
+- [Perdas de memória (Memory Leaks)](#perdas-de-memória-memory-leaks)
+- [GARBAGE COLLECTOR](#garbage-collector)
+- [Benefícios do Garbage Collector](#benefícios-do-garbage-collector)
+- [O heap gerenciado](#o-heap-gerenciado)
+- [Gerações](#gerações)
+- [O ciclo de trabalho do Garbage Collector na heap](#o-ciclo-de-trabalho-do-garbage-collector-na-heap)
+- [Sobreviventes e promoções](#sobreviventes-e-promoções)
+- [Gerações e segmentos efêmeros](#gerações-e-segmentos-efêmeros)
+- [Gerenciando recursos não gerenciados](#gerenciando-recursos-não-gerenciados)
+- [Finalize ~](#finalize-)
+- [Disposal](#disposal)
+- [Try-finally](#try-finally)
+- [Using](#using)
+- [Implementando IDisposable e um finalizador](#implementando-idisposable-e-um-finalizador)
+- [WeakReference - Referências fracas](#weakreference---referências-fracas)
 
 O ciclo de vida de um objeto é simplesmente o tempo entre quando um objeto é criado na memória e quando é destruído a partir dele. Fundamentalmente, o ciclo de vida de um objeto envolve as duas etapas a seguir:
 1.	**Criação de um objeto**: Usamos a palavra-chave new para instanciar um novo objeto.
