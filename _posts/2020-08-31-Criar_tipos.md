@@ -22,6 +22,9 @@
      - [GitHub Page](https://shyoutarou.github.io/Exam-70-483_Csharp8_Csharp9/)
 6. [Questions](https://github.com/shyoutarou/Exam-70-483_Questions/wiki/Questions)
 
+
+# CRIAR E USAR TIPOS (25–30%)
+
   - [Criar tipos](#criar-tipos)
     - [POO - PROGRAMAÇÃO ORIENTADA A OBJETOS](#poo---programação-orientada-a-objetos)
     - [Classes](#classes)
@@ -53,9 +56,6 @@
     - [Tipo Nullable](#tipo-nullable)
     - [Tipo Estático](#tipo-estático)
     
-
- 
-# CRIAR E USAR TIPOS (25–30%)
 ## Criar tipos
 - **Criar tipos de valor, incluindo structs e num; criar tipos de referência, tipos genéricos, variáveis estáticas.**
 
