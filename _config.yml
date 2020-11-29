@@ -4,4 +4,7 @@ description: Criar e usar tipos
 github_username: https://github.com/shyoutarou
 theme: jekyll-theme-midnight
 google-site-verification: kg50GjPxJzeZrWjVtYbRE5i-xpi7UvYsf753E8JJR4A
-
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
