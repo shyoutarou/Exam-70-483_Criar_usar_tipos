@@ -3,6 +3,11 @@
 
 :+1: :heart: :smile: 
 
+<head>
+    {% include head.html %}
+</head>
+
+
 <ul>
 {% for post in site.posts %}
 <li>
